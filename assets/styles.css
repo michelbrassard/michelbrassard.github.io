@@ -1,0 +1,235 @@
+:root {
+  --primary-color: #587CF2;
+  --primary-color-medium: #7995f0;
+  --primary-color-light: #eaefff;
+  --text-color: #383838;
+  --text-color-light: #767676;
+  --title-color: #000000;
+  --small-title-color: #6a6a6a;
+  --design-element-color: #dddddd;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: Inter-Italic;
+    src: url(fonts/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: Inter;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+main {
+    margin: 1rem;
+}
+.dot-background {
+    background-image: radial-gradient(var(--design-element-color) 1px, transparent 1px);
+    background-size: 16px 16px;
+}
+.solid-background {
+    background-color: white;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--title-color);
+    margin: 0;
+    line-height: 1;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.75rem;
+}
+h4 {
+    font-size: 1.5rem;
+}
+h5 {
+    font-size: 1.25rem;
+}
+h6 {
+    font-size: 1.125rem;
+}
+section h1 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+section h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+section h3 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.875rem;
+}
+section h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+section h5 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+section h6 {
+    margin-top: 1.125rem;
+    margin-bottom: 0.5625rem;
+}
+.section-link h1 {
+    margin-bottom: 1.25rem;
+}
+.section-link h2 {
+    margin-bottom: 1rem;
+}
+.section-link h3 {
+    margin-bottom: 0.875rem;
+}
+.section-link h4 {
+    margin-bottom: 0.75rem;
+}
+.section-link h5 {
+    margin-bottom: 0.625rem;
+}
+.section-link h6 {
+    margin-bottom: 0.5625rem;
+}
+
+/* Small titles */
+.sm-title {
+    margin-top: 0.75rem;
+    margin-bottom: 0rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--text-color-light);
+    font-weight: 600
+}
+.xs-title {
+    font-size: 0.625rem;
+    text-transform: uppercase;
+}
+
+/* paragraph */
+p {
+    color: var(--text-color);
+    font-weight: medium;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+em {
+    font-family: Inter-Italic;
+}
+.md-size {
+    font-size: 1rem;
+}
+.sm-size {
+    font-size: 0.75rem;
+}
+.xs-size {
+    font-size: 0.625rem;
+}
+.xxs-size {
+    font-size: 0.5rem;
+}
+
+/* links */
+section a {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+section a:hover {
+    text-decoration: underline;
+}
+
+nav .desktop a {
+    color: var(--text-color-light);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+nav .desktop a:hover {
+    text-decoration: underline;
+}
+nav .desktop .active {
+    color: var(--primary-color);
+}
+
+/* 
+
+Clickable linked section
+use it on a tags, and nest other elements under it
+*/
+.section-link {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: initial;
+    border: var(--design-element-color) solid 1px;
+    border-radius: 1.5rem;
+    transition: all .2s;
+    /* background-image: radial-gradient(var(white) 1px, transparent 1px);
+    background-size: 16px 16px; */
+}
+.section-link:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    /* background-image: radial-gradient(var(--primary-color-medium) 1px, transparent 1px);
+    background-size: 16px 16px; */
+}
+
+.section-link:hover h1,
+.section-link:hover h2,
+.section-link:hover h3,
+.section-link:hover h4,
+.section-link:hover h5,
+.section-link:hover h6,
+.section-link:hover .sm-title,
+.section-link:hover .xs-title {
+    color: white;
+}
+.section-link:hover p {
+    color: var(--primary-color-light);
+}
+
+/*
+    Use a div and then nest 4 sections inside
+*/
+.detailed-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--design-element-color);
+  border-radius: 1rem;
+  overflow: hidden; /* clips inner corners */
+}
+.detailed-section section {
+  padding: 1rem;
+  border-right: 1px solid var(--design-element-color);
+  border-bottom: 1px solid var(--design-element-color);
+}
+/* Remove right border for items in the 2nd column */
+.detailed-section section:nth-child(2n) {
+  border-right: none;
+}
+/* Remove bottom border for last row */
+.detailed-section section:nth-last-child(-n+2) {
+  border-bottom: none;
+}
+
+/* use with div */
+.indent {
+    margin-left: 0.5rem;
+}
+.sm-indent {
+    margin-left: 0.25rem;
+}
