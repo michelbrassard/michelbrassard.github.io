@@ -165,7 +165,11 @@ nav .active {
     color: var(--primary-color);
 }
 
-/* Clickable linked section */
+/* 
+
+Clickable linked section
+use it on a tags, and nest other elements under it
+*/
 .section-link {
     display: block;
     padding: 1.5rem;
