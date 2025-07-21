@@ -225,3 +225,11 @@ use it on a tags, and nest other elements under it
 .detailed-section section:nth-last-child(-n+2) {
   border-bottom: none;
 }
+
+/* use with div */
+.indent {
+    margin-left: 0.5rem;
+}
+.sm-indent {
+    margin-left: 0.25rem;
+}
