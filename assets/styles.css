@@ -152,16 +152,16 @@ section a:hover {
     text-decoration: underline;
 }
 
-nav a {
+nav .desktop a {
     color: var(--text-color-light);
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
 }
-nav a:hover {
+nav .desktop a:hover {
     text-decoration: underline;
 }
-nav .active {
+nav .desktop .active {
     color: var(--primary-color);
 }
 
