@@ -1,3 +1,11 @@
+:root {
+  --primary-color: #587CF2;
+  --text-color: #383838;
+  --text-color-light: #767676;
+  --title-color: #000000;
+  --design-element-color: #dddddd;
+}
+
 @font-face {
   font-family: Inter;
   src: url(fonts/Inter-VariableFont_opsz\,wght.ttf);
@@ -14,45 +22,60 @@ body {
 main {
     margin: 1rem;
 }
-.background {
-    background-image: radial-gradient(#dddddd 1px, transparent 1px);
+.dot-background {
+    background-image: radial-gradient(var(--design-element-color) 1px, transparent 1px);
     background-size: 16px 16px;
+}
+.solid-background {
+    background-color: white;
 }
 
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
-    color: #000000;
+    color: var(--title-color);
     margin: 0;
     line-height: 1;
 }
 h1 {
     font-size: 2.5rem;
-    margin-top: 2.5rem;
-    margin-bottom: 1.25rem;
 }
 h2 {
     font-size: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
 }
 h3 {
     font-size: 1.75rem;
-    margin-top: 1.75rem;
-    margin-bottom: 0.875rem;
 }
 h4 {
     font-size: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.75rem;
 }
 h5 {
     font-size: 1.25rem;
-    margin-top: 1.25rem;
-    margin-bottom: 0.625rem;
 }
 h6 {
     font-size: 1.125rem;
+}
+section h1 {
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+section h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+section h3 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.875rem;
+}
+section h4 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+section h5 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+section h6 {
     margin-top: 1.125rem;
     margin-bottom: 0.5625rem;
 }
@@ -69,7 +92,7 @@ h6 {
 
 /* paragraph */
 p {
-    color: #383838;
+    color: var(--text-color);
     font-weight: medium;
     margin-top: 0;
     margin-bottom: 0.75rem;
@@ -89,4 +112,32 @@ em {
 }
 .xxs-size {
     font-size: 0.5rem;
+}
+
+/* links */
+section a {
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+section a:hover {
+    text-decoration: underline;
+}
+
+nav a {
+    color: var(--text-color-light);
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+nav .active {
+    color: var(--primary-color);
+}
+
+.section-link {
+
 }
