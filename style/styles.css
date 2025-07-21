@@ -1,0 +1,92 @@
+@font-face {
+  font-family: Inter;
+  src: url(fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+    font-family: Inter-Italic;
+    src: url(fonts/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: Inter;
+}
+main {
+    margin: 1rem;
+}
+.background {
+    background-image: radial-gradient(#dddddd 1px, transparent 1px);
+    background-size: 16px 16px;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: #000000;
+    margin: 0;
+    line-height: 1;
+}
+h1 {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+h3 {
+    font-size: 1.75rem;
+    margin-top: 1.75rem;
+    margin-bottom: 0.875rem;
+}
+h4 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+h5 {
+    font-size: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+h6 {
+    font-size: 1.125rem;
+    margin-top: 1.125rem;
+    margin-bottom: 0.5625rem;
+}
+
+/* Small titles */
+.sm-title {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+.xs-title {
+    font-size: 0.625rem;
+    text-transform: uppercase;
+}
+
+/* paragraph */
+p {
+    color: #383838;
+    font-weight: medium;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+}
+em {
+    font-family: Inter-Italic;
+}
+.md-size {
+    font-size: 1rem;
+}
+.sm-size {
+    font-size: 0.75rem;
+}
+.xs-size {
+    font-size: 0.625rem;
+}
+.xxs-size {
+    font-size: 0.5rem;
+}
