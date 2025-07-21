@@ -201,3 +201,27 @@ use it on a tags, and nest other elements under it
 .section-link:hover p {
     color: var(--primary-color-light);
 }
+
+/*
+    Use a div and then nest 4 sections inside
+*/
+.detailed-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--design-element-color);
+  border-radius: 1rem;
+  overflow: hidden; /* clips inner corners */
+}
+.detailed-section section {
+  padding: 1rem;
+  border-right: 1px solid var(--design-element-color);
+  border-bottom: 1px solid var(--design-element-color);
+}
+/* Remove right border for items in the 2nd column */
+.detailed-section section:nth-child(2n) {
+  border-right: none;
+}
+/* Remove bottom border for last row */
+.detailed-section section:nth-last-child(-n+2) {
+  border-bottom: none;
+}
