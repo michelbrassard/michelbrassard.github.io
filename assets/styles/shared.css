@@ -229,10 +229,10 @@ nav .mobile .icon {
     align-items: center;
     justify-content: center;
     stroke: var(--text-color);
-}
-nav .mobile .active {
     display: grid;
     place-items: center;
+}
+nav .mobile .active {
     stroke: var(--primary-color);
 }
 button {
