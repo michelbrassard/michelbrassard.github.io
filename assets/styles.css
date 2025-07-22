@@ -35,7 +35,7 @@ main {
 
 .dot-background {
     background-image: radial-gradient(var(--design-element-color) 1px, transparent 1px);
-    background-size: 16px 16px;
+    background-size: 20px 20px;
 }
 .solid-background {
     background-color: white;
@@ -240,26 +240,6 @@ button .icon:hover {
 .hovering-button svg {
     stroke: var(--primary-color-light);
 }
-@media screen and (max-width: 768px) {
-    nav .desktop {
-        display: none;
-    }
-    nav .mobile {
-        display: flex;
-    }
-}
-@media screen and (min-width: 768px) {
-    nav .desktop {
-        display: flex;
-    }
-    nav .mobile {
-        display: none;
-    }
-    main {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
-}
 
 #overlay {
     position: fixed;
@@ -407,6 +387,8 @@ use it on a "a" tag, and nest other elements under it
 footer {
     padding: 3rem 4rem 0rem 4rem;
     background-color: var(--light-gray);
+    background-image: radial-gradient(var(--design-element-color) 1px, transparent 1px);
+    background-size: 20px 20px;
 }
 footer strong {
     font-size: 1.5rem;
@@ -434,7 +416,7 @@ footer .links a {
     display: inline-flex;
     align-items: center;
     border-radius: 2rem;
-    transition: all .3s;
+    transition: all .2s;
     height: min-content;
 }
 footer .links a:hover {
@@ -457,5 +439,29 @@ footer .navigation a {
 }
 footer .navigation a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    nav .desktop {
+        display: none;
+    }
+    nav .mobile {
+        display: flex;
+    }
+    footer .navigation {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 768px) {
+    nav .desktop {
+        display: flex;
+    }
+    nav .mobile {
+        display: none;
+    }
+    main {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 
