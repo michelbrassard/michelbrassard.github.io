@@ -161,7 +161,7 @@ section a:hover {
 nav .desktop {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1.25rem;
     border-bottom: var(--design-element-color) 1px solid;
 }
 nav .name {
