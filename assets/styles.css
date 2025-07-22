@@ -385,7 +385,7 @@ use it on a "a" tag, and nest other elements under it
 
 /* Footer */
 footer {
-    padding: 3rem 4rem 0rem 4rem;
+    padding: 2rem 4rem 0rem 4rem;
     background-color: var(--light-gray);
     background-image: radial-gradient(var(--design-element-color) 1px, transparent 1px);
     background-size: 20px 20px;
