@@ -418,7 +418,7 @@ footer .links a:hover {
 footer svg {
     height: 1.25rem;
     width: 1.25rem;
-    stroke: var(--primary-color-light);
+    stroke: var(--light-gray);
 }
 footer .navigation {
     display: flex;

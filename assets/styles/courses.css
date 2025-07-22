@@ -55,3 +55,12 @@ hr {
     height: 1.25rem;
     stroke: var(--text-color-light);
 }
+
+@media screen and (max-width: 768px) {
+    #side-navigation {
+        display: none;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
