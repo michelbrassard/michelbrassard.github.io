@@ -10,17 +10,79 @@
 <body>
     <nav>
         <div class="desktop">
-            <a href="/education">Nav link</a>
-            <a href="" class="active">Nav link</a>
+            <a href="/" class="name">Michel Brassard</a>
+            <div class="links">
+                <a href="/" class="active">Home</a>
+                <a href="/education">Education</a>
+                <a href="/experience">Work Experience</a>
+                <a href="/interests">Hobbies & Interests</a>
+                <a href="/projects">Projects</a>
+            </div>
         </div>
         <div class="mobile">
-            <a href="/education">Education</a>
-            <a href="" class="active">Nav link</a>
+            <a href="/" class="name">
+                 <svg class="icon active" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </a>
+            <div class="links">
+                <a href="/education">Education</a>
+                <a href="/experience">Work Experience</a>
+                <button onclick="handleOpenMobileNavigation()">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-right-icon lucide-align-right"><path d="M21 12H9"/><path d="M21 18H7"/><path d="M21 6H3"/></svg>
+                </button>
+            </div>
+            <button class="hovering-button" onclick="handleOpenMobileNavigation()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-right-icon lucide-align-right"><path d="M21 12H9"/><path d="M21 18H7"/><path d="M21 6H3"/></svg>
+            </button>
+            <div id="overlay">
+                <div class="button-container">
+                    <button onclick="handleCloseMobileNavigation()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </button>
+                </div>
+                <div class="list">
+                    <a href="/">Home</a>
+                    <a href="/education">Education</a>
+                    <a href="/experience">Work Experience</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/interests">Hobbies & Interests</a>
+                </div>
+                <div class="overlay-hovering-button-container">
+                    <button onclick="handleCloseMobileNavigation()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-right-icon lucide-align-right"><path d="M21 12H9"/><path d="M21 18H7"/><path d="M21 6H3"/></svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </nav>
     <main>
-        <p>CV...</p>
+        <section>
+            <h1>CV</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sapien sed justo porttitor congue.</p>
+
+            <p>Praesent nec leo id justo tincidunt dapibus. Integer in augue sit amet lacus vehicula fermentum in nec nunc.</p>
+
+            <p>Curabitur a felis non elit vulputate cursus. Proin tincidunt, orci ut porttitor dictum, eros lorem lacinia nisi, nec sollicitudin justo erat vel sapien.</p>
+
+            <h2>CV</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sapien sed justo porttitor congue.</p>
+
+            <p>Praesent nec leo id justo tincidunt dapibus. Integer in augue sit amet lacus vehicula fermentum in nec nunc.</p>
+
+            <p>Curabitur a felis non elit vulputate cursus. Proin tincidunt, orci ut porttitor dictum, eros lorem lacinia nisi, nec sollicitudin justo erat vel sapien.</p>
+            
+            <h3>CV</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sapien sed justo porttitor congue.</p>
+
+            <p>Praesent nec leo id justo tincidunt dapibus. Integer in augue sit amet lacus vehicula fermentum in nec nunc.</p>
+
+            <p>Curabitur a felis non elit vulputate cursus. Proin tincidunt, orci ut porttitor dictum, eros lorem lacinia nisi, nec sollicitudin justo erat vel sapien.</p>
+
+            <p>Morbi dignissim orci ac nisi lobortis, sit amet blandit leo consequat. Duis sit amet libero vitae magna cursus egestas.</p>
+        </section>
     </main>
-    <footer>just a footer</footer>
+    <footer>
+        <p>Michel Brassard</p>
+        <p>Contact...</p>
+    </footer>
 </body>
 </html>
