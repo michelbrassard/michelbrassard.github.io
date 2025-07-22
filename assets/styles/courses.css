@@ -1,0 +1,19 @@
+h1 {
+    margin-bottom: 1.25rem;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+hr {
+    border: var(--design-element-color) 0.5px solid;
+    margin-top: 3rem;
+}
+.side-navigation {
+    border-right: var(--design-element-color) 1px solid;
+}
+
+.content {
+    background-color: white;
+    padding: 1rem;
+}
