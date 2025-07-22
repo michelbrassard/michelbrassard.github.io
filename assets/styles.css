@@ -32,6 +32,7 @@ main {
     flex: 1;
     margin: 1rem;
 }
+
 .dot-background {
     background-image: radial-gradient(var(--design-element-color) 1px, transparent 1px);
     background-size: 16px 16px;
@@ -254,6 +255,10 @@ button .icon:hover {
     nav .mobile {
         display: none;
     }
+    main {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 
 #overlay {
@@ -400,6 +405,57 @@ use it on a "a" tag, and nest other elements under it
 
 /* Footer */
 footer {
-    padding: 1rem;
+    padding: 3rem 4rem 0rem 4rem;
     background-color: var(--light-gray);
 }
+footer strong {
+    font-size: 1.5rem;
+}
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .links {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+}
+footer .copyright {
+    text-align: center;
+    padding-top: 0.5rem;
+    margin-top: 3rem;
+    border-top: var(--design-element-color) 1px solid;
+    color: var(--text-color-light);
+}
+footer .links a {
+    background-color: var(--text-color);
+    padding: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 2rem;
+    transition: all .3s;
+    height: min-content;
+}
+footer .links a:hover {
+    background-color: var(--primary-color);
+}
+footer svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    stroke: var(--primary-color-light);
+}
+footer .navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+footer .navigation a {
+    text-decoration: none;
+    color: var(--text-color-light);
+    font-size: 0.825rem;
+}
+footer .navigation a:hover {
+    text-decoration: underline;
+}
+
