@@ -7,6 +7,7 @@
   --title-color: #000000;
   --small-title-color: #6a6a6a;
   --design-element-color: #dddddd;
+  --light-gray: #eeeeee;
 }
 
 @font-face {
@@ -20,11 +21,15 @@
 
 body {
     margin: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
     font-family: Inter;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 main {
+    flex: 1;
     margin: 1rem;
 }
 .dot-background {
@@ -152,23 +157,182 @@ section a:hover {
     text-decoration: underline;
 }
 
-nav .desktop a {
+/* Desktop navigation */
+nav .desktop {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-bottom: var(--design-element-color) 1px solid;
+}
+nav .name {
+    color: var(--title-color);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+}
+nav .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+nav .links a {
     color: var(--text-color-light);
     font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
 }
-nav .desktop a:hover {
+nav .links a:hover {
     text-decoration: underline;
 }
-nav .desktop .active {
+nav .links .active {
     color: var(--primary-color);
 }
+
+/* Mobile navigation */
+nav .mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: var(--design-element-color) 1px solid;
+}
+nav .mobile .icon {
+    height: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    stroke: var(--text-color);
+}
+nav .mobile .active {
+    display: grid;
+    place-items: center;
+    stroke: var(--primary-color);
+}
+button {
+    all: unset;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+}
+button .icon:hover {
+    stroke: var(--primary-color);
+}
+.hovering-button {
+    z-index: 1;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 2rem;
+    stroke: var(--primary-color-light);
+    transition: all .2s;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+.hovering-button:hover {
+    background-color: var(--primary-color-medium);
+}
+.hovering-button svg {
+    stroke: var(--primary-color-light);
+}
+@media screen and (max-width: 768px) {
+    nav .desktop {
+        display: none;
+    }
+    nav .mobile {
+        display: flex;
+    }
+}
+@media screen and (min-width: 768px) {
+    nav .desktop {
+        display: flex;
+    }
+    nav .mobile {
+        display: none;
+    }
+}
+
+#overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+    /* background-color: #eeeeee77;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px); */
+    background-color: var(--primary-color);
+    background-image: radial-gradient(var(--primary-color-medium) 1px, transparent 1px);
+    background-size: 20px 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all .3s;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+#overlay .button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+#overlay button {
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+#overlay .button-container button  svg {
+    height: 3.25rem;
+    width: 3.25rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* stroke: var(--text-color); */
+    stroke: var(--primary-color-light);
+}
+#overlay .list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-left: 3rem;
+    margin-bottom: 6rem;
+}
+#overlay a {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    /* color: var(--text-color); */
+    color: white;
+    text-wrap: nowrap;
+}
+#overlay a:hover {
+    text-decoration: underline;
+}
+#overlay .overlay-hovering-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+#overlay .overlay-hovering-button-container button {
+    margin: 2rem;
+    padding: 1rem;
+    border: var(--primary-color-light) 1px solid;
+    border-radius: 2rem;
+    background-color: var(--primary-color);
+}
+#overlay .overlay-hovering-button-container svg {
+    stroke: var(--primary-color-light);
+}
+
+
 
 /* 
 
 Clickable linked section
-use it on a tags, and nest other elements under it
+use it on a "a" tag, and nest other elements under it
 */
 .section-link {
     display: block;
@@ -232,4 +396,10 @@ use it on a tags, and nest other elements under it
 }
 .sm-indent {
     margin-left: 0.25rem;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    background-color: var(--light-gray);
 }
