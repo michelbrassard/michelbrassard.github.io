@@ -9,6 +9,9 @@
   --design-element-color: #dddddd;
   --light-gray: #eeeeee;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 @font-face {
   font-family: Inter;
