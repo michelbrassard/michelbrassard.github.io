@@ -1,0 +1,36 @@
+.bachelors h2 {
+    display: inline-flex;
+    align-items: end;
+    gap: 0.75rem;
+}
+
+.detailed-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid var(--design-element-color);
+    border-radius: 1rem;
+    overflow: hidden; /* clips inner corners */
+}
+.detailed-section section {
+    padding: 1rem;
+    border-right: 1px solid var(--design-element-color);
+    border-bottom: 1px solid var(--design-element-color);
+}
+.detailed-section section a {
+    display: block;
+    margin-bottom: 0.25rem;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;  */
+}
+.detailed-section section h3 {
+    margin: 0.25rem;
+}
+/* Remove right border for items in the 2nd column */
+.detailed-section section:nth-child(2n) {
+    border-right: none;
+}
+/* Remove bottom border for last row */
+.detailed-section section:nth-last-child(-n+2) {
+    border-bottom: none;
+}

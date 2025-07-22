@@ -12,11 +12,11 @@
 
 @font-face {
   font-family: Inter;
-  src: url(fonts/Inter-VariableFont_opsz\,wght.ttf);
+  src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 @font-face {
     font-family: Inter-Italic;
-    src: url(fonts/Inter-Italic-VariableFont_opsz\,wght.ttf);
+    src: url(../fonts/Inter-Italic-VariableFont_opsz\,wght.ttf);
 }
 
 body {
@@ -112,7 +112,7 @@ section h6 {
 /* Small titles */
 .sm-title {
     margin-top: 0.75rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0.25rem;
     font-size: 0.75rem;
     text-transform: uppercase;
     color: var(--text-color-light);
@@ -312,10 +312,7 @@ button .icon:hover {
     stroke: var(--primary-color-light);
 }
 
-
-
 /* 
-
 Clickable linked section
 use it on a "a" tag, and nest other elements under it
 */
@@ -336,7 +333,6 @@ use it on a "a" tag, and nest other elements under it
     /* background-image: radial-gradient(var(--primary-color-medium) 1px, transparent 1px);
     background-size: 16px 16px; */
 }
-
 .section-link:hover h1,
 .section-link:hover h2,
 .section-link:hover h3,
@@ -349,30 +345,6 @@ use it on a "a" tag, and nest other elements under it
 }
 .section-link:hover p {
     color: var(--primary-color-light);
-}
-
-/*
-    Use a div and then nest 4 sections inside
-*/
-.detailed-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid var(--design-element-color);
-  border-radius: 1rem;
-  overflow: hidden; /* clips inner corners */
-}
-.detailed-section section {
-  padding: 1rem;
-  border-right: 1px solid var(--design-element-color);
-  border-bottom: 1px solid var(--design-element-color);
-}
-/* Remove right border for items in the 2nd column */
-.detailed-section section:nth-child(2n) {
-  border-right: none;
-}
-/* Remove bottom border for last row */
-.detailed-section section:nth-last-child(-n+2) {
-  border-bottom: none;
 }
 
 /* use with div */
