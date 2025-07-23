@@ -36,6 +36,9 @@ main {
     flex: 1;
     margin: 1rem;
 }
+section:last-of-type {
+    margin-bottom: 3rem;
+}
 
 .dot-background {
     background-image: radial-gradient(var(--design-element-color) 1px, transparent 1px);
