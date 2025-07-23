@@ -19,7 +19,7 @@ h1 {
     border-bottom: var(--design-element-color) 1px solid;
 }
 #side-navigation .links .year {
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 0rem;
     margin-top: 1rem;
 }
