@@ -234,22 +234,23 @@ button {
 button .icon:hover {
     stroke: var(--primary-color);
 }
-.hovering-button {
-    z-index: 1;
+#mobile-navigation-hovering-button {
+    z-index: 10;
     position: fixed;
     bottom: 2rem;
     right: 2rem;
     padding: 1rem;
     background-color: var(--primary-color);
     border-radius: 2rem;
-    stroke: var(--primary-color-light);
     transition: all .2s;
     box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2);
+    border: transparent 1px solid;
 }
-.hovering-button:hover {
+#mobile-navigation-hovering-button:hover {
     background-color: var(--primary-color-medium);
+    border: transparent 1px solid;
 }
-.hovering-button svg {
+#mobile-navigation-hovering-button svg {
     stroke: var(--primary-color-light);
 }
 
@@ -260,9 +261,6 @@ button .icon:hover {
     height: 100vh;
     width: 0;
     opacity: 0;
-    /* background-color: #eeeeee77;
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px); */
     background-color: var(--primary-color);
     background-image: radial-gradient(var(--primary-color-medium) 1px, transparent 1px);
     background-size: 20px 20px;
@@ -294,12 +292,12 @@ button .icon:hover {
 #overlay .list {
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2.5rem;
     padding-left: 3rem;
-    margin-bottom: 6rem;
+    margin-bottom: 12rem;
 }
 #overlay a {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
     font-weight: 500;
     text-decoration: none;
     /* color: var(--text-color); */
@@ -308,20 +306,6 @@ button .icon:hover {
 }
 #overlay a:hover {
     text-decoration: underline;
-}
-#overlay .overlay-hovering-button-container {
-    display: flex;
-    justify-content: flex-end;
-}
-#overlay .overlay-hovering-button-container button {
-    margin: 2rem;
-    padding: 1rem;
-    border: var(--primary-color-light) 1px solid;
-    border-radius: 2rem;
-    background-color: var(--primary-color);
-}
-#overlay .overlay-hovering-button-container svg {
-    stroke: var(--primary-color-light);
 }
 
 /* use with div */
@@ -412,8 +396,29 @@ hr {
     nav .mobile {
         display: flex;
     }
+    nav .mobile .links {
+        gap: 1.5rem;
+        margin-right: 0.25rem;
+    }
     footer .navigation {
         flex-direction: column;
+    }
+    footer {
+        padding: 1rem;
+    }
+    footer .container {
+        flex-direction: column;
+    }
+    footer .links {
+        margin-top: 2rem ;
+    }
+    footer .copyright {
+        margin-top: 2rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    nav .mobile .links a {
+        display: none;
     }
 }
 @media screen and (min-width: 768px) {
