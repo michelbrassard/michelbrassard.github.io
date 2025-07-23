@@ -3,9 +3,6 @@
     flex-direction: row;
     margin-top: 1rem;
 }
-.content .external-link {
-    margin-top: 0.25rem;
-}
 .content h6:first-of-type {
     margin-top: 0;
 }
@@ -17,7 +14,7 @@
     border-right: var(--design-element-color) 1px solid;
 }
 .content .details a {
-    display: block;
+    margin-top: 0.25rem;
     margin-bottom: 0.125rem;
 }
 .content .details p {
