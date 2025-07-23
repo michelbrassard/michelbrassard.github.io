@@ -33,12 +33,17 @@ hr {
 }
 #side-navigation .links a {
     display: block;
-    font-size: 0.75rem;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-top: 0.25rem;
     color: var(--primary-color);
+}
+#side-navigation .links.courses a {
+    font-size: 0.75rem;
+}
+#side-navigation .links.projects a {
+    font-size: 1rem;
 }
 
 .content {

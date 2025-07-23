@@ -3,16 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/styles/shared.css">
+    <link rel="stylesheet" href="../../assets/styles/descriptions.css">
 </head>
 <body>
-    <nav>
-        <a href="">Nav link</a>
-        <a href="" class="active">Nav link</a>
-    </nav>
-    <main>
-        <h1>Project Descriptions</h1>
+    <main class="dot-background">
+        <h1 class="title-with-backlink">
+            <a href="/projects" class="backlink">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+            </a>
+            Project Descriptions
+        </h1>
+        <div class="wrapper">
+            <section id="side-navigation">
+                <div class="links projects">
+                    <p class="sm-title">Personal</p>
+                    <div class="indent">
+                        <a href="#trek">Trek</a>
+                        <a href="#unet">Unet</a>
+                    </div>
+                    <p class="sm-title">RIT (College)</p>
+                    <div class="indent">
+                        <a href="#smudge">Smudge</a>
+                        <a href="#transaction-visualizer">Transaction Visualizer</a>
+                    </div>
+                </div>
+            </section>
+            <section class="content">
+                <h2 class="sm-title">Personal</h2>
+                    <h3 id="#trek">Trek</h3>
+                    <div class="indent">
+                        <p>Description...</p>
+                        <h4>Tech...</h4>
+                    </div>
+
+                <hr>
+                
+                <h2 class="sm-title">RIT (College)</h2>
+                    <h3 id="#smudge">Smudge</h3>
+                    <div class="indent">
+                        <p>Description...</p>
+                        <h4>Tech...</h4>
+                    </div>
+            </section>
+        </div>
     </main>
-    <footer>just a footer</footer>
 </body>
 </html>
