@@ -1,0 +1,79 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+h1 {
+    margin-bottom: 1.25rem;
+}
+
+/* 
+    Clickable linked section
+    use it on a "a" tag, and nest other elements under it
+*/
+.section-link {
+    display: block;
+    padding: 1.5rem;
+    text-decoration: none;
+    color: initial;
+    border: var(--design-element-color) solid 1px;
+    border-radius: 1.5rem;
+    background-color: white;
+    transition: all .2s;
+}
+.section-link:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    background-image: radial-gradient(var(--primary-color-medium) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+.section-link h1 {
+    margin-bottom: 1.25rem;
+}
+.section-link h2 {
+    margin-bottom: 1rem;
+}
+.section-link h3 {
+    margin-bottom: 0.875rem;
+}
+.section-link h4 {
+    margin-bottom: 0.75rem;
+}
+.section-link h5 {
+    margin-bottom: 0.625rem;
+}
+.section-link h6 {
+    margin-bottom: 0.5625rem;
+}
+.section-link:hover h1,
+.section-link:hover h2,
+.section-link:hover h3,
+.section-link:hover h4,
+.section-link:hover h5,
+.section-link:hover h6,
+.section-link:hover .sm-title,
+.section-link:hover .xs-title {
+    color: white;
+}
+.section-link:hover p {
+    color: var(--primary-color-light);
+}
+
+/* Grid layout for projects */
+@media screen and (min-width: 768px) {
+    #trek {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+}
+
+@media screen and (max-width: 864px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}

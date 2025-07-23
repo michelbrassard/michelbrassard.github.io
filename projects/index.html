@@ -4,11 +4,105 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="../assets/styles/shared.css">
+    <link rel="stylesheet" href="../assets/styles/projects.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../assets/script.js" defer></script>
 </head>
 <body>
+    <nav>
+        <div class="desktop">
+            <a href="/" class="name">Michel Brassard</a>
+            <div class="links">
+                <a href="/">Home</a>
+                <a href="/education">Education</a>
+                <a href="/experience">Work Experience</a>
+                <a href="/projects" class="active">Projects</a>
+                <a href="/interests">Hobbies & Interests</a>
+            </div>
+        </div>
+        <div class="mobile">
+            <a href="/" class="name">
+                 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+            </a>
+            <div class="links">
+                <a href="/education">Education</a>
+                <a href="/experience">Work Experience</a>
+                <button onclick="handleOpenMobileNavigation()">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-right-icon lucide-align-right"><path d="M21 12H9"/><path d="M21 18H7"/><path d="M21 6H3"/></svg>
+                </button>
+            </div>
+            <button class="hovering-button" onclick="handleOpenMobileNavigation()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-right-icon lucide-align-right"><path d="M21 12H9"/><path d="M21 18H7"/><path d="M21 6H3"/></svg>
+            </button>
+            <div id="overlay">
+                <div class="button-container">
+                    <button onclick="handleCloseMobileNavigation()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                    </button>
+                </div>
+                <div class="list">
+                    <a href="/">Home</a>
+                    <a href="/education">Education</a>
+                    <a href="/experience">Work Experience</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/interests">Hobbies & Interests</a>
+                </div>
+                <div class="overlay-hovering-button-container">
+                    <button onclick="handleCloseMobileNavigation()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-right-icon lucide-align-right"><path d="M21 12H9"/><path d="M21 18H7"/><path d="M21 6H3"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
     <main class="dot-background">
         <h1>Projects</h1>
+        <div class="wrapper">
+            <a href="descriptions/#trek" id="trek" class="section-link">
+                <h2>Trek</h2>
+                <p>Hello</p>
+                <h4>Title 4 (not 3)</h4>
+                <p>Hello</p>
+            </a>
+            <a href="descriptions/#smudge" id="smudge" class="section-link">
+                <h2>Smudge</h2>
+                <p>Hello</p>
+                <h4>Title 4 (not 3)</h4>
+                <p>Hello</p>
+            </a>
+            <a href="descriptions/#transaction-visualizer" id="transaction-visualizer" class="section-link">
+                <h2>Transaction Visualizer</h2>
+                <p>Hello</p>
+                <h4>Title 4 (not 3)</h4>
+                <p>Hello</p>
+            </a>
+        </div>
     </main>
+    <footer>
+        <div class="container">
+            <div>
+                <p><strong>Michel Brassard</strong></p>
+                <div class="navigation">
+                    <a href="/">Home</a>
+                    <a href="/education">Education</a>
+                    <a href="/experience">Work Experience</a>
+                    <a href="/projects">Projects</a>
+                    <a href="/interests">Hobbies & Interests</a>
+                </div>
+            </div>
+            <div class="links">
+                <a href="mailto:michelbrassard47@gmail.com">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                </a>
+                <a href="https://github.com/michelbrassard">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/michelb1/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+            </div>
+        </div>
+        <p class="sm-size copyright">© Michel Brassard 2025</p>
+    </footer>
 </body>
 </html>
