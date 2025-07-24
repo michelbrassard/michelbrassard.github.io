@@ -16,3 +16,28 @@ function toggleMobileNavigation() {
     button.style.boxShadow = "none";
   }
 }
+
+function toggleGallery(element) {
+  const img = element.querySelector('img');
+  const src = img.getAttribute('src');
+
+  const zoomedGallery = document.getElementById("zoomed-gallery");
+  const zoomedImg = zoomedGallery.querySelector('img');
+
+  zoomedImg.setAttribute('src', src);
+
+  const isOpen = zoomedGallery.style.width === "100%";
+  if (isOpen) {
+    zoomedGallery.style.width = "0%";
+    zoomedGallery.style.opacity = "0%";
+    zoomedImg.style.maxWidth = "0%"
+    zoomedImg.style.maxHeight = "0%"
+    zoomedImg.style.opacity = "0%";
+  } else {
+    zoomedGallery.style.width = "100%";
+    zoomedGallery.style.opacity = "100%";
+    zoomedImg.style.maxWidth = "90vw"
+    zoomedImg.style.maxHeight = "80vh"
+    zoomedImg.style.opacity = "100%";
+  }
+}
