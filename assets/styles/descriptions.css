@@ -18,7 +18,7 @@ h1 {
     margin-right: 1rem;
     border-bottom: var(--design-element-color) 1px solid;
 }
-#side-navigation .links .year {
+#side-navigation .links .title {
     font-weight: 600;
     margin-bottom: 0rem;
     margin-top: 1rem;
