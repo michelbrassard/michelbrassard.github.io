@@ -17,27 +17,65 @@ function toggleMobileNavigation() {
   }
 }
 
-function toggleGallery(element) {
+let elements;
+let index;
+function openGallery(element) {
   const img = element.querySelector('img');
   const src = img.getAttribute('src');
 
+  elements = Array.from(element.parentNode.children)
+  index = elements.indexOf(element);
+  
+  updateImage(elements, index);
+}
+
+function nextImage() {
+  if(index >= elements.length - 1) return;
+  index = index + 1
+  updateImage();
+}
+function prevImage() {
+  if(index <= 0) return;
+  index = index - 1;
+  updateImage();
+}
+function updateImage() {
+  const imageSrc = elements[index].querySelector('img').getAttribute('src')
+  const zoomedGallery = document.getElementById("zoomed-gallery");
+  const zoomedImg = zoomedGallery.querySelector('img');
+  const previous = document.getElementById("previous");
+  const next = document.getElementById("next");
+
+  zoomedImg.setAttribute('src', imageSrc);
+  zoomedGallery.style.width = "100%";
+  zoomedGallery.style.opacity = "100%";
+  zoomedImg.style.maxWidth = "70vw"
+  zoomedImg.style.maxHeight = "70vh"
+  zoomedImg.style.opacity = "100%";
+
+  if(index == elements.length - 1) {
+    next.style.opacity = "30%"
+  }
+  else {
+    next.style.opacity = "100%"
+  }
+  if(index == 0) {
+    previous.style.opacity = "30%"
+  }
+  else {
+    previous.style.opacity = "100%"
+  }
+
+
+}
+
+function closeGallery() {
   const zoomedGallery = document.getElementById("zoomed-gallery");
   const zoomedImg = zoomedGallery.querySelector('img');
 
-  zoomedImg.setAttribute('src', src);
-
-  const isOpen = zoomedGallery.style.width === "100%";
-  if (isOpen) {
-    zoomedGallery.style.width = "0%";
-    zoomedGallery.style.opacity = "0%";
-    zoomedImg.style.maxWidth = "0%"
-    zoomedImg.style.maxHeight = "0%"
-    zoomedImg.style.opacity = "0%";
-  } else {
-    zoomedGallery.style.width = "100%";
-    zoomedGallery.style.opacity = "100%";
-    zoomedImg.style.maxWidth = "90vw"
-    zoomedImg.style.maxHeight = "80vh"
-    zoomedImg.style.opacity = "100%";
-  }
+  zoomedGallery.style.width = "0%";
+  zoomedGallery.style.opacity = "0%";
+  zoomedImg.style.maxWidth = "0%"
+  zoomedImg.style.maxHeight = "0%"
+  zoomedImg.style.opacity = "0%";
 }
