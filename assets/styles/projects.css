@@ -14,7 +14,7 @@ h1 {
 .section-link {
     display: flex;
     flex-direction: column;
-    padding: 1.25rem;
+    padding: 1rem;
     text-decoration: none;
     color: initial;
     border: var(--design-element-color) solid 1px;
@@ -29,7 +29,7 @@ h1 {
     background-image: radial-gradient(var(--primary-color-medium) 1px, transparent 1px);
     background-size: 20px 20px;
 }
-.section-link div {
+.section-link .content {
     flex: 1;
 }
 /* .section-link h2 {
@@ -70,26 +70,37 @@ h1 {
     color: var(--primary-color-light);
 }
 .section-link .image-container {
-    height: 5rem;
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     border: var(--design-element-color) 1px solid;
+    width: auto;
     margin-bottom: 0.5rem;
-    display: flex;
-    justify-content: center;
-    background-image: radial-gradient(var(--design-element-color) 1px, transparent 1px);
+    background-color: var(--primary-color);
+    background-image: radial-gradient(var(--primary-color-light) 1px, transparent 1px);
     background-size: 20px 20px;
-    padding: 0.75rem;
 }
+.section-link .image-container div {
+    height: 6rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: calc(0.5rem - 1px);
+    padding: 0.75rem;
+    transition: opacity .3s;
+}
+.section-link:hover .image-container {
+    border: var(--primary-color-light) 1px solid;
+}
+.section-link:hover .image-container div {
+    opacity: 0;
+}
+
 .section-link .image-container img {
     height: 5rem;
     border-radius: 0.125rem;
     border: var(--design-element-color) 1px solid;
     transition: opacity .3s;
 }
-.section-link:hover .image-container {
-    border: var(--primary-color-light) 1px solid;
-    background-image: radial-gradient(var(--primary-color-light) 1px, transparent 1px);
-}
+
 .section-link:hover .image-container img {
     opacity: 0;
 }
