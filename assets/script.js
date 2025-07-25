@@ -56,20 +56,8 @@ function updateImage() {
   const title = document.getElementById("image-name");
   title.innerText = image.getAttribute('alt');
 
-  if(index == elements.length - 1) {
-    next.style.opacity = "30%"
-  }
-  else {
-    next.style.opacity = "100%"
-  }
-  if(index == 0) {
-    previous.style.opacity = "30%"
-  }
-  else {
-    previous.style.opacity = "100%"
-  }
-
-
+  next.disabled = index === elements.length - 1;
+  previous.disabled = index === 0;
 }
 
 function closeGallery() {

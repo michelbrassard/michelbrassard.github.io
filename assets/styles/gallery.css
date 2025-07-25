@@ -64,6 +64,23 @@
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 1rem;
+    transition: all .2s;
+}
+#zoomed-gallery .image-container button:hover {
+    background-color: var(--primary-color);
+}
+#zoomed-gallery .image-container button:disabled {
+    cursor: not-allowed;
+    opacity: 30%;
+}
+#zoomed-gallery .image-container button:disabled:hover {
+    background-color: #00000077;
+}
+#zoomed-gallery .image-container button:first-of-type {
+    padding-right: 0.20rem;
+}
+#zoomed-gallery .image-container button:last-of-type {
+    padding-left: 0.20rem;
 }
 #zoomed-gallery button svg {
     height: 3rem;
