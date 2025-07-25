@@ -1,0 +1,31 @@
+- title: Kitchen Nightmares Book Cover
+  id: kitchen-nightmares-book-cover
+  thumbnail: kitchen-nightmares-book-cover.jpg
+  description: test
+  technologies: test
+  tag: test
+  gallery:
+    - src: kitchen-nightmares-book-cover.jpg
+      alt: Final Book Cover
+    - src: kitchen-nightmares-book-cover-template.jpg
+      alt: Template Layout
+    - src: kitchen-nightmares-book-cover-draft-1.jpg
+      alt: Draft 1
+    - src: kitchen-nightmares-book-cover-draft-2.jpg
+      alt: Draft 2
+    - src: kitchen-nightmares-book-cover-mood-board.jpg
+      alt: Mood Board
+
+- title: I.T.T.W Repairs
+  id: ittw-repairs
+  thumbnail: ittw-repairs-front.jpg
+  description: An exercise for the NMDE-111 course. The task was to create the front and the back of a business card."
+  technologies: Adobe Illustrator
+  tag: RIT (college)
+  gallery:
+    - src: ittw-repairs.jpg
+      alt: Card Front/Back
+    - src: ittw-repairs-front.jpg
+      alt: Front
+    - src: ittw-repairs-back.jpg
+      alt: Back
