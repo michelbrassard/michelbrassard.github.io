@@ -40,18 +40,21 @@ function prevImage() {
   updateImage();
 }
 function updateImage() {
-  const imageSrc = elements[index].querySelector('img').getAttribute('src')
+  const image = elements[index].querySelector('img')
   const zoomedGallery = document.getElementById("zoomed-gallery");
   const zoomedImg = zoomedGallery.querySelector('img');
   const previous = document.getElementById("previous");
   const next = document.getElementById("next");
 
-  zoomedImg.setAttribute('src', imageSrc);
+  zoomedImg.setAttribute('src', image.getAttribute('src'));
   zoomedGallery.style.width = "100%";
   zoomedGallery.style.opacity = "100%";
   zoomedImg.style.maxWidth = "70vw"
   zoomedImg.style.maxHeight = "70vh"
   zoomedImg.style.opacity = "100%";
+
+  const title = document.getElementById("image-name");
+  title.innerText = image.getAttribute('alt');
 
   if(index == elements.length - 1) {
     next.style.opacity = "30%"
