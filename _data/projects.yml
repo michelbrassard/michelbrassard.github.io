@@ -1,9 +1,9 @@
 - title: Kitchen Nightmares Book Cover
   id: kitchen-nightmares-book-cover
   thumbnail: kitchen-nightmares-book-cover.jpg
-  description: test
-  technologies: test
-  tag: test
+  description: Second project for the NMDE-111 course. The task was to create a book cover for some other existing media.
+  technologies: Adobe Illustrator
+  tag: RIT (college)
   gallery:
     - src: kitchen-nightmares-book-cover.jpg
       alt: Final Book Cover
@@ -16,7 +16,7 @@
     - src: kitchen-nightmares-book-cover-mood-board.jpg
       alt: Mood Board
 
-- title: I.T.T.W Repairs
+- title: I.T.T.W. Repairs
   id: ittw-repairs
   thumbnail: ittw-repairs-front.jpg
   description: An exercise for the NMDE-111 course. The task was to create the front and the back of a business card."
