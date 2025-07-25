@@ -1,0 +1,16 @@
+# Jekyll output
+_site/
+
+# Temporary files
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundle config
+.bundle/
+vendor/
+
+# OS / Editor-specific
+.DS_Store
+*.swp
+*.log
