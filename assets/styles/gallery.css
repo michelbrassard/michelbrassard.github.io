@@ -64,7 +64,7 @@
     overflow-x: scroll;
     width: 60vw;
     gap: 1rem;
-    padding: 2rem;
+    padding: 1rem;
     background-image: radial-gradient(var(--design-element-color) 1px, transparent 1px);
     background-size: 20px 20px;
     border-right: var(--design-element-color) 1px solid;
@@ -78,7 +78,7 @@
 .gallery .image img {
     height: 100px;
     border-radius: 0.25rem;
-    border: var(--text-color-light) 1px solid;
+    border: var(--design-element-color) 1px solid;
 }
 .gallery .overlay {
     position: absolute;
