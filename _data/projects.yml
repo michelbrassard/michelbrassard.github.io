@@ -1,31 +1,66 @@
+
+# NMDE-111
 - title: Kitchen Nightmares Book Cover
   id: kitchen-nightmares-book-cover
-  thumbnail: kitchen-nightmares-book-cover.jpg
+  thumbnail: kitchen-nightmares-book-cover/final.jpg
   description: Second project for the NMDE-111 course. The task was to create a book cover for some other existing media.
   technologies: Adobe Illustrator
   tag: RIT (college)
   gallery:
-    - src: kitchen-nightmares-book-cover.jpg
+    - src: kitchen-nightmares-book-cover/final.jpg
       alt: Final Book Cover
-    - src: kitchen-nightmares-book-cover-template.jpg
+    - src: kitchen-nightmares-book-cover/template.jpg
       alt: Template Layout
-    - src: kitchen-nightmares-book-cover-draft-1.jpg
+    - src: kitchen-nightmares-book-cover/draft-1.jpg
       alt: Draft 1
-    - src: kitchen-nightmares-book-cover-draft-2.jpg
+    - src: kitchen-nightmares-book-cover/draft-2.jpg
       alt: Draft 2
-    - src: kitchen-nightmares-book-cover-mood-board.jpg
+    - src: kitchen-nightmares-book-cover/mood-board.jpg
       alt: Mood Board
 
 - title: I.T.T.W. Repairs
   id: ittw-repairs
-  thumbnail: ittw-repairs-front.jpg
+  thumbnail: ittw-repairs/front.jpg
   description: An exercise for the NMDE-111 course. The task was to create the front and the back of a business card."
   technologies: Adobe Illustrator
   tag: RIT (college)
   gallery:
-    - src: ittw-repairs.jpg
+    - src: ittw-repairs/both.jpg
       alt: Card Front/Back
-    - src: ittw-repairs-front.jpg
+    - src: ittw-repairs/front.jpg
       alt: Front
-    - src: ittw-repairs-back.jpg
+    - src: ittw-repairs/back.jpg
       alt: Back
+
+# ISTE-140
+
+
+- title: Your Favourites!
+  id: your-favourites
+  thumbnail: your-favourites/home.jpg
+  description: A restuarant promo page. First project of the ISTE-140 Web and Mobile 1 course.
+  technologies: HTML, CSS
+  tag: RIT (College)
+  colors:
+    - "#F2AE2E"
+    - "#FFCE58"
+    - "#FFEEC6"
+    - "#000000"
+    - "#FFFFFF"
+  gallery:
+    - src: your-favourites/home.jpg
+      alt: Home
+    - src: your-favourites/home-hover-menu.jpg
+      alt: Home hover ”Menu”
+    - src: your-favourites/home-hover-details.jpg
+      alt: Home hover ”Details”
+    - src: your-favourites/home-hover-contact.jpg
+      alt: Home hover ”Contact”
+    - src: your-favourites/menu-1.jpg
+      alt: Menu 1
+    - src: your-favourites/menu-2.jpg
+      alt: Menu 2
+    - src: your-favourites/details.jpg
+      alt: Details
+    - src: your-favourites/contact.jpg
+      alt: Contact
