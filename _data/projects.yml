@@ -33,6 +33,52 @@
       alt: Back
 
 # ISTE-140
+- title: Blue Whales
+  id: blue-whales
+  thumbnail: blue-whales/logo.jpg
+  description: A website about blue whales. Third project of the ISTE-140 Web and Mobile 1 course.
+  technologies: HTML, CSS
+  tag: RIT (College)
+  colors:
+    - "#011826"
+    - "#042940"
+    - "#EBEFF2"
+    - "#8AB0BF"
+    - "#3E6E8C"
+    - "#000000"
+    - "#FFFFFF"
+  gallery:
+    - src: blue-whales/logo.jpg
+      alt: Logo
+    - src: blue-whales/introduction-1.jpg
+      alt: Introduction 1
+    - src: blue-whales/introduction-2.jpg
+      alt: Introduction 2
+    - src: blue-whales/details-1.jpg
+      alt: Details 1
+    - src: blue-whales/details-2.jpg
+      alt: Details 2
+    - src: blue-whales/details-3.jpg
+      alt: Details 3
+    - src: blue-whales/details-4.jpg
+      alt: Details 4
+    - src: blue-whales/evolution.jpg
+      alt: Evolution
+    - src: blue-whales/endangerment-1.jpg
+      alt: Endangerment 1
+    - src: blue-whales/endangerment-2.jpg
+      alt: Endangerment 2
+    - src: blue-whales/references-1.jpg
+      alt: References 1
+    - src: blue-whales/references-2.jpg
+      alt: References 2
+    - src: blue-whales/mobile-1.jpg
+      alt: Mobile 1
+    - src: blue-whales/mobile-2.jpg
+      alt: Mobile 2
+    - src: blue-whales/project-structure.jpg
+      alt: Project Structure
+
 - title: History of the Web
   id: history-of-the-web
   thumbnail: history-of-the-web/introduction-1.jpg
@@ -67,6 +113,10 @@
       alt: Terminology
     - src: history-of-the-web/references.jpg
       alt: References
+    - src: history-of-the-web/mobile-1.jpg
+      alt: Mobile 1
+    - src: history-of-the-web/mobile-2.jpg
+      alt: Mobile 2
     - src: history-of-the-web/project-structure.jpg
       alt: Project Structure
 

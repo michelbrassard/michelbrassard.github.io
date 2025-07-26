@@ -110,15 +110,34 @@ stylesheets:
             <h4 class="sm-title">ISTE-140 Web and Mobile 1</h4>
             <div class="indent">
                 <h3 id="blue-whales">Blue Whales</h3>
+                {% assign project = site.data.projects | where: "id", "blue-whales" | first %}
                 <div class="indent">
-                    <p>Description...</p>
-                    <h4>Tech...</h4>
+                    <p>
+                        This is a responsive multipage website about blue whales, 
+                        and it is the third project introduced in the 
+                        <a href="{{ site.baselink }}/education/RIT-courses/#iste140">ISTE-140 Web and Mobile 1 course</a>.
+                    </p>
+                    <h5 class="xs-title">Design</h5>
+                    <p>For the project, I used a blue color scheme, and for the font I used the <a href="https://fonts.google.com/specimen/Outfit" target="_blank">Outfit</a> typeface. </p>
+                    {% if project.colors %}
+                        {% include color-list.html colors=project.colors %}
+                    {% endif %}
+
+                    <h5 class="xs-title">Topic</h5>
+                    <p>There isn't much reasoning when it came to chosing blue whales as the topic. At the time, it seemed like a good choice for this kind of project.</p>
+
+                    <h4>Tools & Technologies</h4>
+                    <p>HTML, CSS</p>
+
+                    <h4>Screenshots</h4>
+                    {% include gallery.html images=project.gallery %}
                 </div>
                 <hr>
+                
                 <h3 id="history-of-the-web">History of the Web</h3>
                 {% assign project = site.data.projects | where: "id", "history-of-the-web" | first %}
                 <div class="indent">
-                    <p>This is a multipage static site about the history of the web, and it was the second project introduced in the <a href="{{ site.baselink }}/education/RIT-courses/#iste140">ISTE-140 Web and Mobile 1 course</a>. The project had 5 pages, but the main difference between this project and project one (<a href="#your-favourites">Your Favourites!</a>) is that the topic was given by the professor, and the task was to also do some research around the topic.</p>
+                    <p>This is a responsive multipage website about the history of the web, and it is the second project introduced in the <a href="{{ site.baselink }}/education/RIT-courses/#iste140">ISTE-140 Web and Mobile 1 course</a>. The project had 5 pages, but the main difference between this project and project one (<a href="#your-favourites">Your Favourites!</a>) is that the topic was given by the professor, and the task was to also do some research around the topic.</p>
                     <h5 class="xs-title">Design</h5>
                     <p>For the colors, I picked a desaturated teal color scheme, and for the font I used the <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto</a> typeface. </p>
                     {% if project.colors %}
