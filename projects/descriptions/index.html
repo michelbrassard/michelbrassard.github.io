@@ -57,7 +57,7 @@ stylesheets:
                 <div class="indent">
                     <a href="#blue-whales">Blue Whales</a>
                     <a href="#history-of-the-web">History of the Web</a>
-                    <a href="#restaurant-website">Restaurant Website</a>
+                    <a href="#your-favourites">Your Favourites!</a>
                 </div>
             </div>
         </div>
@@ -121,12 +121,42 @@ stylesheets:
                     <h4>Tech...</h4>
                 </div>
                 <hr>
-                <h3 id="restaurant-website">Restaurant Website</h3>
+
+                <h3 id="your-favourites">Your Favourites!</h3>
+                {% assign project = site.data.projects | where: "id", "your-favourites" | first %}
                 <div class="indent">
-                    <p>Description...</p>
-                    <h4>Tech...</h4>
+                    <p>This is a multipage promotional fast food restaurant website. It was the first project introduced in the <a href="{{ site.baselink }}/education/RIT-courses/#iste140">ISTE-140 Web and Mobile 1 course</a> with <strong>4 pages</strong> in total. </p>
+                    <h5 class="xs-title">Pages</h5>
+                    <p>The <strong>first page</strong> is an introductory landing page with the summary of 
+                        all restaurant information that shows up on hover. 
+                        For the layout I used a 3x3 grid and spanned the cards accordingly where
+                        I implemented the rule of thirds. 
+                        The idea for that was to let hypothetical users see the information 
+                        right away so that they don't need to go to specific pages to retrieve 
+                        information.  
+                        The <strong>second page</strong> shows a list of menu items with 
+                        images, names, and prices of the dishes.  
+                        The <strong>third page</strong> is for details that show the hypothetical location 
+                        and work hours of the restaurant. 
+                        The <strong>fourth page</strong> is for the contact information.
+                    </p>
+                    <h5 class="xs-title">Design</h5>
+                    <p>For the colors, I picked a yellow color scheme because it resembles fast food restaurants like McDonalds. In addition to that, I added the frosted glass/blurred effect for the background which was inspired by Apple's UI.</p>
+                    
+                    {% if project.colors %}
+                        {% include color-list.html colors=project.colors %}
+                    {% endif %}
+
+                    <h5 class="xs-title">Name idea</h5>
+                    <p>The idea for the name “Your Favourites!” didn’t have much thought as this restaurant “sells” hamburgers, pizzas, pancakes and chocolate cakes. A lot of people can say that these are one of their favourite foods so the ad is “marketing” to those customers.</p>
+                    <h4>Tools & Technologies</h4>
+                    <p>HTML, CSS, VSCode (learning to use it), FileZilla</p>
+                    
                     <h4>Screenshots</h4>
+                    {% include gallery.html images=project.gallery %}
                 </div>
+                <hr>
+                
             </div>
             
         </div>
