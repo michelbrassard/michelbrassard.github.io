@@ -1,5 +1,21 @@
 
 # NMDE-111
+- title: DeliverEat
+  id: delivereat
+  thumbnail: delivereat/icon.jpg
+  description: Third project for the NMDE-111 course. The task was to think of an app and create promotional material for it.
+  technologies: Adobe Illustrator, Adobe Photoshop
+  tag: RIT (college)
+  gallery:
+    - src: delivereat/poster.jpg
+      alt: Poster
+    - src: delivereat/icon.jpg
+      alt: Logo
+    - src: delivereat/page-1.jpg
+      alt: Page 1
+    - src: delivereat/page-2.jpg
+      alt: Page 2
+
 - title: Kitchen Nightmares Book Cover
   id: kitchen-nightmares-book-cover
   thumbnail: kitchen-nightmares-book-cover/final.jpg
@@ -31,6 +47,37 @@
       alt: Front
     - src: ittw-repairs/back.jpg
       alt: Back
+
+- title: PlantEd
+  id: planted
+  thumbnail: planted/final.jpg
+  description: A design for a digital invite poster. It is the first project for the NMDE-111 course.
+  technologies: Adobe Photoshop
+  tag: RIT (college)
+  gallery:
+    - src: planted/final.jpg
+      alt: Final Version
+    - src: planted/draft-1.jpg
+      alt: Draft 1
+    - src: planted/draft-2.jpg
+      alt: Draft 2
+    - src: planted/draft-3.jpg
+      alt: Draft 3
+    - src: planted/draft-4.jpg
+      alt: Draft 4
+    - src: planted/draft-5.jpg
+      alt: Draft 5
+    - src: planted/moodboard-1.jpg
+      alt: Moodboard 1
+    - src: planted/moodboard-2.jpg
+      alt: Moodboard 2
+    - src: planted/styleboard-1.jpg
+      alt: Styleboard 1
+    - src: planted/styleboard-2.jpg
+      alt: Styleboard 2
+    - src: planted/styleboard-final.jpg
+      alt: Final Styleboard
+    
 
 # ISTE-140
 - title: Blue Whales

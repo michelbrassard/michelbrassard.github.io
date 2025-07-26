@@ -56,6 +56,15 @@ h1 {
     height: 1.25rem;
     stroke: var(--text-color-light);
 }
+.project-title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.project-title p {
+    color: var(--text-color-light);
+    font-size: 0.85rem;
+}
 
 @media screen and (max-width: 768px) {
     #side-navigation {
