@@ -33,7 +33,42 @@
       alt: Back
 
 # ISTE-140
-
+- title: History of the Web
+  id: history-of-the-web
+  thumbnail: history-of-the-web/introduction-1.jpg
+  description: A website about the history of the web. Second project of the ISTE-140 Web and Mobile 1 course.
+  technologies: HTML, CSS
+  tag: RIT (College)
+  colors:
+    - "#99B4BF"
+    - "#404E59"
+    - "#E9F2F1"
+    - "#C1D4D9"
+    - "#000000"
+    - "#FFFFFF"
+  gallery:
+    - src: history-of-the-web/introduction-1.jpg
+      alt: Introduction 1
+    - src: history-of-the-web/introduction-2.jpg
+      alt: Introduction 2
+    - src: history-of-the-web/introduction-3.jpg
+      alt: Introduction 3
+    - src: history-of-the-web/pioneers-1.jpg
+      alt: Pioneers 1
+    - src: history-of-the-web/pioneers-2.jpg
+      alt: Pioneers 2
+    - src: history-of-the-web/pioneers-3.jpg
+      alt: Pioneers 3
+    - src: history-of-the-web/pioneers-4.jpg
+      alt: Pioneers 4
+    - src: history-of-the-web/http.jpg
+      alt: HTTP
+    - src: history-of-the-web/terminology.jpg
+      alt: Terminology
+    - src: history-of-the-web/references.jpg
+      alt: References
+    - src: history-of-the-web/project-structure.jpg
+      alt: Project Structure
 
 - title: Your Favourites!
   id: your-favourites
@@ -64,3 +99,5 @@
       alt: Details
     - src: your-favourites/contact.jpg
       alt: Contact
+    - src: your-favourites/project-structure.jpg
+      alt: Project Structure

@@ -116,9 +116,20 @@ stylesheets:
                 </div>
                 <hr>
                 <h3 id="history-of-the-web">History of the Web</h3>
+                {% assign project = site.data.projects | where: "id", "history-of-the-web" | first %}
                 <div class="indent">
-                    <p>Description...</p>
-                    <h4>Tech...</h4>
+                    <p>This is a multipage static site about the history of the web, and it was the second project introduced in the <a href="{{ site.baselink }}/education/RIT-courses/#iste140">ISTE-140 Web and Mobile 1 course</a>. The project had 5 pages, but the main difference between this project and project one (<a href="#your-favourites">Your Favourites!</a>) is that the topic was given by the professor, and the task was to also do some research around the topic.</p>
+                    <h5 class="xs-title">Design</h5>
+                    <p>For the colors, I picked a desaturated teal color scheme, and for the font I used the <a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto</a> typeface. </p>
+                    {% if project.colors %}
+                        {% include color-list.html colors=project.colors %}
+                    {% endif %}    
+
+                    <h4>Tools & Technologies</h4>
+                    <p>HTML, CSS (+ VSCode, FileZilla)</p>
+                    
+                    <h4>Screenshots</h4>
+                    {% include gallery.html images=project.gallery %}
                 </div>
                 <hr>
 
@@ -147,10 +158,13 @@ stylesheets:
                         {% include color-list.html colors=project.colors %}
                     {% endif %}
 
+                    <p>For the typography I used a <strong>generic sans-serif font</strong> (in the CSS file just "font-family: sans-serif;")</p>
+
                     <h5 class="xs-title">Name idea</h5>
-                    <p>The idea for the name “Your Favourites!” didn’t have much thought as this restaurant “sells” hamburgers, pizzas, pancakes and chocolate cakes. A lot of people can say that these are one of their favourite foods so the ad is “marketing” to those customers.</p>
+                    <p>The idea for the name “Your Favourites!” didn't have much thought as this restaurant “sells” hamburgers, pizzas, pancakes and chocolate cakes. A lot of people can say that these are one of their favourite foods so the ad is “marketing” to those customers.</p>
+                    
                     <h4>Tools & Technologies</h4>
-                    <p>HTML, CSS, VSCode (learning to use it), FileZilla</p>
+                    <p>HTML, CSS, VSCode, FileZilla (learning to use new tools)</p>
                     
                     <h4>Screenshots</h4>
                     {% include gallery.html images=project.gallery %}
