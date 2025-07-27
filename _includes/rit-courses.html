@@ -1,0 +1,67 @@
+{% for year in site.data.rit-courses %}
+    <h2>Year {{ year.year }}</h2>
+    {% for term in year.terms %}
+        <div class="indent">
+            <h4 class="sm-title">{{ term.term }}</h4>
+            <div class="indent">
+                {% for course in term.courses %}
+                    <h3 id="{{ course.id }}">{{ course.title }}</h3>
+                    <div class="indent">
+                        <p><em>
+                            {{ course.official-description}} <br> 
+                            {{ course.official-term }}
+                        </em></p>
+
+                        {% if course.tools-technologies %}
+                            <h4>Tools & Technologies</h4>
+                            <div class="indent">
+                                <p>{{ course.tools-technologies }}</p>
+                            </div>
+                        {% endif %}
+
+                        {% if course.projects %}
+                            <h4>Projects</h4>
+                            <div class="indent">
+                                {% for project in course.projects %}
+                                    <h5>{{ project.title }}</h5>
+                                    <div class="indent">
+                                        <p>{{ project.description | markdownify }}</p>
+                                        {% if project.id and project.name %}
+                                            <a href="{{ site.baseurl }}/projects/descriptions/{{ project.id }}" class="external-link">
+                                                {{ project.name }}
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link-icon lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+                                            </a>
+                                        {% endif %}
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
+                        {% if course.notes-comments %}
+                            <h4>Notes & Comments</h4>
+                            <div class="indent">
+                                {% for note in course.notes-comments %}
+                                    <h5 class="xs-title">{{ note.title }}</h5>
+
+                                    {% if note.links %}
+                                        {% assign content = note.content %}
+                                        {% for link in note.links %}
+                                            {% assign token = '[[' | append: link.token | append: ']]' %}
+                                            {% assign link_tag = '<a href="' | append: link.url | relative_url | append: '">' | append: link.text | append: '</a>' %}
+                                            {% assign content = content | replace: token, link_tag %}
+                                        {% endfor %}
+                                        <p>{{ content | raw }}</p>
+                                    {% else %}
+                                        <p>{{ note.content }}</p>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                        {% endif %}
+
+                    </div>
+                    <hr>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+{% endfor %}

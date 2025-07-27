@@ -35,6 +35,11 @@ h1 {
     margin-top: 0.25rem;
     color: var(--primary-color);
 }
+#side-navigation .xs-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
 #side-navigation .links.courses a {
     font-size: 0.75rem;
 }

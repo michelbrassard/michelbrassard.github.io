@@ -1,0 +1,52 @@
+- year: 1
+  terms:
+    - term: Fall 2021
+      courses:
+        - id: iste120
+          title: ISTE-120 Computational Problem Solving in Information Domain 1
+          official-description: A first course in using the object-oriented approach to solve problems in the information domain. Students will learn to design software solutions using the object-oriented approach, to visually model systems using UML, to implement software solutions using a contemporary programming language, and to test these software solutions. Additional topics include thinking in object-oriented terms, and problem definition. Programming projects will be required.
+          official-term: Lec/Lab 6, Credits 4 (Fall, Spring)
+          tools-technologies: Java
+          notes-comments:
+            - title: Topics
+              content: Intro to programming, variables, comments, data types, type conversions, methods, objects, constructors, classes, drawing on canvas (rectangles, triangles, coordinates…), scope, persistence, overloading, control statements, nesting, private/public, name clashes, arrays, ArrayList, 2d arrays, inheritance, interfaces, I/O (character, binary), files, exceptions, best practices…
+            - title: course structure
+              content: This course was conducted 3 times a week. Two of the times were lectures, and the third was a lab exercise (2 hours per session). In addition to that, there were weekly homeworks, and, occasionally, an extra in-class exercise was assigned during lectures. (14 lab exercises, 13 homeworks, 4 practical exams).
+        
+        - id: iste140
+          title: ISTE-140 Web and Mobile I
+          official-description: This course provides students with an introduction to internet and web technologies, and to development on Macintosh/UNIX computer platforms. Topics include HTML and CSS, CSS3 features, digital images, web page design and website publishing. Emphasis is placed on fundamentals, concepts and standards. Additional topics include the user experience, mobile design issues, and copyright/intellectual property considerations. Exercises and projects are required.
+          official-term: Lab 3, Lecture 2, Credits 3 (Spring)
+          tools-technologies: HTML, CSS, JS, PHP, VSCode, Terminal, FileZilla (beginner level)
+          projects:
+            - title: Simple Portfolio
+              description: The first website students and I had to build was a personal portfolio where we would link all our exercises and future projects.
+            - title: ”Your Favourites!” Website (Project 1)
+              description: The task was to create a simple website for a hypothetical local restaurant. It had to have a home page, a details page, a menu page and a contact page. In addition to that, the task was to pay attention to visual design, navigation, folder structure, naming conventions etc. (no frameworks allowed, pure HTML, CSS, and JS if needed)
+              id: your-favourites
+              name: ”Your Favourites!”
+            - title: ”History of the Web” Website (Project 2)
+              description: The task was to create a website with a given topic. In this case, it was about the origins of the web. The requirements were similar to the previous project (attention to visual design, navigation...), but students also needed to pay attention to semantic tags, create more pages, and research about some terms for the topic. (no frameworks allowed, pure HTML, CSS, and JS if needed)
+              id: history-of-the-web
+              name: History of the Web
+            - title: ”Blue Whales” Website (Project 3)
+              description: The task for the third project was to research a topic of our own liking, and create a multipage website about it. The requirements were similar to the previous projects, but a bit more strict regarding styling, layout, and project structure. Students needed to embed other media (videos, links, sound files), and have more content comparatively. For the topic; I have chosen to research about blue whales. (no frameworks allowed, pure HTML, CSS, and JS if needed)
+              id: blue-whales
+              name: Blue Whales
+          notes-comments:
+            - title: Topics
+              content: Intro (How the web works), web development overview, careers in web dev, HTML basics, CSS, CSS3, progressive enhancement/graceful degradation, validation, design basics, prototyping, images, copyright, layout, positioning, flexbox, grid, responsive design, Unix system intro, Unix commands, embedded media, animations, intro to JavaScript, intro to forms, intro to PHP…
+            - title: Course Structure
+              content: This course had 3 projects, 2 exams (midterm, final), weekly quizzes and inclass/homework exercises.
+            - title: TA Experience
+              content: In my second year, I worked as a [[ta-link]] for this course.
+              links: 
+                - token: ta-link
+                  text: teaching assistant
+                  url: /experience/#taho
+
+- year: 2
+
+- year: 3
+
+- year: 4

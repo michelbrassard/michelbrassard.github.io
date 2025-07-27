@@ -1,3 +1,23 @@
+#ISTE-121
+- title: Snake Game
+  id: snake-game
+  thumbnail:
+  description: A snake game that utilizes multi threading to stream the gameplay to clients. Final group project for the ISTE-121 course.
+  technologies: Java (JavaFX)
+  tag: RIT (ISTE-121)
+  gallery:
+    - src:
+      alt: 
+
+- title: JavaFX Text Editor
+  id: javafx-text-editor
+  thumbnail:
+  description: A simple text editor created with JavaFX. The second homework for the ISTE-121 course.
+  technologies: Java (JavaFX)
+  tag: RIT (ISTE-121)
+  gallery:
+    - src:
+      alt: 
 
 # NMDE-111
 - title: DeliverEat
@@ -5,7 +25,7 @@
   thumbnail: delivereat/icon.jpg
   description: Third project for the NMDE-111 course. The task was to think of an app and create promotional material for it.
   technologies: Adobe Illustrator, Adobe Photoshop
-  tag: RIT (college)
+  tag: RIT (NMDE-111)
   gallery:
     - src: delivereat/poster.jpg
       alt: Poster
@@ -21,7 +41,7 @@
   thumbnail: kitchen-nightmares-book-cover/final.jpg
   description: Second project for the NMDE-111 course. The task was to create a book cover for some other existing media.
   technologies: Adobe Illustrator
-  tag: RIT (college)
+  tag: RIT (NMDE-111)
   gallery:
     - src: kitchen-nightmares-book-cover/final.jpg
       alt: Final Book Cover
@@ -39,7 +59,7 @@
   thumbnail: ittw-repairs/front.jpg
   description: An exercise for the NMDE-111 course. The task was to create the front and the back of a business card."
   technologies: Adobe Illustrator
-  tag: RIT (college)
+  tag: RIT (NMDE-111)
   gallery:
     - src: ittw-repairs/both.jpg
       alt: Card Front/Back
@@ -53,7 +73,7 @@
   thumbnail: planted/final.jpg
   description: A design for a digital invite poster. It is the first project for the NMDE-111 course.
   technologies: Adobe Photoshop
-  tag: RIT (college)
+  tag: RIT (NMDE-111)
   gallery:
     - src: planted/final.jpg
       alt: Final Version
@@ -85,7 +105,7 @@
   thumbnail: blue-whales/logo.jpg
   description: A website about blue whales. Third project of the ISTE-140 Web and Mobile 1 course.
   technologies: HTML, CSS
-  tag: RIT (College)
+  tag: RIT (ISTE-140)
   colors:
     - "#011826"
     - "#042940"
@@ -131,7 +151,7 @@
   thumbnail: history-of-the-web/introduction-1.jpg
   description: A website about the history of the web. Second project of the ISTE-140 Web and Mobile 1 course.
   technologies: HTML, CSS
-  tag: RIT (College)
+  tag: RIT (ISTE-140)
   colors:
     - "#99B4BF"
     - "#404E59"
@@ -172,7 +192,7 @@
   thumbnail: your-favourites/home.jpg
   description: A restuarant promo page. First project of the ISTE-140 Web and Mobile 1 course.
   technologies: HTML, CSS
-  tag: RIT (College)
+  tag: RIT (ISTE-140)
   colors:
     - "#F2AE2E"
     - "#FFCE58"
