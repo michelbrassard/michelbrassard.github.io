@@ -1,0 +1,53 @@
+{% for type in site.data.projects %}
+    <h2>{{ type.name }}</h2>
+    <div class="indent">
+        {% for category in type.categories %}
+            <h4 class="sm-title">{{ category.name }}</h4>
+            <div class="indent">
+                {% for project in category.projects %}
+                    <div class="project-title">
+                        <h3 id="{{project.id}}">{{ project.title }}</h3>
+                        <p>Completed: {{project.completed}}</p>
+                    </div>
+                    <div class="indent">
+                        
+                        {% for note in project.content %}
+                            {% if note.title %}
+                                <h5 class="xs-title">{{note.title}}</h5>
+                            {% endif %}
+
+                            {% assign content = note.text | strip %}
+                            {% if note.links %}
+                                {% for link in note.links %}
+                                    {% assign token = '[[' | append: link.token | append: ']]' %}
+                                    
+                                    {% if link.external %}
+                                        {% assign anchor = '<a href="' | append: link.url | append: '" target="_blank">' | append: link.text | append: '</a>' %}
+                                    
+                                    {% else %}
+                                        {% assign full_url = site.url | append: link.url %}
+                                        {% assign anchor = '<a href="' | append: full_url | append: '">' | append: link.text | append: '</a>' %}
+                                    {% endif %}
+                                    
+                                    {% assign content = content | replace: token, anchor %}
+                                {% endfor %}
+                            {% endif %}
+                            <p>{{ content }}</p>
+                        {% endfor %}
+
+                        {% if project.colors %}
+                            {% include color-list.html colors=project.colors %}
+                        {% endif %}
+
+                        <h4>Tools & Technologies</h4>
+                        <p>{{project.technologies}}</p>
+
+                        <h4>Screenshots</h4>
+                        {% include gallery.html images=project.gallery %}
+                    </div>
+                    <hr>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}

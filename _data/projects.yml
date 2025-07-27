@@ -1,220 +1,297 @@
-#ISTE-121
-- title: Snake Game
-  id: snake-game
-  thumbnail:
-  description: A snake game that utilizes multi threading to stream the gameplay to clients. Final group project for the ISTE-121 course.
-  technologies: Java (JavaFX)
-  tag: RIT (ISTE-121)
-  gallery:
-    - src:
-      alt: 
-
-- title: JavaFX Text Editor
-  id: javafx-text-editor
-  thumbnail:
-  description: A simple text editor created with JavaFX. The second homework for the ISTE-121 course.
-  technologies: Java (JavaFX)
-  tag: RIT (ISTE-121)
-  gallery:
-    - src:
-      alt: 
-
-# NMDE-111
-- title: DeliverEat
-  id: delivereat
-  thumbnail: delivereat/icon.jpg
-  description: Third project for the NMDE-111 course. The task was to think of an app and create promotional material for it.
-  technologies: Adobe Illustrator, Adobe Photoshop
-  tag: RIT (NMDE-111)
-  gallery:
-    - src: delivereat/poster.jpg
-      alt: Poster
-    - src: delivereat/icon.jpg
-      alt: Logo
-    - src: delivereat/page-1.jpg
-      alt: Page 1
-    - src: delivereat/page-2.jpg
-      alt: Page 2
-
-- title: Kitchen Nightmares Book Cover
-  id: kitchen-nightmares-book-cover
-  thumbnail: kitchen-nightmares-book-cover/final.jpg
-  description: Second project for the NMDE-111 course. The task was to create a book cover for some other existing media.
-  technologies: Adobe Illustrator
-  tag: RIT (NMDE-111)
-  gallery:
-    - src: kitchen-nightmares-book-cover/final.jpg
-      alt: Final Book Cover
-    - src: kitchen-nightmares-book-cover/template.jpg
-      alt: Template Layout
-    - src: kitchen-nightmares-book-cover/draft-1.jpg
-      alt: Draft 1
-    - src: kitchen-nightmares-book-cover/draft-2.jpg
-      alt: Draft 2
-    - src: kitchen-nightmares-book-cover/mood-board.jpg
-      alt: Mood Board
-
-- title: I.T.T.W. Repairs
-  id: ittw-repairs
-  thumbnail: ittw-repairs/front.jpg
-  description: An exercise for the NMDE-111 course. The task was to create the front and the back of a business card."
-  technologies: Adobe Illustrator
-  tag: RIT (NMDE-111)
-  gallery:
-    - src: ittw-repairs/both.jpg
-      alt: Card Front/Back
-    - src: ittw-repairs/front.jpg
-      alt: Front
-    - src: ittw-repairs/back.jpg
-      alt: Back
-
-- title: PlantEd
-  id: planted
-  thumbnail: planted/final.jpg
-  description: A design for a digital invite poster. It is the first project for the NMDE-111 course.
-  technologies: Adobe Photoshop
-  tag: RIT (NMDE-111)
-  gallery:
-    - src: planted/final.jpg
-      alt: Final Version
-    - src: planted/draft-1.jpg
-      alt: Draft 1
-    - src: planted/draft-2.jpg
-      alt: Draft 2
-    - src: planted/draft-3.jpg
-      alt: Draft 3
-    - src: planted/draft-4.jpg
-      alt: Draft 4
-    - src: planted/draft-5.jpg
-      alt: Draft 5
-    - src: planted/moodboard-1.jpg
-      alt: Moodboard 1
-    - src: planted/moodboard-2.jpg
-      alt: Moodboard 2
-    - src: planted/styleboard-1.jpg
-      alt: Styleboard 1
-    - src: planted/styleboard-2.jpg
-      alt: Styleboard 2
-    - src: planted/styleboard-final.jpg
-      alt: Final Styleboard
-    
-
-# ISTE-140
-- title: Blue Whales
-  id: blue-whales
-  thumbnail: blue-whales/logo.jpg
-  description: A website about blue whales. Third project of the ISTE-140 Web and Mobile 1 course.
-  technologies: HTML, CSS
-  tag: RIT (ISTE-140)
-  colors:
-    - "#011826"
-    - "#042940"
-    - "#EBEFF2"
-    - "#8AB0BF"
-    - "#3E6E8C"
-    - "#000000"
-    - "#FFFFFF"
-  gallery:
-    - src: blue-whales/logo.jpg
-      alt: Logo
-    - src: blue-whales/introduction-1.jpg
-      alt: Introduction 1
-    - src: blue-whales/introduction-2.jpg
-      alt: Introduction 2
-    - src: blue-whales/details-1.jpg
-      alt: Details 1
-    - src: blue-whales/details-2.jpg
-      alt: Details 2
-    - src: blue-whales/details-3.jpg
-      alt: Details 3
-    - src: blue-whales/details-4.jpg
-      alt: Details 4
-    - src: blue-whales/evolution.jpg
-      alt: Evolution
-    - src: blue-whales/endangerment-1.jpg
-      alt: Endangerment 1
-    - src: blue-whales/endangerment-2.jpg
-      alt: Endangerment 2
-    - src: blue-whales/references-1.jpg
-      alt: References 1
-    - src: blue-whales/references-2.jpg
-      alt: References 2
-    - src: blue-whales/mobile-1.jpg
-      alt: Mobile 1
-    - src: blue-whales/mobile-2.jpg
-      alt: Mobile 2
-    - src: blue-whales/project-structure.jpg
-      alt: Project Structure
-
-- title: History of the Web
-  id: history-of-the-web
-  thumbnail: history-of-the-web/introduction-1.jpg
-  description: A website about the history of the web. Second project of the ISTE-140 Web and Mobile 1 course.
-  technologies: HTML, CSS
-  tag: RIT (ISTE-140)
-  colors:
-    - "#99B4BF"
-    - "#404E59"
-    - "#E9F2F1"
-    - "#C1D4D9"
-    - "#000000"
-    - "#FFFFFF"
-  gallery:
-    - src: history-of-the-web/introduction-1.jpg
-      alt: Introduction 1
-    - src: history-of-the-web/introduction-2.jpg
-      alt: Introduction 2
-    - src: history-of-the-web/introduction-3.jpg
-      alt: Introduction 3
-    - src: history-of-the-web/pioneers-1.jpg
-      alt: Pioneers 1
-    - src: history-of-the-web/pioneers-2.jpg
-      alt: Pioneers 2
-    - src: history-of-the-web/pioneers-3.jpg
-      alt: Pioneers 3
-    - src: history-of-the-web/pioneers-4.jpg
-      alt: Pioneers 4
-    - src: history-of-the-web/http.jpg
-      alt: HTTP
-    - src: history-of-the-web/terminology.jpg
-      alt: Terminology
-    - src: history-of-the-web/references.jpg
-      alt: References
-    - src: history-of-the-web/mobile-1.jpg
-      alt: Mobile 1
-    - src: history-of-the-web/mobile-2.jpg
-      alt: Mobile 2
-    - src: history-of-the-web/project-structure.jpg
-      alt: Project Structure
-
-- title: Your Favourites!
-  id: your-favourites
-  thumbnail: your-favourites/home.jpg
-  description: A restuarant promo page. First project of the ISTE-140 Web and Mobile 1 course.
-  technologies: HTML, CSS
-  tag: RIT (ISTE-140)
-  colors:
-    - "#F2AE2E"
-    - "#FFCE58"
-    - "#FFEEC6"
-    - "#000000"
-    - "#FFFFFF"
-  gallery:
-    - src: your-favourites/home.jpg
-      alt: Home
-    - src: your-favourites/home-hover-menu.jpg
-      alt: Home hover ”Menu”
-    - src: your-favourites/home-hover-details.jpg
-      alt: Home hover ”Details”
-    - src: your-favourites/home-hover-contact.jpg
-      alt: Home hover ”Contact”
-    - src: your-favourites/menu-1.jpg
-      alt: Menu 1
-    - src: your-favourites/menu-2.jpg
-      alt: Menu 2
-    - src: your-favourites/details.jpg
-      alt: Details
-    - src: your-favourites/contact.jpg
-      alt: Contact
-    - src: your-favourites/project-structure.jpg
-      alt: Project Structure
+- name: Other
+  categories:
+    - name: personal
+      projects: 
+        - title: Trek
+- name: RIT (College)
+  categories:
+    - name: NMDE-111 New Media Design Digital Survey 1
+      projects: 
+        - title: DeliverEat
+          id: delivereat
+          thumbnail: delivereat/icon.jpg
+          completed: 12 Dec 2021
+          description: Third project for the NMDE-111 course. The task was to think of an app and create promotional material for it.
+          content:
+            - text: This is a third project for the [[nmde-link]]. It is a promotional poster for a hypothetical food delivery app called DeliverEat.
+              links:
+                - token: nmde-link
+                  text: NMDE-111 New Media Design 1 course
+                  url: /education/rit-courses/#nmde111
+                  external: false
+            - title: Name
+              text: The name would be pronounced as “deliver it”, but instead of “it” the word “eat” was used to associate it with food.
+            - title: Icon
+              text: For the icon, I imagined a bag that is moving very fast with cutlery in the center to signal fast delivery, and again to associate it with food.
+            - title: Poster
+              text: In the poster, I added a white shape that resembles pac-man to better isolate the call to action buttons for downloading the app, but it also worked as another association to food and eating.
+          technologies: Adobe Illustrator, Adobe Photoshop
+          tag: RIT (NMDE-111)
+          gallery:
+            - src: delivereat/poster.jpg
+              alt: Poster
+            - src: delivereat/icon.jpg
+              alt: Logo
+            - src: delivereat/page-1.jpg
+              alt: Page 1
+            - src: delivereat/page-2.jpg
+              alt: Page 2
+        - title: Kitchen Nightmares Book Cover
+          id: kitchen-nightmares-book-cover
+          thumbnail: kitchen-nightmares-book-cover/final.jpg
+          completed: 16 Nov
+          description: Second project for the NMDE-111 course. The task was to create a book cover for some other existing media.
+          content: 
+            - text: This is a hypothetical cover design of the reality show “Kitchen Nightmares” by Gordon Ramsey if it was made into a book. It is the second project for the [[nmde-link]].
+              links: 
+                - token: nmde-link
+                  text: NMDE-111 New Media Design 1 course
+                  url: /education/rit-courses/#nmde111
+                  external: false
+            - title: Theme
+              text: In that period, a lot of times, I would play the reality show as a “background” when I was completing homeworks, projects or doing chores. That is how I came to this idea to use it as the theme for this project.
+            - title: Elements
+              text: For the background, I put some famous phrases said during the show, either by Gordon Ramsey or someone else in the show. On the forefront there is a plate full of unpleasant items. There are loose hairs, a cockroach, a dead rat without a tail, and a half eaten rotting apple. The items on the plate were made by image tracing existing images, but the plate itself is a light gray circle with circular lines. The lines were filled with a gradient (spanning from white to dark gray) so that they resemble the highlights and shadows of a plate. Also, the circle itself drops a shadow to give off a 3D-like effect.
+          technologies: Adobe Illustrator
+          tag: RIT (NMDE-111)
+          gallery:
+            - src: kitchen-nightmares-book-cover/final.jpg
+              alt: Final Book Cover
+            - src: kitchen-nightmares-book-cover/template.jpg
+              alt: Template Layout
+            - src: kitchen-nightmares-book-cover/draft-1.jpg
+              alt: Draft 1
+            - src: kitchen-nightmares-book-cover/draft-2.jpg
+              alt: Draft 2
+            - src: kitchen-nightmares-book-cover/mood-board.jpg
+              alt: Mood Board
+        - title: I.T.T.W. Repairs
+          id: ittw-repairs
+          thumbnail: ittw-repairs/front.jpg
+          completed: 7 Nov 2021
+          description: An exercise for the NMDE-111 course. The task was to create the front and the back of a business card."
+          content: 
+            - text: This is a business card for a hypothetical technology repair business. It is the ninth lab exercise in the [[nmde-link]].
+              links:
+                - token: nmde-link
+                  text: NMDE-111 New Media Design 1 course
+                  url: /education/rit-courses/#nmde111
+                  external: false
+            - title: Inspiration
+              text: The name was inspired from the frustration that comes with dealing with technology that doesn’t work properly. In those scenarios we often question if the thing itself even works from which the abbreviation ITTW (is this thing working) came from.
+          technologies: Adobe Illustrator
+          tag: RIT (NMDE-111)
+          gallery:
+            - src: ittw-repairs/both.jpg
+              alt: Card Front/Back
+            - src: ittw-repairs/front.jpg
+              alt: Front
+            - src: ittw-repairs/back.jpg
+              alt: Back
+        - title: PlantEd
+          id: planted
+          thumbnail: planted/final.jpg
+          completed: 19 Oct 2021
+          description: A design for a digital invite poster. It is the first project for the NMDE-111 course.
+          content: 
+            - text: This is an electronic invite poster for a hypothetical event which was the first project in the [[nmde-link]]. I chose to make a poster for a hypothetical event about plants (how to grow, use, decorate, cultivate, prepare…).
+              links:
+                - token: nmde-link
+                  text: NMDE-111 New Media Design 1 course
+                  url: /education/rit-courses/#nmde111
+                  external: false
+            - title: Name
+              text: The name is simple, plants are planted, but in this case the “Ed” is highlighted because the “full name” for the event would be Plant Education, and the shortened version would be Plant Ed = PlantEd.
+            - title: Note
+              text: For this project, I had to make different variations of the design which is why some styleboards or moodboards may not correspond to the final version.
+          technologies: Adobe Photoshop
+          tag: RIT (NMDE-111)
+          gallery:
+            - src: planted/final.jpg
+              alt: Final Version
+            - src: planted/draft-1.jpg
+              alt: Draft 1
+            - src: planted/draft-2.jpg
+              alt: Draft 2
+            - src: planted/draft-3.jpg
+              alt: Draft 3
+            - src: planted/draft-4.jpg
+              alt: Draft 4
+            - src: planted/draft-5.jpg
+              alt: Draft 5
+            - src: planted/moodboard-1.jpg
+              alt: Moodboard 1
+            - src: planted/moodboard-2.jpg
+              alt: Moodboard 2
+            - src: planted/styleboard-1.jpg
+              alt: Styleboard 1
+            - src: planted/styleboard-2.jpg
+              alt: Styleboard 2
+            - src: planted/styleboard-final.jpg
+              alt: Final Styleboard
+    - name: ISTE 140 Web and Mobile 1
+      projects:
+        - title: Blue Whales
+          id: blue-whales
+          thumbnail: blue-whales/logo.jpg
+          completed: 19 Dec 2021
+          description: A website about blue whales. Third project of the ISTE-140 Web and Mobile 1 course.
+          content: 
+            - text: This is an electronic invite poster for a hypothetical event which was the first project in the [[nmde-link]]. I chose to make a poster for a hypothetical event about plants (how to grow, use, decorate, cultivate, prepare…).
+              links:
+                - token: iste-140-link
+                  text:  ISTE-140 Web and Mobile 1 course
+                  url: /education/rit-courses/#iste140
+                  external: false
+            - title: Design
+              text: For the project, I used a blue color scheme, and for the font I used the [[outfit]] typeface.
+              links: 
+                - token: outfit
+                  text: Outfit
+                  url: https://fonts.google.com/specimen/Outfit
+                  external: true
+          technologies: HTML, CSS
+          tag: RIT (ISTE-140)
+          colors:
+            - "#011826"
+            - "#042940"
+            - "#EBEFF2"
+            - "#8AB0BF"
+            - "#3E6E8C"
+            - "#000000"
+            - "#FFFFFF"
+          gallery:
+            - src: blue-whales/logo.jpg
+              alt: Logo
+            - src: blue-whales/introduction-1.jpg
+              alt: Introduction 1
+            - src: blue-whales/introduction-2.jpg
+              alt: Introduction 2
+            - src: blue-whales/details-1.jpg
+              alt: Details 1
+            - src: blue-whales/details-2.jpg
+              alt: Details 2
+            - src: blue-whales/details-3.jpg
+              alt: Details 3
+            - src: blue-whales/details-4.jpg
+              alt: Details 4
+            - src: blue-whales/evolution.jpg
+              alt: Evolution
+            - src: blue-whales/endangerment-1.jpg
+              alt: Endangerment 1
+            - src: blue-whales/endangerment-2.jpg
+              alt: Endangerment 2
+            - src: blue-whales/references-1.jpg
+              alt: References 1
+            - src: blue-whales/references-2.jpg
+              alt: References 2
+            - src: blue-whales/mobile-1.jpg
+              alt: Mobile 1
+            - src: blue-whales/mobile-2.jpg
+              alt: Mobile 2
+            - src: blue-whales/project-structure.jpg
+              alt: Project Structure
+        - title: History of the Web
+          id: history-of-the-web
+          thumbnail: history-of-the-web/introduction-1.jpg
+          completed: 15 Nov 2025
+          description: A website about the history of the web. Second project of the ISTE-140 Web and Mobile 1 course.
+          content: 
+            - text: This is a responsive multipage website about the history of the web, and it is the second project introduced in the [[iste140-link]]. The project had 5 pages, but the main difference between this project and project one ([[your-favourites-link]]) is that the topic was given by the professor, and the task was to also do some research around the topic.
+              links:
+                - token: iste140-link
+                  text:  ISTE-140 Web and Mobile 1 course
+                  url: /education/rit-courses/#iste140
+                  external: false
+                - token: your-favourites-link
+                  text: Your Favourites!
+                  url: /projects/descriptions/#your-favourites
+                  external: false
+            - title: Design
+              text: For the colors, I picked a desaturated teal color scheme, and for the font I used the [[roboto]] typeface.
+              links: 
+                - token: roboto
+                  text: Roboto
+                  url: https://fonts.google.com/specimen/Roboto
+                  external: true
+          technologies: HTML, CSS
+          tag: RIT (ISTE-140)
+          colors:
+            - "#99B4BF"
+            - "#404E59"
+            - "#E9F2F1"
+            - "#C1D4D9"
+            - "#000000"
+            - "#FFFFFF"
+          gallery:
+            - src: history-of-the-web/introduction-1.jpg
+              alt: Introduction 1
+            - src: history-of-the-web/introduction-2.jpg
+              alt: Introduction 2
+            - src: history-of-the-web/introduction-3.jpg
+              alt: Introduction 3
+            - src: history-of-the-web/pioneers-1.jpg
+              alt: Pioneers 1
+            - src: history-of-the-web/pioneers-2.jpg
+              alt: Pioneers 2
+            - src: history-of-the-web/pioneers-3.jpg
+              alt: Pioneers 3
+            - src: history-of-the-web/pioneers-4.jpg
+              alt: Pioneers 4
+            - src: history-of-the-web/http.jpg
+              alt: HTTP
+            - src: history-of-the-web/terminology.jpg
+              alt: Terminology
+            - src: history-of-the-web/references.jpg
+              alt: References
+            - src: history-of-the-web/mobile-1.jpg
+              alt: Mobile 1
+            - src: history-of-the-web/mobile-2.jpg
+              alt: Mobile 2
+            - src: history-of-the-web/project-structure.jpg
+              alt: Project Structure
+        - title: Your Favourites!
+          id: your-favourites
+          thumbnail: your-favourites/home.jpg
+          completed: 20 Oct 2021
+          description: A restuarant promo page. First project of the ISTE-140 Web and Mobile 1 course.
+          content: 
+            - text: 
+              links:
+                - token: iste140-link
+                  text:  ISTE-140 Web and Mobile 1 course
+                  url: /education/rit-courses/#iste140
+                  external: false
+            - title: Pages
+              text: The first page is an introductory landing page with the summary of all restaurant information that shows up on hover. For the layout I used a 3x3 grid and spanned the cards accordingly where I implemented the rule of thirds. The idea for that was to let hypothetical users see the information right away so that they don't need to go to specific pages to retrieve information. The second page shows a list of menu items with images, names, and prices of the dishes. The third page is for details that show the hypothetical location and work hours of the restaurant. The fourth page is for the contact information.
+            - title: Design
+              text: "For the colors, I picked a yellow color scheme because it resembles fast food restaurants like McDonalds. In addition to that, I added the frosted glass/blurred effect for the background which was inspired by Apple's UI. For the typography I used a generic sans-serif font (in the CSS file just font-family: sans-serif;)"
+            - title: Name idea
+              text: The idea for the name “Your Favourites!” didn't have much thought as this restaurant “sells” hamburgers, pizzas, pancakes and chocolate cakes. A lot of people can say that these are one of their favourite foods so the ad is “marketing” to those customers.
+          technologies: HTML, CSS
+          tag: RIT (ISTE-140)
+          colors:
+            - "#F2AE2E"
+            - "#FFCE58"
+            - "#FFEEC6"
+            - "#000000"
+            - "#FFFFFF"
+          gallery:
+            - src: your-favourites/home.jpg
+              alt: Home
+            - src: your-favourites/home-hover-menu.jpg
+              alt: Home hover ”Menu”
+            - src: your-favourites/home-hover-details.jpg
+              alt: Home hover ”Details”
+            - src: your-favourites/home-hover-contact.jpg
+              alt: Home hover ”Contact”
+            - src: your-favourites/menu-1.jpg
+              alt: Menu 1
+            - src: your-favourites/menu-2.jpg
+              alt: Menu 2
+            - src: your-favourites/details.jpg
+              alt: Details
+            - src: your-favourites/contact.jpg
+              alt: Contact
+            - src: your-favourites/project-structure.jpg
+              alt: Project Structure

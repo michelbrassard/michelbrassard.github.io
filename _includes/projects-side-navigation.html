@@ -1,0 +1,15 @@
+<div class="links courses">
+    {% for type in site.data.projects %}
+        <p class="title">{{ type.name }}</p>
+        {% for category in type.categories %}
+            <div class="indent">
+                <p class="xs-title">{{ category.name }}</p>
+                <div class="indent">
+                    {% for project in category.projects %}
+                        <a href="{{ site.baseurl }}/projects/descriptions/#{{project.id}}">{{ project.title }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    {% endfor %}
+</div>
