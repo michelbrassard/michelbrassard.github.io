@@ -1,6 +1,6 @@
 - number: 1
   terms:
-    - name: Fall 2021
+    - name: Fall (2021)
       courses:
         - id: iste120
           title: ISTE-120 Computational Problem Solving in Information Domain 1
@@ -102,7 +102,7 @@
           notes-comments:
             - title: Note
               content: This course was used to introduce freshmen to the RIT community and its services.
-    - name: Spring 2022
+    - name: Spring (2022)
       courses:
         - id: iste121
           title: ISTE-121 Computational Problem Solving in Information Domain 2
@@ -168,7 +168,7 @@
               
 - number: 2
   terms:
-    - name: Fall 2022
+    - name: Fall (2022)
       courses: 
         - id: iste222
           title: ISTE-222 Computational Problem Solving in the Information Domain 3
@@ -228,7 +228,7 @@
               content: Societal influence, social structure, social construction of reality, dimensions of culture, cultural expectations, social order, identity, presentation of self, building social relationships, deviance…
             - title: Course structure
               content: This course had 2 exams, 5 discussion papers, project essay, and weekly discussions.
-    - name: Spring 2023
+    - name: Spring (2023)
       courses: 
         - id: iste252
           title: ISTE-252 Foundations of Mobile Design
@@ -287,7 +287,7 @@
           notes-comments:
             - title: Topics
               content: Frontend, AJAX, async, MVC, JS, JS modules, jQuery, local storage,  HTML Forms, PHP ASP.NET, consuming an API, dynamic rendering…
-        - id: mlfr201
+        - id: mlfr202
           title: MLFR-202 Beginning French 2
           official-description: "This is the second course in a two-course sequence. The sequence provides students without prior exposure to the language with a sound basis for learning French as it is used today in its spoken and written forms. The goal of the sequence is proficiency in communication skills with an emphasis on oral proficiency. The sequence also acquaints students with contemporary culture and life in French-speaking countries. (Prerequisites: Minimum score of 1 on RIT Language Placement Exam or MLFR-201 or equivalent course.)"
           official-term: Seminar, Credits 4 (Fall, Spring)
@@ -307,7 +307,7 @@
           notes-comments:
             - title: Topics
               content: Software design principles, DRY, separation of concerns, high cohesion, low coupling software design patterns, Singleton, Observer, Factory, Adapter, Facade, Composite, refactoring, UML diagrams, sequence diagrams, GitLab intro…
-    - name: Summer 2023
+    - name: Summer (2023)
       courses:
         - id: iste499-1
           title: ISTE-499 Undergraduate Co-op (1st)
@@ -325,5 +325,145 @@
                   url: /experience/#laus
         
 - number: 3
+  terms:
+    - name: Fall (2023)
+      courses:
+        - id: iste341
+          title: ISTE-341 Server Programming
+          official-description: "This course provides in-depth work in server-side programming. Students will develop dynamic, data centric web pages and systems, and server-side information services that will be available to clients implemented in a variety of software technologies. Topics include XML parsing, generation, and consumption; web configuration and security; design patterns; web service structures, and application security. Programming projects are required. (Prerequisites: ISTE-340 and (ISTE-230 or CSCI-320) and (SWEN-383 or SWEN-262) or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: PHP, Java, JakartaEE, NodeJS, Express, Postman
+          projects:
+            - title: Event Management (PHP, Project 1)
+              description: For this project, students had to create an event management web application using PHP. It had to have a login/signup form, support at least 2 user types (regular user/admin), and be able to perform CRUD operations on a database (create events, enroll, edit events, delete events, view attendees…). 
+              id: event-management
+              name: Event Management
+            - title: Employee Management (JakartaEE, Project 2)
+              description: For the second project, the task was to create a multilayer (service, business, data layers) employee management REST service. It had to be built using JakartaEE, and tested with Postman. This application doesn’t have a frontend.
+            - title: Employee Management (NodeJS, Project 3)
+              description: The third project is the same when it comes to the topic and the requirements, but it had to be built using NodeJS and Express. 
+              id: employee-management
+              name: Employee Management
+          notes-comments:
+            - title: Topics
+              content: Backend, PHP Review, OOP, PDO, state Management, sessions, routing, database connectivity, RESTful web services, Docker, multicontainer apps, NodeJS, NodeJS Express, connecting to MongoDB…
+        - id: engl210
+          title: ENGL-210 Literature and Cultural Studies
+          official-description: In this course, students will study literature, movements, and writers within their cultural contexts and in relation to modes of literary production and circulation. Students will hone their skills as attentive readers and will engage with literary analysis and cultural criticism. The class will incorporate various literary, cultural, and interdisciplinary theories--such as psychoanalytic theory, feminist and queer theories, critical race studies, and postcolonial theory. Using these theoretical frameworks in order to study texts, students will gain a strong foundation for analyzing the ways literary language functions and exploring the interrelations among literature, culture, and history. In doing so, they will engage issues involving culture, identity, language, ethics, race, gender, class, and globalism, among many others.
+          official-term: Lecture 3, Credits 3 (Fall, Spring)
+          projects:
+            - title: Trickster gods Comparison Research and Presentation
+              description: The project for this course was to pick one of the topics from the lecture materials, research about it, and then present it in class. The assignment was done in pairs, and for the topic my teammate and I worked on the comparison of mythological trickster gods (Wakjankaga vs Hermes).
+          notes-comments:
+            - title: Topics
+              content: Drama, Elizabethan theatre, the golden age, theatre in the age of Shakespeare, The Tempest, essays, transcendentalism, civil rights, Henry David Thoreau, resistance to civil government, Ralph Aldo Emerson, self-reliance, world mythologies, native american trickster tales, Felix White Sr.'s Introduction to Wakjankaga, Winnebago trickster, Ernest Hemingway, Emily Dickinson, writing citations, literary review…
+        - id: iste358
+          title: ISTE-358 Foundations of Wearable and Ubiquitous Computing
+          official-description: "Wearable technologies, like smart watches, and ubiquitous computing technologies, including the Internet of Things, are entering the mainstream. In this introductory course, students will learn the history of research in these areas and fundamentals of developing for these devices, including interface design, networking, physical form factors; societal issues such as privacy will also be discussed. This class is primarily project-based. (Prerequisites: ISTE-341 and ISTE-252 or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall)
+          tools-technologies: Arduino, Arduino IDE, Arduino UNO, C, Tinkerkad
+          projects:
+            - title: Arduino Safe
+              description: For the project, the task was to combine multiple components covered in class, write code for it, create an outer shell in some 3D software (Tinkercard, Blender…), connect everything in one logical unit, and present it in class. I chose to make a safe. A user could configure their PIN (on a keypad), see feedback on a 16x2 LCD screen (* signs for password, is the password correct, is it opened/closed…), and see/hear the servo motor move (lock/unlock) the safe. 
+              id: arduino-safe
+              name: Arduino Safe
+          notes-comments:
+            - title: Topics
+              content: Basic concepts of electric circuits, intro to Arduino and C, circuit diagrams, combinational logic, logic gates, components, registers, sensors, temperature/humidity sensor, HCSR04 ultrasonic sensor, screens, LCD-1602A_CA, input components, buttons, keypads, actuators, servo motors, intro to 3D printing…
+            - title: Course structure
+              content: This course had 2 exams (midterm, final), lab exercises almost each week where different components were explored, and a final project.
+        - id: iste422
+          title: ISTE-422 Application Development Practices
+          official-description: "In this course, students will gain experience with the processes, practices, and tools professional developers use to deliver robust and maintainable applications. Students will apply these practices and tools to build smaller-scale production-quality applications and systems. Topics include development life cycles, version control, test bed development and use, build utilities, error handling, deployment tools, and documentation. (Prerequisites: ISTE-121 or ISTE-200 or CSCI-142 or CSCI-140 or IGME-106 or CSCI-242 or GCIS-124 or GCIS-127 or equivalent course.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: Java, JavaFX, GitLab, GitLab CI/CD
+          projects:
+            - title: Edge Converter (Group Project)
+              description: At the beginning of the course, a buggy, unfinished project that needed refactoring was provided to students. As the lectures progressed, the point was to implement what was learned in class (fix mistakes, add new features, setting up a CI/CD, remove warnings from static/dynamic code analysis tools) to that project. It was a group assignment done in teams of 5-6 students. The app was a GUI database table builder with additional export features to SQL. 
+              id: edge-converter
+              name: Edge Converter
+          notes-comments:
+            - title: Topics
+              content: Intro to methodologies, waterfall, agile, scrum, sprints, build utilities, build servers, testing, GitLab CI/CD pipeline, static code analysis, refactoring…
+        - id: mlfr301
+          title: MLFR-301 Intermediate French 1
+          official-description: "This is the first course of a two-course sequence at the intermediate level. The sequence provides students with the tools necessary to increase their ability to function in French. Communicative activities, contemporary texts, vocabulary study, and grammar are used to expand all communication skills, especially oral proficiency. This sequence continues to address issues of contemporary French life and culture as well as the cultures of the Francophone world. (Prerequisites: Minimum score of 2 on RIT Language Placement Exam or MLFR-202 or MLFR-202T or equivalent course.)"
+          official-term: Seminar, Credits 3 (Fall, Spring)
+          notes-comments:
+            - title: Topics
+              content: Explain what and when you did, past tense have, telling where you when, past tense “be”, discussing activities and weather, deciding what to wear, pronouns, inviting someone, reflexive verbs, talking about routines, verbs ending in -ir, identifying parts of the body, going to the doctor, talk about your impressions, good/bad sides, character traits, talk about technology (vocabulary)...
+    - name: Spring (2024)
+      courses: 
+        - id: iste442
+          title: ISTE-442 Secure Web Application Development
+          official-description: "When building larger-scale web applications, there are a myriad of concerns that range from technology, security, framework, and architecture selection to runtime performance optimization. This course focuses on the development of secure integrated web applications that consume information served from one or many sources. Trends in web application development are identified and assessed. Programming projects are required. (Prerequisites: ISTE-341 or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall)
+          tools-technologies: OWASP Zap, Angular, NestJS, MySQL, Phaser, VueJS
+          projects:
+            - title: Escape Room (Gamification of the Learning Process, Group Project)
+              description: For the group project, the task was to create a multiplayer turn based educational game that implements security precautions learned in class. In addition to that it has to be some form of a web application. For the assignment, my teammates and I created an escape room like game with chemistry for the topic where a player combines and creates chemical compounds which will open new clues as the game progresses.
+              id: escape-room
+              name: Escape Room
+            - title: Tech Shop (Individual Project)
+              description: For the individual project, the task was to pick some web technology (library, framework…), create an application, research the pros and cons in terms of security, document the development experience, and present it in class. For the technology, I picked VueJS, and I created a simple web shop application that sells tech (computers, cameras, phones, headphones etc.).
+              id: tech-shop
+              name: Tech Shop
+          notes-comments:
+            - title: Topics
+              content: Web app overview, personal system attacks, SQL injections, XSS, CSRF, OWASP, Zap, cryptography, encryption, symmetric/asymmetric encryption, hashing, profiling, load testing, heap analysis, memory allocation…
+        - id: envs150
+          title: ENVS-150 Ecology of the Dalmatian Coast
+          official-description: This course is an introduction to population, community, and ecosystem ecology; stressing the dynamic interrelationships of plant and animal communities of the Dalmatian Coast. The course includes such ecological concepts as energy flow and trophic levels in natural communities, population and community dynamics, biogeography and ecosystem ecology. Field trips to local Croatian ecosystems are included.
+          official-term: Lab 2, Lecture 3, Credits 4 (Spring)
+          projects:
+            - title: E-Waste Research Paper (Individual Project)
+              description: For this course, a research paper was assigned, and students had to write about some topic that relates to ecology. I decided to write about e-waste.
+            - title: Calculating Biomass at Park Bundek (Group Project)
+              description: For the group project, students were separated into teams, and each team had to measure the biomass of some area filled with trees (a park usually). 
+          notes-comments:
+            - title: Topics
+              content: Intro to ecology of the dalmatian coast, niches, biomes, responses of natural systems to environmental stress, cycles, feedback loops, climate feedback, planetary cycles, global warming, ecological succession, biodiversity, nutrient cycling, decomposition, toxicology, water, water pollution, air, air pollution…
+        - id: iste444
+          title: ISTE-444 Web Server Development and Administration
+          official-description: "Web developers often need to go beyond building web pages and client-server programming to plan, install, configure, develop, and maintain the Web servers that host their sites. They need to understand issues of scalability, performance, and security as they apply to deploying a web presence. This course provides a practical hands-on approach to development, configuration, and administration of Web server platforms, including operating system administration and shell scripting. Topics include issues of and approaches to scalability, multiple server systems, security, and auditing, as well as the many configuration options, modules, and server alternatives available. (Prerequisites: ISTE-341 or equivalent course.)"
+          official-term: Lec/Lab 3, Credits 3 (Spring)
+          tools-technologies: Microsoft Azure, Amazon AWS, VMWareFusion, CentOS
+          notes-comments:
+            - title: Topics
+              content: Web server software selection, OS, hosting options, server access, IIS, Apache, vertical scaling, horizontal scaling, geographic scaling, sessions distribution, virtualization, cloud computing, DNS, DNS issues, security and auditing, users, groups, authentication, authorization, SSL, certificates, web server development…
+            - title: Course structure
+              content: This course had 2 exams (midterm, final), and labs/exercises bi-weekly.
+        - id: iste470
+          title: ISTE-470 Data Mining and Exploration
+          official-description: "Rapidly expanding volumes of data from all areas of society are becoming available in digital form. High value information and knowledge is embedded in many of these data volumes. Unlocking this information can provide many benefits, and may also raise ethical questions in certain circumstances. This course provides students with a hands-on introduction to how interactive data exploration and data mining software can be used for data-driven knowledge discovery, including domains such as business, environmental management, healthcare, finance, and transportation. Data mining techniques and their application to large data sets will be discussed in detail, including classification, clustering, association rule mining, and anomaly detection. In addition, students will learn the importance of applying data visualization practices to facilitate exploratory data analysis. (Prerequisites: (STAT-145 OR MATH-251) and (GCIS-124 OR ISTE-121 OR CSCI-140 OR CSCI-142 OR CSCI-242 OR ISTE-200 OR IGME-201 OR IGME-106 OR GCIS-127) or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: Python, Pandas, Numpy, Dash Plotly
+          projects:
+            - title: Transaction Visualizer, PDF Bank Statement Parser
+              description: For the project, students needed to pick from two types. A data focused (website scraping, parsing), or a model focused (picking a dataset, and training a model with it) project. I chose to create a data focused project that parses bank statements in PDF form, and visualizes spending data using a calendar heat map (the more one spends that day, darker the color gets in the calendar cell).
+              id: transaction-visualizer
+              name: Transaction Visualizer
+          notes-comments:
+            - title: Topics
+              content: Intro to python, python anaconda, pandas, matplotlib, cluster analysis, classification, artificial neural networks, decision trees, anomaly detection, association analysis, deep learning…
+        - id: mlfr302
+          title: MLFR-302 Intermediate French 2
+          official-description: "This is the second course of a two-course sequence at the intermediate level. The sequence provides students with the tools necessary to increase their ability to function in French. Communicative activities, contemporary texts, vocabulary study, and grammar are used to expand all communication skills, especially oral proficiency. This sequence continues to address issues of contemporary French life and culture as well as the cultures of the Francophone world. (Prerequisites: Minimum score of 3 on RIT Language Placement Exam or MLFR-301 or equivalent course.)"
+          official-term: Seminar, Credits 3 (Fall, Spring)
+          notes-comments:
+            - title: Topics
+              content: Pronouns which, what, where, placing a hotel reservation (price, room, organization, accommodation), future tense, talking about future plans, conditional tense, media, giving orders, persuade, argumenting, starting, continuing, ending a conversation, expressing an opinion, talking about what we are going to do, employment, careers, forming hypothesis... 
+    - name: Summer (2024)
+      courses:
+        - id: iste499-2
+          title: ISTE-499 Undergraduate Co-op (2nd)
+          official-description: Students perform paid, professional work related to their program of study. Students work full-time during the term they are registered for co-op. Students must complete a student co-op work report for each term they are registered; students also are evaluated each term by their employer. A satisfactory grade is given for co-op when both a completed student co-op report and a corresponding employer report that indicates satisfactory student performance are received. (Enrollment in this course requires permission from the department offering the course.)
+          official-term: Co-op, Credits 0 (Fall, Spring, Summer)
+          tools-technologies: Flutter
+          notes-comments:
+            - title: notes
+              content: Students have to work for a minimum of 10 weeks full time to complete this course (first 400 hours of the 800 hours needed to graduate).
+            - title: My coop
+              content: For my second coop, I worked on a team project (project based unpaid co-op) with the professor of psychology on campus. I worked on a note taking feature for an app that was designed to help students with course work. Technically speaking, my employer was RIT Croatia. 
 
 - number: 4
