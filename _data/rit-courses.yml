@@ -467,3 +467,125 @@
               content: For my second coop, I worked on a team project (project based unpaid co-op) with the professor of psychology on campus. I worked on a note taking feature for an app that was designed to help students with course work. Technically speaking, my employer was RIT Croatia. 
 
 - number: 4
+  terms: 
+    - name: Fall (2024)
+      courses:
+        - id: iste500
+          title: ISTE-500 Senior Development Project I
+          official-description: "The first course in a two-course, senior level, system development capstone project. Students form project teams and work with sponsors to define system requirements. Teams then create architectures and designs, and depending on the project, also may begin software development. Requirements elicitation and development practices introduced in prior coursework are reviewed, and additional methods and processes are introduced. Student teams are given considerable latitude in how they organize and conduct project work. (This course is restricted to WMC-BS, HCC-BS, CMIT-BS, and 2 ISTE-499 completed or (1 ISTE-498 completed and 1 ISTE-499 completed).)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          projects:
+            - title: Realex.in (Team Capstone Project)
+              description: Realex.in is a real-estate management platform which focuses on non-standard vacation homes. It is a responsive web application that is supported by blockchain technology. The task for the first semester was to explore use cases, develop a work breakdown structure, write a project plan, assess the potential risks, and test out new technologies (blockchain mostly). 
+              id: realex
+              name: Realex.in
+          notes-comments:
+            - title: Topics
+              content: Teams, group dynamics, requirements development, tracking, project charters, methodologies, strategies, documentation, use cases, MVP, work breakdown structure, technology selection, testing, cost estimation, risk management, wireframes, development environments…
+            - title: course
+              content: In the first semester, most of the work was done on the documentation (planning, making graphs, assessing risks, understanding the project…), and preparation for the development that follows next semester. Only a little bit of coding was done at the end to test out unknown technologies. 
+            - title: sponsor
+              content: For this course, an “external person” from outside RIT was brought in. They acted as a potential client/sponsor, and presented an idea for an application which students needed to develop (Realex.in my case). 
+        - id: envs151
+          title: ENVS-151 Scientific Inquiries in Environmental Science
+          official-description: This course is part of a two-semester sequence that when combined presents an integrated approach to the interrelated, interdisciplinary principles of environmental science through case studies, site visits, and field work. Through assigned readings, classroom discussion and case studies dealing with global environmental issues as well as the environmental issues related to the Dalmatian coast, students will learn how to critically analyze environmental problems from a multidisciplinary perspective and to propose solutions.
+          official-term: Lab 2, Lecture 3, Credits 4 (Fall)
+          projects:
+            - title: Review of Minimalism, Research Paper (Impact on the Environment)
+              description: For the research paper, I reviewed the impact of a minimalist lifestyle on the environment. By minimalism, I mean the process of buying and consuming less, not the modern style of clothes, architecture and furniture with a simple design. 
+          notes-comments: 
+            - title: Topics
+              content: Overview of current global environmental issues, scientific creativity, cases of collapsed civilizations, data collection, introduction to data analysis, organizing information in a research paper, the story of humans, survival , migrations, dispersal…
+        - id: iste454
+          title: ISTE-454 Mobile Application Development 1
+          official-description: "This course extends the material covered in the Foundations of Mobile Design course and provides students with the experience of creating interesting applications for small-size form factor mobile devices such as smartphones These devices are exceptionally portable, have unique sets of hardware and communications capabilities, incorporate novel interfaces, are location aware, and provide persistent connectivity. Students are encouraged to make creative use of these unique device characteristics and operating properties to develop innovative applications. Programming projects are required. (Prerequisites: (ISTE-252 and ISTE-340) or IGME-330 or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: Swift, SwiftUI, XCode (iOS Development)
+          projects:
+            - title: Rack 
+              description: For the project, students had to create an iOS application that was proposed to the professor at the beginning of the course. My idea was to create a productivity app that combines features from typical Notes, Calendar, and Reminders apps.
+              id: rack
+              name: Rack
+          notes-comments:
+            - title: Topics
+              content: Introduction to iOS, Swift, Application design, SwiftUI, text, images, buttons, PLists, Tuples, delegates, protocols, MapKit, CoreLocation, Lists, State and Binding, Navigation Views, Tab Views, data flow, JSON, gestures, animations…
+        - id: anth210
+          title: ANTH-210 Culture and Globalization
+          official-description: By exploring critical issues of globalizing culture, we examine how ideas, attitudes, and values are exchanged or transmitted across conventional borders. How has the production, articulation, and dissemination of cultural forms (images, languages, practices, beliefs) been shaped by global capitalism, media industries, communication technologies, migration, and tourist travels? How are cultural imaginaries forged, exchanged, and circulated among a global consumer public? How has the internationalizing of news, computer technologies, video-sharing websites, blogging sites, and other permutations of instant messaging served to accelerate cultural globalization? Students will be introduced to anthropological perspectives on cultural globalization, the transmission of culture globally, and the subsequent effects on social worlds, peoples, communities, and nations.
+          official-term: Lecture 3, Credits 3 (Fall/Spring/Summer)
+          projects:
+          - title: Collective Memory
+            description: For this assignment, students had to identify an object or event that connects them to a group of people that share a similar experience as them. Something that makes them a part of “collective memory” (a term coined by Maurice Halbwach)  It can be some special tradition, a dish, ornament, equipment, anything that connects their personal history with a larger group. For the task, we had to explain why and how the chosen item is important while implementing terms learned in class. For my topic, I chose Japanese curry rice.
+          notes-comments:
+            - title: Topics
+              content: Defining globalization, politics, cultural identity, global economy, capitalism, culture of capitalism, consumer, laborer, capitalist, nation states, new means of consumption, organizations and power, global businesses…
+        - id: phil103
+          title: PHIL-103 Critical Thinking
+          official-description: The purpose of this course is to improve everyday reasoning skills. Critical thinking means evaluating the reasons for our actions and beliefs. Ideally, we think our actions are rational, not arbitrary. But one does not have to look far to discover disagreement and apparent irrationality. What accounts for this? This course investigates how to argue effectively, how to evaluate evidence and reasons, and how to marshal good evidence and reasons in order to arrive at reliable knowledge and justified action. It covers common mistakes that people make in causal, statistical, moral, and everyday reasoning, and it teaches how and when it pays to be skeptical,reflective, and critical.
+          official-term: Lecture 3, Credits 3 (Fall, Spring)
+          notes-comments:
+            - title: Topics
+              content: Introduction to logic, reasoning, identifying inconsistencies, errors, arguments, constructing, identifying, and evaluating arguments, logical connections, relationships between ideas, systematical problem analysis, accessing the relevance of arguments and ideas…
+
+    - name: Spring (2025)
+      courses: 
+        - id: iste501
+          title: ISTE-501 Senior Development Project 2
+          official-description: "The second course in a two-course, senior level, system development capstone project. Student teams complete development of their system project and package the software and documentation for deployment. Usability testing practices introduced in prior course work are reviewed, and additional methods and processes are introduced. Teams present their developed system and discuss lessons learned at the completion of the course. (Prerequisites: ISTE-500 or equivalent course.)"
+          official-term: Lecture 3, Credits 3 (Fall, Spring)
+          tools-technologies: React, Three.js, NodeJS, Express, PostgreSQL, Supabase, Hyperledger Fabric
+          projects:
+            - title: Realex.in (Team Capstone Project)
+              description: Realex.in is a real-estate management platform which focuses on non-standard vacation homes. It is a responsive web application supported by blockchain technology. The task for the second semester was to develop and present a minimum viable product with a deployment plan. 
+              id: realex
+              name: Realex.in
+          notes-comments:
+            - title: Topics
+              content: Leadership, team management, beta product presenting, usability testing, system testing, integration needs, individual status reports, PM status reports, sponsor reports, gate reviews, phase gates, traceability matrix, deployment…
+        - id: iste432
+          title: ISTE-432 Database Application Development
+          official-description: "The second course in a two-course, senior level, system development capstone project. Student teams complete development of their system project and package the software and documentation for deployment. Usability testing practices introduced in prior course work are reviewed, and additional methods and processes are introduced. Teams present their developed system and discuss lessons learned at the completion of the course. (Prerequisites: ISTE-500 or equivalent course.)"
+          official-term: Lecture 3, Credits 3 (Fall, Spring)
+          tools-technologies: Java, Spring, Hibernate
+          projects:
+            - title: Vitalin, Doctor's Appointment Management App (Group Project)
+              description: For the project, the task was to create a web application with an ORM of choice (Spring, Hibernate was recommended). It had to have around 15 entities (excluding many-to-many tables), a simple frontend, it had to support multiple user roles, and perform CRUD operations on the database. My teammate and I chose to make a simplified medical dashboard for managing doctor’s appointments.
+              id: vitalin
+              name: Vitalin
+          notes-comments:
+            - title: Topics
+              content: Software architecture, advanced database connectivity, transactions, object-relational mapping, security, database design, best practices, patterns, what to avoid, performance, scalability, JDBC revision, intro to Spring, Spring Boot, intro to Hibernate…
+        - id: iste456
+          title: ISTE-456 Mobile Application Development 2
+          official-description: "This course extends the Foundations of Mobile Design course in that students will learn to apply mobile design skills to develop applications in the Android platform. Students will design, develop, and test mobile applications using the Android Studio IDE. This course covers the major components such as activities, receivers, content providers, permissions, intents, fragments, data storage, and security. Programming projects are required (Prerequisites: (ISTE-252 and ISTE-340) or IGME-330 or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: Kotlin, Jetpack Compose, Android Studio
+          projects:
+            - title: Smudge, Drawing Application
+              description: The assignment was to create an Android application using Jetpack Compose on a topic that was previously approved by the professor. I decided to create a simplified drawing application inspired by Procreate Pocket, a popular iOS app for drawing and painting.
+              id: smudge
+              name: Smudge
+          notes-comments:
+            - title: Topics
+              content: Intro to the Android environment, Android Studio, Kotlin, Android views, Jetpack compose, UI elements, styling, data store, local storage options, coroutines, Surface, Scaffold components, navigation, API fetching, view models, permissions, location, animations…
+        - id: anth350
+          title: ANTH-350 Global Economy & Grassroots
+          official-description: Economic globalization has given birth to global, grassroots social movements. This course examines how global economic integration is brought about through multilateral institutions, multinational corporations, outsourcing, trade agreements, international lending, and neoliberal reforms. We consider impacts (cultural, economic, and health) of these trends on employees, farmers, small businesses, consumers, and the environment in the developed and developing worlds (with special emphasis on Latin America). We examine beliefs, alternative visions, and strategies of grassroots movements responding to these challenges.
+          official-term: Lecture 3, Credits 3 (Spring)
+          notes-comments:
+            - title: Topics
+              content: Globalization, anti-globalization, alter-globalization, intro to neoliberalism, media politics, Mexico’s Zapatistas, pursuit of freedom, wealth inequality…
+            - title: Course structure
+              content: This course had 2 pairs of exams (a midterm, and a final, written + oral form) and weekly discussions.
+        - id: soci230
+          title: SOCI-230 Sociology of Work
+          official-description: "This course analyzes and assesses social relations of paid labor. Sociology's major ideas about the ways we work will be examined and applied to numerous important topics such as: workplace organization, unions, labor legislation, health and safety, workplace culture, interplays between work and family, experiences of work as alienating or satisfying, inequalities at work, and social mobility."
+          official-term: Lecture 3, Credits 3 (Fall, Spring)
+          projects:
+            - title: Job Interview Process (Project Assignment)
+              description: This is a 4 part assignment designed to mimic the process of finding a job. The first part was to find some existing job, and explain what it is with our reasoning as to why we chose it. The second part was to create a CV, and cover letter for the position. The third was an interview followed by the fourth part, a SWOT analysis (strengths, weaknesses, opportunities, threats). After the interview, everyone got individual feedback on what to work on in terms of communication, what to say, how to say it, eye contact, hand placement etc. 
+          notes-comments:
+            - title: Topics
+              content: Sociological perspectives on work and leisure, embarking in careers, work roles, job interviews, socialization to work, work and discrimination, fulfillment and discontent at work, unemployment…
+            - title: Course Structure
+              content: This course had 2 exams (midterm, final, written + oral form), 5 discussion papers, in-class discussions, and a project.
