@@ -77,6 +77,26 @@
               alt: Box 5
     - name: ISTE-252 Foundations of Mobile Design
       projects:
+        - title: Weather App
+          id: weather-app
+          thumbnail: weather-app/screen.jpg
+          completed: 30 Mar 2023  
+          description: A simple hybrid weather app. Third project for the ISTE-252 course.
+          content: 
+            - text: This is the third project for the [[course-link]]. It is a simple hybrid weather app that was built with Cordova that, on the chosen location, displays the local time, coordinates, temperature, weather description, pressure, and humidity values. 
+              links: 
+                - token: course-link
+                  text: ISTE-252 Foundations of Mobile Design course
+                  url: /education/rit-courses/#iste252
+                  external: false
+            - title: APIs and plugins
+              text: This app uses the cordova geolocation plugin, Google Maps API, and OpenWeather API for extra data
+          technologies: Apache Cordova
+          tag: RIT (ISTE-252)
+          gallery:
+            - src: weather-app/screen.jpg
+              alt: Screen
+          
         - title: myWorkouts
           id: myworkouts
           thumbnail: myworkouts/logo-1.jpg
