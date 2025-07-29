@@ -5,6 +5,51 @@
         - title: Trek
 - name: RIT (College)
   categories:
+    - name: ISTE-358 Foundations of Wearable and Ubiquitous Computing
+      projects: 
+        - title: Safety Deposit Box
+          id: safety-deposit-box
+          thumbnail: safety-deposit-box/tinkercad.jpg
+          completed: December 2023
+          description: Arduino safety deposit box. Final individual project for the ISTE-358 course.
+          content:
+            - text: This is the “brains” of a safety deposit box built with Arduino Components. It was the final project for the [[course-link]]. 
+              links: 
+                - token: course-link
+                  text: ISTE-358 Foundations of Wearable and Ubiquitous Computing course
+                  url: /education/rit-courses/#iste358
+                  external: false
+            - title: Features
+              text: The safe can be opened by imputing a 4 digit PIN number, and it can give both audio and visual feedback when the safe changes state or when a user gives a wrong password (motor moves, screen says “Open”/”Closed”/”Wrong password”..., and the piezo buzzer buzzes). Also, the user can change the PIN number of the safe (only if they already know the previous password). 
+            - title: Buzzer
+              text: The buzzer has different sounds depending on the action, if a user adds an incorrect password it will release one longer sound, and on the contrary, if the safe has been successfully opened, the buzzer will release two short sounds. 
+            - title: Password Change
+              text: When a user has to change the password, they first have to initiate that mode by clicking the “*” button on the keypad, input the old PIN, set a new PIN, repeat the new PIN, and click the “#” button to reset. 
+            - title: Components
+              text: SG90 Micro servo motor, Elegoo Uno R3, piezo buzzer, 16x2 LCD Screen, 4x2 keypad
+          technologies: Arduino, Arduino IDE, C, Tinkercad
+          tag: RIT (ISTE-358)
+          gallery:
+            - src: safety-deposit-box/tinkercad.jpg
+              alt: Tinkercad
+            - src: safety-deposit-box/schema.jpg
+              alt: Schema
+            - src: safety-deposit-box/arduino-1.jpg
+              alt: Arduino 1
+            - src: safety-deposit-box/arduino-2.jpg
+              alt: Arduino 2
+            - src: safety-deposit-box/arduino-3.jpg
+              alt: Arduino 3
+            - src: safety-deposit-box/box-1.jpg
+              alt: Box 1
+            - src: safety-deposit-box/box-2.jpg
+              alt: Box 2
+            - src: safety-deposit-box/box-3.jpg
+              alt: Box 3
+            - src: safety-deposit-box/box-4.jpg
+              alt: Box 4
+            - src: safety-deposit-box/box-5.jpg
+              alt: Box 5
     - name: ISTE-121 Computational Problem Solving in Information Domain 2
       projects: 
         - title: Snake Game
@@ -12,13 +57,13 @@
           thumbnail:
           completed: nan
           description: A snake game that utilizes multi threading to stream the gameplay to clients. Final group project for the ISTE-121 course.
-          # content:
+          content:
+            - text: 
           technologies: Java (JavaFX)
           tag: RIT (ISTE-121)
           gallery:
             - src:
               alt: 
-
         - title: JavaFX Text Editor
           id: javafx-text-editor
           thumbnail:

@@ -363,10 +363,10 @@
           official-term: Lec/Lab 3, Credits 3 (Fall)
           tools-technologies: Arduino, Arduino IDE, Arduino UNO, C, Tinkerkad
           projects:
-            - title: Arduino Safe
+            - title: Arduino Safety Deposit Box
               description: For the project, the task was to combine multiple components covered in class, write code for it, create an outer shell in some 3D software (Tinkercard, Blender…), connect everything in one logical unit, and present it in class. I chose to make a safe. A user could configure their PIN (on a keypad), see feedback on a 16x2 LCD screen (* signs for password, is the password correct, is it opened/closed…), and see/hear the servo motor move (lock/unlock) the safe. 
-              id: arduino-safe
-              name: Arduino Safe
+              id: safety-deposit-box
+              name: Safety Deposit Box
           notes-comments:
             - title: Topics
               content: Basic concepts of electric circuits, intro to Arduino and C, circuit diagrams, combinational logic, logic gates, components, registers, sensors, temperature/humidity sensor, HCSR04 ultrasonic sensor, screens, LCD-1602A_CA, input components, buttons, keypads, actuators, servo motors, intro to 3D printing…
