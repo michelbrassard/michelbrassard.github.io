@@ -154,7 +154,88 @@
               alt: Wireframes 3
             - src: myworkouts/wireframes-4.jpg
               alt: Wireframes 4
-            
+
+    - name: NSSA-290 Networking Essentials for Developers
+      projects:
+        - title: Campus Network Simulation
+          id: campus-network
+          thumbnail: campus-network/image.jpg
+          completed: December 2022
+          description: Network simulation for a campus. Project for the NSSA-290 course
+          content: 
+            - text: This is a simulated network created in Cisco Packet Tracer, and it was the final project for the [[course-link]]. The network has 2 classes, a lab, departments for accounting, marketing, networking, and general staff, a pay check server, and a simulation of the external web (DNS server + servers for RIT, Facebook, Twitter). 
+              links: 
+                - token: course-link
+                  text: NSSA-290 Networking Essentials for Developers course
+                  url: /education/rit-courses/#nssa290
+                  external: false
+            - title: Configuration
+              text: For this project to work, proper routing had to be configured alongside a simple firewall. 
+          technologies: Cisco Packet Tracer
+          tag: RIT (NSSA-290)
+          gallery:
+            - src: campus-network/image.jpg
+              alt: Network
+          
+        - title: myWorkouts
+          id: myworkouts
+          thumbnail: myworkouts/logo-1.jpg
+          completed: 17 Feb 2023
+          description: A design prototype for a workout app. First project in the ISTE-252 course
+          content: 
+            - text: This is the first project for the [[course-link]]. It is an interactive design prototype for a workout application. 
+              links: 
+                - token: course-link
+                  text: ISTE-252 Foundations of Mobile Design course
+                  url: /education/rit-courses/#iste252
+                  external: false
+            - title: Prototype link
+              text: "Link: [[figma-link]]"
+              links:
+                - token: figma-link
+                  text:  Figma Prototype
+                  url: https://www.figma.com/proto/Eim1CaIARfrLheWZDt4Bcm/project-1?page-id=0%3A1&node-id=106-171&p=f&viewport=1429%2C1515%2C0.25&t=SAnXhbgp4m7esWDT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=106%3A171
+                  external: true
+          technologies: Figma
+          tag: RIT (ISTE-252)
+          colors: 
+            - "#011126"
+            - "#024873"
+            - "#C7E7FC"
+            - "#F2CA80"
+            - "#BF0426"
+            - "#FFFFFF"
+          gallery:
+            - src: myworkouts/logo-1.jpg
+              alt: Logo 1
+            - src: myworkouts/logo-2.jpg
+              alt: Logo 2
+            - src: myworkouts/mock-1.jpg
+              alt: Mock 1
+            - src: myworkouts/mock-2.jpg
+              alt: Mock 2
+            - src: myworkouts/mock-3.jpg
+              alt: Mock 3
+            - src: myworkouts/mock-4.jpg
+              alt: Mock 4
+            - src: myworkouts/mock-5.jpg
+              alt: Mock 5
+            - src: myworkouts/mock-6.jpg
+              alt: Mock 6
+            - src: myworkouts/mock-7.jpg
+              alt: Mock 7
+            - src: myworkouts/mock-8.jpg
+              alt: Mock 8
+            - src: myworkouts/wireframes-1.jpg
+              alt: Wireframes 1
+            - src: myworkouts/wireframes-2.jpg
+              alt: Wireframes 2
+            - src: myworkouts/wireframes-3.jpg
+              alt: Wireframes 3
+            - src: myworkouts/wireframes-4.jpg
+              alt: Wireframes 4
+
+
     - name: ISTE-121 Computational Problem Solving in Information Domain 2
       projects: 
         - title: Snake Game
