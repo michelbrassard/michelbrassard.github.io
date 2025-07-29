@@ -5,6 +5,31 @@
         - title: Trek
 - name: RIT (College)
   categories:
+    - name: ISTE-341 Server Programming
+      projects: 
+        - title: Employee Management Backend
+          id: employee-management
+          thumbnail: employee-management/postman.jpg
+          completed: December 2023
+          description: Backend API for an employee management service. A project for the ISTE-341 course.
+          content:
+            - text: This is the backend service for an employee management application, and it is the third project of the [[course-link]] course. The task was to create the business, and service layers of the application (data layer was provided). 
+              links: 
+                - token: course-link
+                  text: ISTE-341 Server Programming course
+                  url: /education/rit-courses/#iste341
+                  external: false
+            - title: JakartaEE version
+              text: In this same course, an identical project was also done before this one. Same task, but built with Java using JakartaEE.
+            - title: Features
+              text: This is only a backend service, there is no frontend, so everything was tested via manual API calls (using Postman). A user can perform CRUD operations on the employee, department, and company entities. 
+          technologies: NodeJS, Express
+          tag: RIT (ISTE-341)
+          gallery:
+            - src: employee-management/postman.jpg
+              alt: Postman
+            - src: employee-management/project-structure.jpg
+              alt: Project Structure
     - name: ISTE-358 Foundations of Wearable and Ubiquitous Computing
       projects: 
         - title: Safety Deposit Box
@@ -50,6 +75,66 @@
               alt: Box 4
             - src: safety-deposit-box/box-5.jpg
               alt: Box 5
+    - name: ISTE-252 Foundations of Mobile Design
+      projects:
+        - title: myWorkouts
+          id: myworkouts
+          thumbnail: myworkouts/logo-1.jpg
+          completed: 17 Feb 2023
+          description: A design prototype for a workout app. First project in the ISTE-252 course
+          content: 
+            - text: This is the first project for the [[course-link]]. It is an interactive design prototype for a workout application. 
+              links: 
+                - token: course-link
+                  text: ISTE-252 Foundations of Mobile Design course
+                  url: /education/rit-courses/#iste252
+                  external: false
+            - title: Prototype link
+              text: "Link: [[figma-link]]"
+              links:
+                - token: figma-link
+                  text:  Figma Prototype
+                  url: https://www.figma.com/proto/Eim1CaIARfrLheWZDt4Bcm/project-1?page-id=0%3A1&node-id=106-171&p=f&viewport=1429%2C1515%2C0.25&t=SAnXhbgp4m7esWDT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=106%3A171
+                  external: true
+          technologies: Figma
+          tag: RIT (ISTE-252)
+          colors: 
+            - "#011126"
+            - "#024873"
+            - "#C7E7FC"
+            - "#F2CA80"
+            - "#BF0426"
+            - "#FFFFFF"
+          gallery:
+            - src: myworkouts/logo-1.jpg
+              alt: Logo 1
+            - src: myworkouts/logo-2.jpg
+              alt: Logo 2
+            - src: myworkouts/mock-1.jpg
+              alt: Mock 1
+            - src: myworkouts/mock-2.jpg
+              alt: Mock 2
+            - src: myworkouts/mock-3.jpg
+              alt: Mock 3
+            - src: myworkouts/mock-4.jpg
+              alt: Mock 4
+            - src: myworkouts/mock-5.jpg
+              alt: Mock 5
+            - src: myworkouts/mock-6.jpg
+              alt: Mock 6
+            - src: myworkouts/mock-7.jpg
+              alt: Mock 7
+            - src: myworkouts/mock-8.jpg
+              alt: Mock 8
+            - src: myworkouts/wireframes-1.jpg
+              alt: Wireframes 1
+            - src: myworkouts/wireframes-2.jpg
+              alt: Wireframes 2
+            - src: myworkouts/wireframes-3.jpg
+              alt: Wireframes 3
+            - src: myworkouts/wireframes-4.jpg
+              alt: Wireframes 4
+            
     - name: ISTE-121 Computational Problem Solving in Information Domain 2
       projects: 
         - title: Snake Game
