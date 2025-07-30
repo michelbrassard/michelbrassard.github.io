@@ -275,7 +275,7 @@
           tools-technologies: JS, C# (ASP.NET), jQuery
           projects:
             - title: Custom Sandwiches Interactive JS Frontend (Project 1)
-              description: For the first project, the task was to create a frontend of an application with the topic of our choosing. The data was not pulled from an API, but from a file. For the requirements, it had to follow the MVC structure, have conditional dropdowns, and utilize local storage. There need to be at least 3 layers selected, and each select has to have a minimum of 2 options. For the topic I have chosen to create a sandwich creator web app where I user can pick from 2 different breads, fillings, and toppings. 
+              description: For the first project, the task was to create a frontend of an application with the topic of our choosing. The data was not pulled from an API, but from a file. For the requirements, it had to follow the MVC structure, have conditional dropdowns, and utilize local storage. There need to be at least 3 layers selected, and each select has to have a minimum of 2 options. For the topic I have chosen to create a sandwich creator web app where I user can pick from 2 different breads, spreadings, and meats (hams). 
               id: custom-sandwiches
               name: Custom Sandwiches
             - title: RIT Redesigned jQuery Frontend (Project 2)
