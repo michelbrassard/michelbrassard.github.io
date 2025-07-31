@@ -126,7 +126,82 @@
 
     - name: ISTE-432 Database Application Development
     - name: ISTE-456 Mobile Application Development 2
+    
     - name: ISTE-454 Mobile Application Development 1
+      projects: 
+        - title: Rack
+          id: rack
+          thumbnail: rack/thumbnail.jpg
+          completed: 9 Dec 2024
+          description: An iOS notes and remiders combo app for course work. A project for the ISTE-454 course.
+          content:
+            - text: This is a notes, reminders, calendar, and files app combined into one specialized for course work (assignemnts, deadlines, courses, terms etc.). It is built on the iOS platform, uses [[firebase]] for storage, and it is the final individual project for the [[course-link]].
+              links: 
+                - token: firebase
+                  text: Firebase
+                  url: https://firebase.google.com/
+                  external: true
+                - token: course-link
+                  text: ISTE-454 Mobile Application Development 1 course
+                  url: /education/rit-courses/#iste454
+                  external: false
+            - title: Unfinished
+              text: Unfortunately, the project is not complete, calendar and file features are missing, notifications don't work properly, and there are bugs here and there that need to be fixed. 
+          technologies: Swift, SwiftUI, XCode, Firebase (Firestore)
+          tag: RIT (ISTE-454)
+          gallery:
+            - src: rack/term.jpeg
+              alt: No terms
+            - src: rack/create-term.jpeg
+              alt: Create term
+            - src: rack/edit-term.jpeg
+              alt: Edit term
+            - src: rack/delete-term.jpeg
+              alt: Delete term
+            - src: rack/home-1.jpeg
+              alt: Home
+            - src: rack/home-2.jpeg
+              alt: Home with alerts
+            - src: rack/calendar.jpeg
+              alt: Calendar
+            - src: rack/create-course-1.jpeg
+              alt: No courses
+            - src: rack/create-course-2.jpeg
+              alt: Create a course
+            - src: rack/courses.jpeg
+              alt: Courses
+            - src: rack/edit-course.jpeg
+              alt: Edit course
+            - src: rack/delete-course.jpeg
+              alt: Delete course
+            - src: rack/reminders-1.jpeg
+              alt: No courses and reminders
+            - src: rack/reminders-2.jpeg
+              alt: No reminders
+            - src: rack/reminders-3.jpeg
+              alt: Reminder form empty
+            - src: rack/reminders-4.jpeg
+              alt: Reminder form full
+            - src: rack/reminders-5.jpeg
+              alt: Reminder
+            - src: rack/reminders-6.jpeg
+              alt: Complete reminder
+            - src: rack/reminders-7.jpeg
+              alt: Delete/edit reminder
+            - src: rack/project-structure-1.jpeg
+              alt: Project structure
+            - src: rack/project-structure-2.jpeg
+              alt: Project structure components
+            - src: rack/project-structure-3.jpeg
+              alt: Project structure forms
+            - src: rack/project-structure-4.jpeg
+              alt: Project structure view models
+            - src: rack/project-structure-5.jpg
+              alt: Project structure views
+            - src: rack/firebase.jpeg
+              alt: Firebase console
+        
+    
     - name: ISTE-470 Data Mining and Exploration
     - name: ISTE-442 Secure Web App Development
     - name: ISTE-422 Application Development Practices
