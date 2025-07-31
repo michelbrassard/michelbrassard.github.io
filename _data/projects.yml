@@ -126,6 +126,56 @@
 
     - name: ISTE-432 Database Application Development
     - name: ISTE-456 Mobile Application Development 2
+      projects: 
+        - title: Smudge
+          id: smudge
+          thumbnail: smudge/thumbnail.jpg
+          completed: 5 May 2025
+          description: A simple Android drawing application inspired by Procreate Pocket. A project for ISTE-456 course.
+          content:
+            - text: This is a simplified vector drawing application built for the Android Platform. It is the final individual project for the [[course-link]].
+              links:
+                - token: course-link
+                  text: ISTE-456 Mobile Application Development 2 course
+                  url: /education/rit-courses/#iste456
+                  external: false
+            - title: features
+              text: A user can create, edit, and delete artworks. Each artwork supports multiple layers (create,  rearrange, delete layers), and the canvas itself gives access to multiple brushes (brush shapes, change brush settings), to an eraser, a color picker and it gives access to buttons for undo/redo.
+            - title: Side effect
+              text: An artwork is a collection of vector paths, and when it gets saved locally, it is transformed into JSON. The app itself doesn’t connect to any API, but because it gets stored that way it could potentially support online backup or even real-time collaboration.
+          technologies: Kotlin, Jetpack Compose, Android Studio
+          tag: RIT (ISTE-456)
+          gallery:
+            - src: smudge/gallery-1.jpeg
+              alt: Empty gallery
+            - src: smudge/gallery-2.jpeg
+              alt: Gallery with empty artwork
+            - src: smudge/gallery-3.jpeg
+              alt: Gallery with filled artwork
+            - src: smudge/gallery-4.jpeg
+              alt: Delete artwork
+            - src: smudge/canvas.jpeg
+              alt: Empty canvas
+            - src: smudge/canvas-drawing.jpeg
+              alt: Canvas with drawing
+            - src: smudge/layers.jpeg
+              alt: Layers
+            - src: smudge/colors.jpeg
+              alt: Color wheel
+            - src: smudge/pen.jpeg
+              alt: Brush
+            - src: smudge/wireframes.jpeg
+              alt: Wireframes
+            - src: smudge/project-structure.jpg
+              alt: Project structure
+            - src: smudge/project-structure-canvas.jpeg
+              alt: Project structure canvas
+            - src: smudge/project-structure-dto.jpeg
+              alt: Project structure DTO
+            - src: smudge/project-structure-gallery.jpeg
+              alt: Project structure gallery
+            - src: smudge/project-structure-model.jpeg
+              alt: Project structure model
     
     - name: ISTE-454 Mobile Application Development 1
       projects: 
@@ -251,7 +301,6 @@
               alt: Box 4
             - src: safety-deposit-box/box-5.jpg
               alt: Box 5
-    
     - name: ISTE-341 Server Programming
       projects: 
         - title: Employee Management Backend
