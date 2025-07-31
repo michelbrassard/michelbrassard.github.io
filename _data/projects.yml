@@ -6,6 +6,124 @@
 - name: RIT (College)
   categories:
     - name: ISTE-500/501 Senior Development Project
+      projects:
+        - title: Realex.in
+          id: realex
+          thumbnail: realex/logo.jpeg
+          completed: 22 Apr 2025
+          description: A real estate management platform supported by a private blockchain. Senior developmet group project (ISTE-500/501).
+          content: 
+            - text: Realex.in (“relax in” or "real" as in real estate) is a multiuser web application for managing investments of non-standard vacation homes. The application has a traditional frontend and backend, but it also utilizes a private blockchain. This project is a senior group assignment for the [[course-link]], and a capstone project for the Web and Mobile bachelor's degree. 
+              links: 
+                - token: course-link
+                  text: ISTE-500/501 Senior Development Project course
+                  url: /education/rit-courses/#iste500
+                  external: false
+            - title: Idea
+              text: For this course, it is not the professor, or the students that comes up with an idea, it is an external person, a client/sponsor, that presents a certain problem, and it is up to students to explore, and solve it if possible. 
+            - text: The client's “problem” was that there isn't any real public control when it comes to building non-standard vacation homes. Usually, a person or a company with enough capital will build something, and then rent it on Airbnb, or resell it to someone else. The point was that people in general don't have a say on whether they would like to have something built or not.
+            - text: The sponsor's idea was to create a web application with blockchain support that will try and solve this problem, and it was up to my teammates and I to establish concrete features and build a minimum viable product. 
+            - title: Roles
+              text: There are 3 roles for this application, an admin, creator, and regular user. A regular user, in short, can invest in a property and buy/sell tokens, a creator can post, edit, delete property ideas, and the admin can verify idea creators, and approve new property ideas. 
+            - title: Application flow
+              text: A user finds a property idea, and invests in it. Later, after the property receives enough funds, construction begins. After it is done, the investor picks the dates of their stay, and receives tokens that are stored on the blockchain. With the tokens, the investor can either use them to stay in the newly constructed property (stay dates are defined on the smart contract) or sell them to the secondary market.
+            - title: Solution
+              text: The idea for the solution was to allow the public to decide whether they want to build something by investing in some property idea (voting with wallets), and to allow proposing real estate ideas without having the necessary funds right away.
+            - title: Clarification
+              text: The main difference between Airbnb and Realex.in is that it deals with investments, not existing properties. The point is that people invest in some idea/plan for the property, potentially realize it, and then, as a reward, they will be able to stay in that property. 
+            - title: Security
+              text: As this platform would deal with large amounts of capital, for the current solution, verification goes through the admin (admin can see all the needed documents that are uploaded by the creator for a certain property idea).
+            - title: Opensanctions
+              text: When the admin views users, data from [[opensanctions]] is retrieved which is used to mimic a KYC check. 
+              links:
+                - token: opensanctions
+                  text: OpenSanctions
+                  url: https://www.opensanctions.org/
+                  external: true
+            - title: Blockchain
+              text: One of the requirements for the project was to utilize blockchain. My teammates and I decided to use it only for the most critical part of the application. In this case, it is for the tokens, or better explained as “tickets” that grant a user the ability to stay in the place they have invested in. For everything else, a regular database was used, because it is much better for regular CRUD operations. One of the downsides of this way is that on-chain, and off-chain data had to be synchronised.
+            - text: "[[fabric]] was used because it is a private blockchain. A solution with a public blockchain like Ethereum could be implemented, but it seemed like a better choice to use Hyperledger because it designed for businesses, and it may be easier to deal with regulations like GDPR if its a private one."
+              links:
+                - token: fabric
+                  text: Hyperledger Fabric
+                  url: https://hyperledger-fabric.readthedocs.io/en/release-2.5/
+                  external: true
+            - title: Team
+              text: There were 6 of us in the team. (designer, frontend, backend developers, QA, documentation writer, team lead)
+            - text: I was the team lead, and I acted as a “bridge” between the sponsor, and the development team. This means I organized meetings, established use cases, worked on the work breakdown structure, and on the project plan. I also helped with the presentations, gate reviews, and sponsor reports. I haven’t done much programming for this project, only at the end of the development phase on the frontend side (bug fixes, minor features). 
+            - title: Final notes
+              text: The project itself is tricky to understand, and there are a lot of unexplored scenarios and even potential legal issues (when dealing with large amounts of capital an app has to follow regulations, KYC, AML, GDPR…) that are not addressed with this application, but I think that it is important to emphasize the process of getting to some solution, communicating with the sponsor, reaching a consensus, planning, organizing everything, and synchronising with the team.
+          technologies: React, ThreeJS, NodeJS, Express, Hyperledger Fabric, Supabase, PostgreSQL
+          tag: RIT (ISTE-500/501)
+          colors:
+            - "#0074D9"
+            - "#EEF4F9"
+            - "#FFFFFF"
+            - "#32292F"
+            - "#8C878A"
+            - "#F0F0F0"
+            - "#DB162F"
+            - "#000000"
+          gallery:
+            - src: realex/landing.jpeg
+              alt: Landing Page
+            - src: realex/signup-1.jpeg
+              alt: Sign up 1
+            - src: realex/signup-2.jpeg
+              alt: Sign up 2
+            - src: realex/signup-3.jpeg
+              alt: Sign up 3
+            - src: realex/idea-creator-signup-1.jpeg
+              alt: Sign up (Idea Creator) 1
+            - src: realex/idea-creator-signup-2.jpeg
+              alt: Sign up (Idea Creator) 2
+            - src: realex/home.jpeg
+              alt: Home Page
+            - src: realex/notifications.jpeg
+              alt: Notifications
+            - src: realex/profile-1.jpeg
+              alt: Profile 1
+            - src: realex/profile-2.jpeg
+              alt: Profile 2
+            - src: realex/property-1.jpeg
+              alt: Property 1
+            - src: realex/property-2.jpeg
+              alt: Property 2
+            - src: realex/property-3.jpeg
+              alt: Property 3
+            - src: realex/investments.jpeg
+              alt: Investments
+            - src: realex/payment.jpeg
+              alt: Payment
+            - src: realex/pick-tokens-1.jpeg
+              alt: Pick tokens 1
+            - src: realex/pick-tokens-2.jpeg
+              alt: Pick tokens 2
+            - src: realex/view-tokens.jpeg
+              alt: View Tokens
+            - src: realex/sell-tokens.jpeg
+              alt: Sell Tokens
+            - src: realex/secondary-market.jpeg
+              alt: Secondary Market
+            - src: realex/view-secondary-market.jpeg
+              alt: Secondary Market Details
+            - src: realex/upgrade.jpeg
+              alt: Upgrade to Creator role
+            - src: realex/creator-requests.jpeg
+              alt: Admin views upgrade requests
+            - src: realex/view-idea-creator-request.jpeg
+              alt: Admin views an upgrade request 
+            - src: realex/view-opensanctions.jpeg
+              alt: Admin views OpenSanctions data 
+            - src: realex/create-property.jpeg
+              alt: Creating a new propery (for creator)
+            - src: realex/view-property-requests.jpeg
+              alt: Admin views new property requests
+            - src: realex/project-structure-frontend.jpeg
+              alt: Frontend project structure
+            - src: realex/project-structure-backend.jpeg
+              alt: Backend project structure
+
     - name: ISTE-432 Database Application Development
     - name: ISTE-456 Mobile Application Development 2
     - name: ISTE-454 Mobile Application Development 1
