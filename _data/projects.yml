@@ -123,8 +123,28 @@
               alt: Frontend project structure
             - src: realex/project-structure-backend.jpeg
               alt: Backend project structure
-
     - name: ISTE-432 Database Application Development
+      projects: 
+        - title: Vitalin
+          id: vitalin
+          thumbnail: vitalin/thumbnail.jpg
+          completed: 4 May 2025
+          description: A doctor's appointments dashboard web application. A project for ISTE-432 course.
+          content:
+            - text: for the [[course-link]].
+              links:
+                - token: course-link
+                  text: ISTE-432 Database Application Development course
+                  url: /education/rit-courses/#iste432
+                  external: false
+            - title: features
+              text: A user can create, edit, and delete artworks. Each artwork supports multiple layers (create,  rearrange, delete layers), and the canvas itself gives access to multiple brushes (brush shapes, change brush settings), to an eraser, a color picker and it gives access to buttons for undo/redo.
+          technologies: NextJS, Spring, Spring Boot, MySQL
+          tag: RIT (ISTE-432)
+          gallery:
+            - src: vitalin/gallery-1.jpeg
+              alt: Empty gallery
+
     - name: ISTE-456 Mobile Application Development 2
       projects: 
         - title: Smudge
@@ -176,7 +196,6 @@
               alt: Project structure gallery
             - src: smudge/project-structure-model.jpeg
               alt: Project structure model
-    
     - name: ISTE-454 Mobile Application Development 1
       projects: 
         - title: Rack
@@ -251,7 +270,6 @@
             - src: rack/firebase.jpeg
               alt: Firebase console
         
-    
     - name: ISTE-470 Data Mining and Exploration
     - name: ISTE-442 Secure Web App Development
     - name: ISTE-422 Application Development Practices
@@ -385,6 +403,66 @@
 
     - name: ISTE-252 Foundations of Mobile Design
       projects:
+        - title: Cookez
+          id: cookez
+          thumbnail: cookez/thumbnail.jpg
+          completed: 5 May 2023
+          description: A simple recipe application built with Flutter. The final project for ISTE-252 course.
+          content:
+            - text: This is a simple recipe application that allows users to get info from the [[api]]. It is the last project for the [[course-link]].
+              links:
+                - token: api
+                  text: Spoonacular API
+                  url: https://spoonacular.com/food-api
+                  external: true
+                - token: course-link
+                  text: ISTE-252 Foundations of Mobile Design course
+                  url: /education/rit-courses/#iste252
+                  external: false
+            - title: Features
+              text: The app allows users to save recipes. explore random recipes, find them based on provided ingredients, and it allows users to create custom recipes. 
+            - title: QR Code
+              text: The [[qr-api]] is used to generate QR codes for a recipe so that they can be easily shared, but it is not a finished feature. 
+              links: 
+                - token: qr-api
+                  text: QR Code Generator API
+                  url: https://goqr.me/api/
+                  external: true
+          technologies: Flutter
+          tag: RIT (ISTE-252)
+          gallery:
+            - src: cookez/platforms.jpg
+              alt: Platforms
+            - src: cookez/thumbnail.jpg
+              alt: Logo
+            - src: cookez/home.jpeg
+              alt: Logo
+            - src: cookez/explore-1.jpeg
+              alt: Explore page
+            - src: cookez/explore-2.jpeg
+              alt: Explore page recipe details
+            - src: cookez/explore-3.jpeg
+              alt: Explore page save recipe
+            - src: cookez/recipes-1.jpeg
+              alt: Saved recipes
+            - src: cookez/recipes-2.jpeg
+              alt: Delete recipe
+            - src: cookez/create-recipe-1.jpeg
+              alt: Create a recipe
+            - src: cookez/create-recipe-2.jpeg
+              alt: Save recipe
+            - src: cookez/create-recipe-3.jpeg
+              alt: View recipe in list
+            - src: cookez/find-1.jpeg
+              alt: Find recipe
+            - src: cookez/find-2.jpeg
+              alt: Add ingredients
+            - src: cookez/find-3.jpeg
+              alt: View found recipes
+            - src: cookez/qr.jpeg
+              alt: Open camera for QR code scan
+            - src: cookez/project-structure.jpg
+              alt: Project structure
         - title: Weather App
           id: weather-app
           thumbnail: weather-app/screen.jpg
@@ -404,7 +482,6 @@
           gallery:
             - src: weather-app/screen.jpg
               alt: Screen
-        
         - title: Mammals
           id: mammals
           thumbnail: mammals/home.jpg
@@ -432,7 +509,6 @@
               alt: List
             - src: mammals/details.jpg
               alt: Details
-          
         - title: myWorkouts
           id: myworkouts
           thumbnail: myworkouts/logo-1.jpg
@@ -490,7 +566,6 @@
               alt: Wireframes 3
             - src: myworkouts/wireframes-4.jpg
               alt: Wireframes 4
-
     - name: NSSA-290 Networking Essentials for Developers
       projects:
         - title: Campus Network Simulation
@@ -512,7 +587,6 @@
           gallery:
             - src: campus-network/image.jpg
               alt: Network
-
     - name: ISTE 240 Web and Mobile 2
 
     - name: ISTE-121 Computational Problem Solving in Information Domain 2
