@@ -313,8 +313,7 @@
             - src: rack/project-structure-5.jpg
               alt: Project structure views
             - src: rack/firebase.jpeg
-              alt: Firebase console
-        
+              alt: Firebase console   
     - name: ISTE-470 Data Mining and Exploration
     - name: ISTE-442 Secure Web App Development
     - name: ISTE-422 Application Development Practices
