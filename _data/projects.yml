@@ -131,20 +131,65 @@
           completed: 4 May 2025
           description: A doctor's appointments dashboard web application. A project for ISTE-432 course.
           content:
-            - text: for the [[course-link]].
+            - text: This is a backend heavy web application for handling doctor's appointments. It is a group project for the [[course-link]].
               links:
                 - token: course-link
                   text: ISTE-432 Database Application Development course
                   url: /education/rit-courses/#iste432
                   external: false
-            - title: features
-              text: A user can create, edit, and delete artworks. Each artwork supports multiple layers (create,  rearrange, delete layers), and the canvas itself gives access to multiple brushes (brush shapes, change brush settings), to an eraser, a color picker and it gives access to buttons for undo/redo.
+            - title: Roles
+              text: There were 2 of us in the group, and I mostly worked on the frontend section (my teammate was carrying in this case). 
+            - title: Features
+              text: This app supports 2 roles. Doctors can view appointments, schedule test results to other doctors (lab technicians), and perform (add) tests. Patients can schedule appointments, view them, and view their test results.
+            - title: Note
+              text: The idea was to create something more of a hospital management system,but unfortunately there wasn’t enough time for that. 
           technologies: NextJS, Spring, Spring Boot, MySQL
           tag: RIT (ISTE-432)
           gallery:
-            - src: vitalin/gallery-1.jpeg
-              alt: Empty gallery
-
+            - src: vitalin/thumbnail.jpg
+              alt: Logo
+            - src: vitalin/landing.jpeg
+              alt: Landing Page
+            - src: vitalin/register.jpeg
+              alt: Register patients
+            - src: vitalin/login.jpeg
+              alt: Login
+            - src: vitalin/patient/home.jpeg
+              alt: Home
+            - src: vitalin/patient/appointments.jpg
+              alt: Appointments
+            - src: vitalin/patient/appointment-details.jpeg
+              alt: Appointment details
+            - src: vitalin/patient/schedule-appointment.jpeg
+              alt: Schedule Appointment
+            - src: vitalin/patient/view-results.jpeg
+              alt: View test results
+            - src: vitalin/doctor/home.jpeg
+              alt: Doctor home
+            - src: vitalin/doctor/appointment-details.jpeg
+              alt: Doctor appointment details
+            - src: vitalin/doctor/request-test-1.jpeg
+              alt: Request test 1
+            - src: vitalin/doctor/request-test-2.jpeg
+              alt: Request test 2
+            - src: vitalin/doctor/test-requests.jpeg
+              alt: Test requests
+            - src: vitalin/doctor/test-request-details.jpeg
+              alt: Test request details
+            - src: vitalin/doctor/add-results.jpeg
+              alt: Add test results
+            - src: vitalin/profile.jpeg
+              alt: Profile page
+            - src: vitalin/project-structure.jpg
+              alt: Project structure
+            - src: vitalin/backend-1.jpeg
+              alt: Project structure Backend 1
+            - src: vitalin/backend-2.jpeg
+              alt: Project structure Backend 2
+            - src: vitalin/frontend-1.jpeg
+              alt: Project structure Frontend 1
+            - src: vitalin/frontend-2.jpg
+              alt: Project structure Frontend 2
     - name: ISTE-456 Mobile Application Development 2
       projects: 
         - title: Smudge
