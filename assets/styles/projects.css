@@ -105,6 +105,22 @@ h1 {
     opacity: 0;
 }
 
+.title-with-icon {
+    display: inline-flex;
+    align-items: start;
+    gap: 0.5rem;
+}
+.title-with-icon .icon {
+    stroke: var(--primary-color);
+    height: 1.25rem;
+    width: 1.25rem;
+    margin: 0.1rem;
+    padding: 0;
+}
+.section-link:hover .title-with-icon .icon {
+    stroke: var(--primary-color-light);
+}
+
 /* Grid layout for projects */
 @media screen and (min-width: 768px) {
     /* #trek {
