@@ -208,6 +208,13 @@
               text: A user can create, edit, and delete artworks. Each artwork supports multiple layers (create,  rearrange, delete layers), and the canvas itself gives access to multiple brushes (brush shapes, change brush settings), to an eraser, a color picker and it gives access to buttons for undo/redo.
             - title: Side effect
               text: An artwork is a collection of vector paths, and when it gets saved locally, it is transformed into JSON. The app itself doesn’t connect to any API, but because it gets stored that way it could potentially support online backup or even real-time collaboration.
+            - title: Github
+              text: This app can also be found on [[github]].
+              links:
+                - token: github
+                  text:  GitHub
+                  url: https://github.com/michelbrassard/Smudge
+                  external: true
           technologies: Kotlin, Jetpack Compose, Android Studio
           tag: RIT (ISTE-456)
           gallery:
@@ -315,6 +322,53 @@
             - src: rack/firebase.jpeg
               alt: Firebase console   
     - name: ISTE-470 Data Mining and Exploration
+      projects: 
+        - title: Transaction Visualizer
+          id: transaction-visualizer
+          thumbnail: transaction-visualizer/pie-1.jpeg
+          completed: 25 Apr 2024
+          description: A Dash plotly web app that visualizes PDF bank statements. A project for the ISTE-470 course. 
+          content: 
+            - text: This web app allows users to upload PDF bank statements from [[pbz]], and transform them into a calendar heatmap. In the map, a darker color represents a larger spending amount for that day. In addition to that, tiles can be clicked, after which a pie chart will be shown that lists transactions performed for that day. Above that section, a selection picker is added so that a user can choose between different uploaded months (multiple bank statements can be added at same time). It is the final project for the [[course-link]].
+              links:
+                - token: pbz
+                  text:  Privredna Banka Zagreb
+                  url: https://www.pbz.hr/gradjani
+                  external: true
+                - token: course-link
+                  text:  ISTE-470 Data Mining and Exploration
+                  url: /education/rit-courses/#iste470
+                  external: false
+            - title: parsing
+              text: The parsing algorithm uses pdfplumber to turn pdfs into text by isolating the table from the PDF, and then additional cleanup functions are used to remove unnecessary words or characters. 
+            - title: Limitations
+              text: For now, it only parses PDFs from PBZ, but the app could theoretically be extended to support other bank statements too without too much problems. I personally had bank statements from PBZ which is why I worked with them for this project.
+            - title: Issues
+              text: A tricky part for this app is that the structure of the PDFs changes throughout time. Meaning, documents from 2022 are not the same as ones from 2024, there are slight differences. 
+            - title: Github
+              text: This app can also be found on [[github]].
+              links:
+                - token: github
+                  text:  GitHub
+                  url: https://github.com/michelbrassard/transaction-visualiser
+                  external: true
+          technologies: Python, Dash Plotly, Pandas, pdfplumber
+          tag: RIT (ISTE-470)
+          gallery:
+            - src: transaction-visualizer/no-data.jpeg
+              alt: No data uploaded
+            - src: transaction-visualizer/uploaded-data.jpeg
+              alt: Data uploaded
+            - src: transaction-visualizer/pie-1.jpeg
+              alt: Clicked on a day
+            - src: transaction-visualizer/pie-2.jpeg
+              alt: Clicked on another day
+            - src: transaction-visualizer/picker.jpeg
+              alt: Document picker
+            - src: transaction-visualizer/project-structure.jpeg
+              alt: Project Structure
+            - src: transaction-visualizer/wireframes.jpeg
+              alt: Project Structure
     - name: ISTE-442 Secure Web App Development
     - name: ISTE-422 Application Development Practices
     
@@ -706,7 +760,6 @@
               alt: Mobile Navigation Scroll down
             - src: unix-tutorial/project-structure.jpeg
               alt: Project structure
-        
         - title: Dubrovnik Tours
           id: dubrovnik-tours
           thumbnail: dubrovnik-tours/thumbnail.jpg
@@ -764,7 +817,6 @@
               alt: Mobile 3
             - src: dubrovnik-tours/project-structure.jpeg
               alt: Project Structure
-
     - name: ISTE-121 Computational Problem Solving in Information Domain 2
       projects: 
         - title: Snake Game
