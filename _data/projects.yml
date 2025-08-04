@@ -632,6 +632,64 @@
             - src: campus-network/image.jpg
               alt: Network
     - name: ISTE 240 Web and Mobile 2
+      projects:
+        - title: Dubrovnik Tours
+          id: dubrovnik-tours
+          thumbnail: dubrovnik-tours/thumbnail.jpg
+          completed: 24 Apr 2022
+          description: A tour website for Dubrovnik. Individual project for the ISTE-240 course.
+          content: 
+            - text: This is a simplified tour website of the city Dubrovnik, Croatia. It shows 10 popular spots from the old town, and briefly explains the history behind it. It is the individual project for the [[course-link]].
+              links:
+                - token: course-link
+                  text:  ISTE-240 Web and Mobile 2 course
+                  url: /education/rit-courses/#iste240
+                  external: false
+            - title: SVG
+              text: The introductory page has an interactive SVG component that shows the map of Dubrovnik. Each dot is a link that represents a spot covered in the tour.
+            - title: Note
+              text: This website also has a comments/feedback section, but the database is not available any more so no screenshots were provided for it. Also, not all pages are added for the tour because they all follow the same structure. 
+            - title: Font
+              text: I used the [[font]] typeface for this project.
+              links: 
+                - token: font
+                  text: Montserrat
+                  url: https://fonts.google.com/specimen/Montserrat
+                  external: true
+          technologies: HTML, CSS, JS, PHP
+          tag: RIT (ISTE-240)
+          colors:
+            - "#BD4A39"
+            - "#FFC1A7"
+            - "#FFDBBF"
+            - "#740001"
+            - "#460000"
+            - "#FFFFFF"
+          gallery:
+            - src: dubrovnik-tours/introduction.jpeg
+              alt: Introduction
+            - src: dubrovnik-tours/map.jpeg
+              alt: Map
+            - src: dubrovnik-tours/tour-navigation.jpeg
+              alt: Tour list 
+            - src: dubrovnik-tours/tour-1.jpeg
+              alt: Tour 1
+            - src: dubrovnik-tours/tour-2.jpeg
+              alt: Tour 2
+            - src: dubrovnik-tours/tour-3.jpeg
+              alt: Tour 3
+            - src: dubrovnik-tours/about.jpeg
+              alt: About
+            - src: dubrovnik-tours/references.jpeg
+              alt: References
+            - src: dubrovnik-tours/mobile-1.jpg
+              alt: Mobile 1
+            - src: dubrovnik-tours/mobile-2.jpeg
+              alt: Mobile 2
+            - src: dubrovnik-tours/mobile-3.jpeg
+              alt: Mobile 3
+            - src: dubrovnik-tours/project-structure.jpeg
+              alt: Project Structure
 
     - name: ISTE-121 Computational Problem Solving in Information Domain 2
       projects: 
