@@ -633,6 +633,80 @@
               alt: Network
     - name: ISTE 240 Web and Mobile 2
       projects:
+        - title: Unix Tutorial
+          id: unix-tutorial
+          thumbnail: unix-tutorial/logo.jpg
+          completed: 1 May 2022
+          description: A tutorial website for learning beginner lever Unix commands. Group project for the ISTE-240 course.
+          content: 
+            - text: This is a tutorial website that shows potential learners how to use Unix commands. It shows how to view directory contents, how to move through directories, how to create, edit, delete files, how to change permissions, and finally, how to connect and upload a project to a server. This is a group project for the [[course-link]]. 
+              links:
+                - token: course-link
+                  text:  ISTE-240 Web and Mobile 2 course
+                  url: /education/rit-courses/#iste240
+                  external: false
+            - title: Cheat sheet
+              text: In addition to step by step screenshots for using commands, the website also allows users to download a cheat sheet with Unix commands.
+            - title: Contribution
+              text: I worked on the code for the website, and made the screenshots. 
+            - title: Note
+              text: A feedback section is also a part of the project, but the database is not available any more. Also, not all pages of the tutorial are displayed.
+            - title: Font
+              text: The [[font]] typeface is used for the project.
+              links: 
+                - token: font
+                  text: Quicksand
+                  url: https://fonts.google.com/specimen/Quicksand
+                  external: true
+          technologies: HTML, CSS, JS, PHP
+          tag: RIT (ISTE-240)
+          colors:
+            - "#007AFF"
+            - "#DBDBDB"
+            - "#EBEBEB"
+            - "#F7F7F7"
+            - "#474747"
+            - "#FFFFFF"
+          gallery:
+            - src: unix-tutorial/logo.jpg
+              alt: Logo
+            - src: unix-tutorial/home.jpeg
+              alt: Home
+            - src: unix-tutorial/home-navigation.jpeg
+              alt: Home Navigation
+            - src: unix-tutorial/home-hover.jpeg
+              alt: Home Navigation Hover
+            - src: unix-tutorial/commands.jpeg
+              alt: Commands
+            - src: unix-tutorial/commands-print.jpeg
+              alt: Commands PDF for print
+            - src: unix-tutorial/tutorial-1.jpeg
+              alt: Tutorial page 1
+            - src: unix-tutorial/tutorial-2.jpeg
+              alt: Tutorial page 2
+            - src: unix-tutorial/tutorial-3.jpeg
+              alt: Tutorial page 3
+            - src: unix-tutorial/tutorial-4.jpeg
+              alt: Tutorial page 4
+            - src: unix-tutorial/tutorial-5.jpeg
+              alt: Tutorial page 5
+            - src: unix-tutorial/tutorial-6.jpeg
+              alt: Tutorial page 6
+            - src: unix-tutorial/tutorial-7.jpeg
+              alt: Tutorial page 7
+            - src: unix-tutorial/references.jpeg
+              alt: References
+            - src: unix-tutorial/mobile.jpeg
+              alt: Mobile
+            - src: unix-tutorial/mobile-hover-1.jpeg
+              alt: Mobile Navigation hover 1
+            - src: unix-tutorial/mobile-hover-2.jpeg
+              alt: Mobile Navigation hover 2
+            - src: unix-tutorial/mobile-scroll-down.jpeg
+              alt: Mobile Navigation Scroll down
+            - src: unix-tutorial/project-structure.jpeg
+              alt: Project structure
+        
         - title: Dubrovnik Tours
           id: dubrovnik-tours
           thumbnail: dubrovnik-tours/thumbnail.jpg
