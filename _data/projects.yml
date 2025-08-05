@@ -878,14 +878,35 @@
               alt: Project structure 4
         - title: JavaFX Text Editor
           id: javafx-text-editor
-          thumbnail:
-          completed: nan
+          thumbnail: javafx-text-editor/thumbnail.jpeg
+          completed: 2 Feb 2022
           description: A simple text editor created with JavaFX. The second homework for the ISTE-121 course.
+          content:
+            - text: This is a simplified file editor that allows users to create, save, edit, rename and delete .txt files. Also, it has tooltip popups that show a placeholder “about” data (in this case it is personal info), and the current word count of the file. This was the second homework of the [[course-link]].
+              links:
+                - token: course-link
+                  text:  ISTE-121 ISTE-121 Computational Problem Solving in Information Domain 2 course
+                  url: /education/rit-courses/#iste121
+                  external: false
           technologies: Java (JavaFX)
           tag: RIT (ISTE-121)
           gallery:
-            - src:
-              alt: 
+            - src: javafx-text-editor/home-no-text.jpeg
+              alt: Empty editor
+            - src: javafx-text-editor/home-text.jpeg
+              alt: Editor with text
+            - src: javafx-text-editor/file.jpeg
+              alt: File dropdown
+            - src: javafx-text-editor/tools-menu.jpeg
+              alt: Tools dropdown
+            - src: javafx-text-editor/tools-popup.jpeg
+              alt: Tools popup
+            - src: javafx-text-editor/help-menu.jpeg
+              alt: Help dropdown
+            - src: javafx-text-editor/help-popup.jpeg
+              alt: Help popup
+            - src: javafx-text-editor/project-structure.jpeg
+              alt: Project structure
     - name: NMDE-111 New Media Design Digital Survey 1
       projects: 
         - title: DeliverEat
