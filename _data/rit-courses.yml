@@ -111,11 +111,11 @@
           tools-technologies: Java, JavaFX
           projects:
             - title: Snake Game (Final Group Project)
-              description: Description
+              description: This is a final group project for which students had to create a snake game with JavaFX, and to connect it to a multithreaded server in some way. My teammate and I decided to add a chat section, and the ability of the current player to stream their gameplay to other connected players. 
               id: snake-game
               name: Snake Game
             - title: JavaFX Text Editor (Homework 2)
-              description: Description
+              description: This is one of the homeworks assigned for this course for which students had to create a simple text editor with JavaFX. Users can create, edit, rename, and delete .txt files. 
               id: javafx-text-editor
               name: JavaFX Text Editor
           notes-comments:

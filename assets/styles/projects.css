@@ -117,8 +117,20 @@ h1 {
     margin: 0.1rem;
     padding: 0;
 }
+.title-with-icon .group {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+.title-with-icon .group p {
+    font-size: 0.85rem;
+    color: var(--primary-color);
+}
 .section-link:hover .title-with-icon .icon {
     stroke: var(--primary-color-light);
+}
+.section-link:hover .title-with-icon p {
+    color: var(--primary-color-light);
 }
 
 /* Grid layout for projects */
