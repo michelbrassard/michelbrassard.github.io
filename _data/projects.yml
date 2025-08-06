@@ -375,6 +375,69 @@
               alt: Project Structure
     - name: ISTE-442 Secure Web App Development
       projects:
+        - title: Scynscape
+          id: scynscape
+          group: true
+          members: 3
+          thumbnail: scynscape/logo.jpg
+          completed: 22 Apr 2024
+          description: A multiplayer educational game (chemistry). A group project for the ISTE-442 course.
+          content:
+            - text: This is a multiplayer turn-based educational escape room type game. It was the final group project for the [[course-link]]. The requirement for the project was to create something that gamifies education, to make it multiplayer and turn based.
+              links:
+                - token: course-link
+                  text: ISTE-442 Secure Web App Development course
+                  url: /education/rit-courses/#iste442
+                  external: false
+            - title: Topic
+              text: For the topic, my teammates and I chose chemistry as it combines well with an escape room type game. A player has to combine elements, create new compounds, and use them to progress the game. The recipes are somewhat grounded in reality (they are not made up, but they are simplified). For example, a player has to pick up zinc and copper, create sheets from that, combine it with acid, and with it assemble a battery.
+            - title: Turn based
+              text: Each player has 20 seconds for their turn to progress as much as possible. When a turn ends, the game of the current player is paused, and then the other player can begin their turn. This repeats until one of the players escapes, making them the winner of the game. 
+            - title: Chat
+              text: In the lobby, players can chat before the game starts. (bottom left corner)
+            - title: Note
+              text: I worked on the gameplay section (combining Phaser with Angular), but other than that I didn't have much contribution in this project. 
+          technologies: NestJS, TypeORM, MySQL, Angular, Phaser
+          tag: RIT (ISTE-442)
+          gallery:
+            - src: scynscape/logo.jpg
+              alt: Logo
+            - src: scynscape/home.jpeg
+              alt: Home
+            - src: scynscape/how-to-1.jpeg
+              alt: How to 1
+            - src: scynscape/how-to-2.jpeg
+              alt: How to 2
+            - src: scynscape/about.jpeg
+              alt: About
+            - src: scynscape/login.jpeg
+              alt: Log in
+            - src: scynscape/signup.jpeg
+              alt: Sign up
+            - src: scynscape/menu.jpeg
+              alt: Menu
+            - src: scynscape/account.jpeg
+              alt: Account
+            - src: scynscape/lobbies.jpeg
+              alt: Lobbies
+            - src: scynscape/create-lobby.jpeg
+              alt: Create a lobby
+            - src: scynscape/pick-lobby.jpeg
+              alt: Pick lobby
+            - src: scynscape/lobby-wait.jpeg
+              alt: Wait in lobby
+            - src: scynscape/game.jpeg
+              alt: Game
+            - src: scynscape/project-structure.jpeg
+              alt: Project structure
+            - src: scynscape/project-structure-backend-1.jpeg
+              alt: Project structure backend 1
+            - src: scynscape/project-structure-backend-2.jpeg
+              alt: Project structure backend 2
+            - src: scynscape/project-structure-frontend-1.jpeg
+              alt: Project structure frontend 1
+            - src: scynscape/project-structure-frontend-2.jpeg
+              alt: Project structure frontend 2
         - title: SeeTech
           id: seetech
           thumbnail: seetech/logo.jpg
