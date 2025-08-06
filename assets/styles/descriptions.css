@@ -1,0 +1,92 @@
+h1 {
+    margin-bottom: 1.25rem;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+#side-navigation {
+    border-right: var(--design-element-color) 1px solid;
+}
+#side-navigation .links {
+    position: sticky;
+    top: 0;
+    width: 20vw;
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-right: 1rem;
+    border-bottom: var(--design-element-color) 1px solid;
+}
+#side-navigation .links .title {
+    font-weight: 600;
+    margin-bottom: 0rem;
+    margin-top: 1rem;
+}
+#side-navigation .links .xs-title {
+    margin: 0;
+    margin-top: 0.5rem;
+}
+#side-navigation .links a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 0.25rem;
+    color: var(--primary-color);
+}
+#side-navigation .xs-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#side-navigation .links.courses a {
+    font-size: 0.75rem;
+}
+#side-navigation .links.projects a {
+    font-size: 1rem;
+}
+
+.content {
+    background-color: white;
+    padding: 1rem;
+}
+.content button {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: var(--design-element-color) 1px solid;
+}
+.content button svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    stroke: var(--text-color-light);
+}
+.project-title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.project-title p {
+    color: var(--text-color-light);
+    font-size: 0.85rem;
+}
+.text-with-icon strong {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.text-with-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    stroke: var(--primary-color);
+}
+
+@media screen and (max-width: 768px) {
+    #side-navigation {
+        display: none;
+    }
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}

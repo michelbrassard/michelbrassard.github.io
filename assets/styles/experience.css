@@ -1,0 +1,45 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+.content h6:first-of-type {
+    margin-top: 0;
+}
+.content .details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 30%;
+    border-right: var(--design-element-color) 1px solid;
+}
+.content .details a {
+    margin-top: 0.25rem;
+    margin-bottom: 0.125rem;
+}
+.content .details p {
+    margin-bottom: 0.125rem;
+}
+.content .description {
+    background-color: white;
+    padding-left: 1rem;
+}
+.content .description p {
+    margin-top: 0.25rem;
+}
+.sm-title {
+    margin-bottom: 0.125rem;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .content .details {
+        border: none;
+    }
+    .content .description {
+        padding: 0;
+        margin-top: 1rem;
+    }
+}

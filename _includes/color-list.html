@@ -1,0 +1,52 @@
+<style>
+    .color-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 1rem 1rem 1rem 0rem;
+    }
+    .color-list .item {
+        padding: 0.5rem;
+        min-width: 3.5rem;
+        border-radius: 0.75rem;
+        transition: all .2s;
+        border: var(--design-element-color) 1px solid;
+    }
+    .color-list .item:hover {
+        border: var(--primary-color-light) 1px solid;
+        background-color: var(--primary-color) !important;
+        cursor: copy;
+    }
+    .color-list .item p {
+        opacity: 0;
+        font-size: 0.75rem;
+        color: var(--primary-color-light);
+        margin: 0%;
+        transition: all .2s;
+        text-align: center;
+    }
+    .color-list .item:hover p {
+        opacity: 1;
+    }
+</style>
+
+<div class="color-list">
+    {% for color in include.colors %}
+    <!-- this is a false positive error, as the rule will not be empty -->
+    <div 
+        style="background-color: {{ color }};"
+        class="item" 
+        onclick="copyToClipboard('{{ color }}')"
+        title="Copy Color Hex"
+    >
+        <p>{{ color }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+<script>
+  function copyToClipboard(text) {
+    navigator.clipboard.writeText(text)
+      .catch(err => alert('Failed to copy: ' + err));
+  }
+</script>

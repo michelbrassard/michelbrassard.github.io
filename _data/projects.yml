@@ -1,0 +1,1532 @@
+- name: Other
+  categories:
+    - name: personal
+      projects: 
+        - title: Trek
+- name: RIT (College)
+  categories:
+    - name: ISTE-500/501 Senior Development Project
+      projects:
+        - title: Realex.in
+          id: realex
+          group: true
+          members: 6
+          thumbnail: realex/logo.jpeg
+          completed: 22 Apr 2025
+          description: A real estate management platform supported by a private blockchain. Senior developmet group project (ISTE-500/501).
+          content: 
+            - text: Realex.in (“relax in” or "real" as in real estate) is a multiuser web application for managing investments of non-standard vacation homes. The application has a traditional frontend and backend, but it also utilizes a private blockchain. This project is a senior group assignment for the [[course-link]], and a capstone project for the Web and Mobile bachelor's degree. 
+              links: 
+                - token: course-link
+                  text: ISTE-500/501 Senior Development Project course
+                  url: /education/rit-courses/#iste500
+                  external: false
+            - title: Idea
+              text: For this course, it is not the professor, or the students that comes up with an idea, it is an external person, a client/sponsor, that presents a certain problem, and it is up to students to explore, and solve it if possible. 
+            - text: The client's “problem” was that there isn't any real public control when it comes to building non-standard vacation homes. Usually, a person or a company with enough capital will build something, and then rent it on Airbnb, or resell it to someone else. The point was that people in general don't have a say on whether they would like to have something built or not.
+            - text: The sponsor's idea was to create a web application with blockchain support that will try and solve this problem, and it was up to my teammates and I to establish concrete features and build a minimum viable product. 
+            - title: Roles
+              text: There are 3 roles for this application, an admin, creator, and regular user. A regular user, in short, can invest in a property and buy/sell tokens, a creator can post, edit, delete property ideas, and the admin can verify idea creators, and approve new property ideas. 
+            - title: Application flow
+              text: When it comes to the application flow, we can begin with a user who finds a property idea, and invests in it. Later, after the property receives enough funds, construction begins. After it is done, the investor picks the dates of their stay, and receives tokens that are stored on the blockchain. With the tokens, the investor can either use them to stay in the newly constructed property (stay dates are defined on the smart contract) or sell them to the secondary market.
+            - title: Solution
+              text: The idea for the solution was to allow the public to decide whether they want to build something by investing in some property idea (voting with wallets), and to allow proposing real estate ideas without having the necessary funds right away.
+            - title: Clarification
+              text: The main difference between Airbnb and Realex.in is that it deals with investments, not existing properties. The point is that people invest in some idea/plan for the property, potentially realize it, and then, as a reward, they will be able to stay in that property. 
+            - title: Security
+              text: As this platform would deal with large amounts of capital, for the current solution, verification goes through the admin (admin can see all the needed documents that are uploaded by the creator for a certain property idea).
+            - title: Opensanctions
+              text: When the admin views users, data from [[opensanctions]] is retrieved which is used to mimic a KYC check. 
+              links:
+                - token: opensanctions
+                  text: OpenSanctions
+                  url: https://www.opensanctions.org/
+                  external: true
+            - title: Blockchain
+              text: One of the requirements for the project was to utilize blockchain. My teammates and I decided to use it only for the most critical part of the application. In this case, it is for the tokens, or better explained as “tickets” that grant a user the ability to stay in the place they have invested in. For everything else, a regular database was used, because it is much better for regular CRUD operations. One of the downsides of this way is that on-chain, and off-chain data had to be synchronised.
+            - text: "[[fabric]] was used because it is a private blockchain. A solution with a public blockchain like Ethereum could be implemented, but it seemed like a better choice to use Hyperledger because it designed for businesses, and it may be easier to deal with regulations like GDPR if its a private one."
+              links:
+                - token: fabric
+                  text: Hyperledger Fabric
+                  url: https://hyperledger-fabric.readthedocs.io/en/release-2.5/
+                  external: true
+            - title: Team
+              text: There were 6 of us in the team. (designer, frontend, backend developers, QA, documentation writer, team lead)
+            - text: I was the team lead, and I acted as a “bridge” between the sponsor, and the development team. This means I organized meetings, established use cases, worked on the work breakdown structure, and on the project plan. I also helped with the presentations, gate reviews, and sponsor reports. I haven’t done much programming for this project, only at the end of the development phase on the frontend side (bug fixes, minor features). 
+            - title: Final notes
+              text: The project itself is tricky to understand, and there are a lot of unexplored scenarios and even potential legal issues (when dealing with large amounts of capital an app has to follow regulations, KYC, AML, GDPR…) that are not addressed with this application, but I think that it is important to emphasize the process of getting to some solution, communicating with the sponsor, reaching a consensus, planning, organizing everything, and synchronising with the team.
+          technologies: React, ThreeJS, NodeJS, Express, Hyperledger Fabric, Supabase, PostgreSQL
+          tag: RIT (ISTE-500/501)
+          colors:
+            - "#0074D9"
+            - "#EEF4F9"
+            - "#FFFFFF"
+            - "#32292F"
+            - "#8C878A"
+            - "#F0F0F0"
+            - "#DB162F"
+            - "#000000"
+          gallery:
+            - src: realex/landing.jpeg
+              alt: Landing Page
+            - src: realex/signup-1.jpeg
+              alt: Sign up 1
+            - src: realex/signup-2.jpeg
+              alt: Sign up 2
+            - src: realex/signup-3.jpeg
+              alt: Sign up 3
+            - src: realex/idea-creator-signup-1.jpeg
+              alt: Sign up (Idea Creator) 1
+            - src: realex/idea-creator-signup-2.jpeg
+              alt: Sign up (Idea Creator) 2
+            - src: realex/home.jpeg
+              alt: Home Page
+            - src: realex/notifications.jpeg
+              alt: Notifications
+            - src: realex/profile-1.jpeg
+              alt: Profile 1
+            - src: realex/profile-2.jpeg
+              alt: Profile 2
+            - src: realex/property-1.jpeg
+              alt: Property 1
+            - src: realex/property-2.jpeg
+              alt: Property 2
+            - src: realex/property-3.jpeg
+              alt: Property 3
+            - src: realex/investments.jpeg
+              alt: Investments
+            - src: realex/payment.jpeg
+              alt: Payment
+            - src: realex/pick-tokens-1.jpeg
+              alt: Pick tokens 1
+            - src: realex/pick-tokens-2.jpeg
+              alt: Pick tokens 2
+            - src: realex/view-tokens.jpeg
+              alt: View Tokens
+            - src: realex/sell-tokens.jpeg
+              alt: Sell Tokens
+            - src: realex/secondary-market.jpeg
+              alt: Secondary Market
+            - src: realex/view-secondary-market.jpeg
+              alt: Secondary Market Details
+            - src: realex/upgrade.jpeg
+              alt: Upgrade to Creator role
+            - src: realex/creator-requests.jpeg
+              alt: Admin views upgrade requests
+            - src: realex/view-idea-creator-request.jpeg
+              alt: Admin views an upgrade request 
+            - src: realex/view-opensanctions.jpeg
+              alt: Admin views OpenSanctions data 
+            - src: realex/create-property.jpeg
+              alt: Creating a new propery (for creator)
+            - src: realex/view-property-requests.jpeg
+              alt: Admin views new property requests
+            - src: realex/project-structure-frontend.jpeg
+              alt: Frontend project structure
+            - src: realex/project-structure-backend.jpeg
+              alt: Backend project structure
+    - name: ISTE-432 Database Application Development
+      projects: 
+        - title: Vitalin
+          id: vitalin
+          group: true
+          members: 2
+          thumbnail: vitalin/thumbnail.jpg
+          completed: 4 May 2025
+          description: A doctor's appointments dashboard web application. A project for ISTE-432 course.
+          content:
+            - text: This is a backend heavy web application for handling doctor's appointments. It is a group project for the [[course-link]].
+              links:
+                - token: course-link
+                  text: ISTE-432 Database Application Development course
+                  url: /education/rit-courses/#iste432
+                  external: false
+            - title: Roles
+              text: There were 2 of us in the group, and I mostly worked on the frontend section (my teammate was carrying in this case). 
+            - title: Features
+              text: This app supports 2 roles. Doctors can view appointments, schedule test results to other doctors (lab technicians), and perform (add) tests. Patients can schedule appointments, view them, and view their test results.
+            - title: Note
+              text: The idea was to create something more of a hospital management system,but unfortunately there wasn’t enough time for that. 
+          technologies: NextJS, Spring, Spring Boot, MySQL
+          tag: RIT (ISTE-432)
+          gallery:
+            - src: vitalin/thumbnail.jpg
+              alt: Logo
+            - src: vitalin/landing.jpeg
+              alt: Landing Page
+            - src: vitalin/register.jpeg
+              alt: Register patients
+            - src: vitalin/login.jpeg
+              alt: Login
+            - src: vitalin/patient/home.jpeg
+              alt: Home
+            - src: vitalin/patient/appointments.jpg
+              alt: Appointments
+            - src: vitalin/patient/appointment-details.jpeg
+              alt: Appointment details
+            - src: vitalin/patient/schedule-appointment.jpeg
+              alt: Schedule Appointment
+            - src: vitalin/patient/view-results.jpeg
+              alt: View test results
+            - src: vitalin/doctor/home.jpeg
+              alt: Doctor home
+            - src: vitalin/doctor/appointment-details.jpeg
+              alt: Doctor appointment details
+            - src: vitalin/doctor/request-test-1.jpeg
+              alt: Request test 1
+            - src: vitalin/doctor/request-test-2.jpeg
+              alt: Request test 2
+            - src: vitalin/doctor/test-requests.jpeg
+              alt: Test requests
+            - src: vitalin/doctor/test-request-details.jpeg
+              alt: Test request details
+            - src: vitalin/doctor/add-results.jpeg
+              alt: Add test results
+            - src: vitalin/profile.jpeg
+              alt: Profile page
+            - src: vitalin/project-structure.jpg
+              alt: Project structure
+            - src: vitalin/backend-1.jpeg
+              alt: Project structure Backend 1
+            - src: vitalin/backend-2.jpeg
+              alt: Project structure Backend 2
+            - src: vitalin/frontend-1.jpeg
+              alt: Project structure Frontend 1
+            - src: vitalin/frontend-2.jpg
+              alt: Project structure Frontend 2
+    - name: ISTE-456 Mobile Application Development 2
+      projects: 
+        - title: Smudge
+          id: smudge
+          thumbnail: smudge/thumbnail.jpg
+          completed: 5 May 2025
+          description: A simple Android drawing application inspired by Procreate Pocket. A project for ISTE-456 course.
+          content:
+            - text: This is a simplified vector drawing application built for the Android Platform. It is the final individual project for the [[course-link]].
+              links:
+                - token: course-link
+                  text: ISTE-456 Mobile Application Development 2 course
+                  url: /education/rit-courses/#iste456
+                  external: false
+            - title: features
+              text: A user can create, edit, and delete artworks. Each artwork supports multiple layers (create,  rearrange, delete layers), and the canvas itself gives access to multiple brushes (brush shapes, change brush settings), to an eraser, a color picker and it gives access to buttons for undo/redo.
+            - title: Side effect
+              text: An artwork is a collection of vector paths, and when it gets saved locally, it is transformed into JSON. The app itself doesn’t connect to any API, but because it gets stored that way it could potentially support online backup or even real-time collaboration.
+            - title: Github
+              text: This app can also be found on [[github]].
+              links:
+                - token: github
+                  text:  GitHub
+                  url: https://github.com/michelbrassard/Smudge
+                  external: true
+          technologies: Kotlin, Jetpack Compose, Android Studio
+          tag: RIT (ISTE-456)
+          gallery:
+            - src: smudge/gallery-1.jpeg
+              alt: Empty gallery
+            - src: smudge/gallery-2.jpeg
+              alt: Gallery with empty artwork
+            - src: smudge/gallery-3.jpeg
+              alt: Gallery with filled artwork
+            - src: smudge/gallery-4.jpeg
+              alt: Delete artwork
+            - src: smudge/canvas.jpeg
+              alt: Empty canvas
+            - src: smudge/canvas-drawing.jpeg
+              alt: Canvas with drawing
+            - src: smudge/layers.jpeg
+              alt: Layers
+            - src: smudge/colors.jpeg
+              alt: Color wheel
+            - src: smudge/pen.jpeg
+              alt: Brush
+            - src: smudge/wireframes.jpeg
+              alt: Wireframes
+            - src: smudge/project-structure.jpg
+              alt: Project structure
+            - src: smudge/project-structure-canvas.jpeg
+              alt: Project structure canvas
+            - src: smudge/project-structure-dto.jpeg
+              alt: Project structure DTO
+            - src: smudge/project-structure-gallery.jpeg
+              alt: Project structure gallery
+            - src: smudge/project-structure-model.jpeg
+              alt: Project structure model
+    - name: ISTE-454 Mobile Application Development 1
+      projects: 
+        - title: Rack
+          id: rack
+          thumbnail: rack/thumbnail.jpg
+          completed: 9 Dec 2024
+          description: An iOS notes and remiders combo app for course work. A project for the ISTE-454 course.
+          content:
+            - text: This is a notes, reminders, calendar, and files app combined into one specialized for course work (assignemnts, deadlines, courses, terms etc.). It is built on the iOS platform, uses [[firebase]] for storage, and it is the final individual project for the [[course-link]].
+              links: 
+                - token: firebase
+                  text: Firebase
+                  url: https://firebase.google.com/
+                  external: true
+                - token: course-link
+                  text: ISTE-454 Mobile Application Development 1 course
+                  url: /education/rit-courses/#iste454
+                  external: false
+            - title: Unfinished
+              text: Unfortunately, the project is not complete, calendar and file features are missing, notifications don't work properly, and there are bugs here and there that need to be fixed. 
+          technologies: Swift, SwiftUI, XCode, Firebase (Firestore)
+          tag: RIT (ISTE-454)
+          gallery:
+            - src: rack/term.jpeg
+              alt: No terms
+            - src: rack/create-term.jpeg
+              alt: Create term
+            - src: rack/edit-term.jpeg
+              alt: Edit term
+            - src: rack/delete-term.jpeg
+              alt: Delete term
+            - src: rack/home-1.jpeg
+              alt: Home
+            - src: rack/home-2.jpeg
+              alt: Home with alerts
+            - src: rack/calendar.jpeg
+              alt: Calendar
+            - src: rack/create-course-1.jpeg
+              alt: No courses
+            - src: rack/create-course-2.jpeg
+              alt: Create a course
+            - src: rack/courses.jpeg
+              alt: Courses
+            - src: rack/edit-course.jpeg
+              alt: Edit course
+            - src: rack/delete-course.jpeg
+              alt: Delete course
+            - src: rack/reminders-1.jpeg
+              alt: No courses and reminders
+            - src: rack/reminders-2.jpeg
+              alt: No reminders
+            - src: rack/reminders-3.jpeg
+              alt: Reminder form empty
+            - src: rack/reminders-4.jpeg
+              alt: Reminder form full
+            - src: rack/reminders-5.jpeg
+              alt: Reminder
+            - src: rack/reminders-6.jpeg
+              alt: Complete reminder
+            - src: rack/reminders-7.jpeg
+              alt: Delete/edit reminder
+            - src: rack/project-structure-1.jpeg
+              alt: Project structure
+            - src: rack/project-structure-2.jpeg
+              alt: Project structure components
+            - src: rack/project-structure-3.jpeg
+              alt: Project structure forms
+            - src: rack/project-structure-4.jpeg
+              alt: Project structure view models
+            - src: rack/project-structure-5.jpg
+              alt: Project structure views
+            - src: rack/firebase.jpeg
+              alt: Firebase console   
+    - name: ISTE-470 Data Mining and Exploration
+      projects: 
+        - title: Transaction Visualizer
+          id: transaction-visualizer
+          thumbnail: transaction-visualizer/pie-1.jpeg
+          completed: 25 Apr 2024
+          description: A Dash plotly web app that visualizes PDF bank statements. A project for the ISTE-470 course. 
+          content: 
+            - text: This web app allows users to upload PDF bank statements from [[pbz]], and transform them into a calendar heatmap. In the map, a darker color represents a larger spending amount for that day. In addition to that, tiles can be clicked, after which a pie chart will be shown that lists transactions performed for that day. Above that section, a selection picker is added so that a user can choose between different uploaded months (multiple bank statements can be added at same time). It is the final project for the [[course-link]].
+              links:
+                - token: pbz
+                  text:  Privredna Banka Zagreb
+                  url: https://www.pbz.hr/gradjani
+                  external: true
+                - token: course-link
+                  text:  ISTE-470 Data Mining and Exploration
+                  url: /education/rit-courses/#iste470
+                  external: false
+            - title: parsing
+              text: The parsing algorithm uses pdfplumber to turn pdfs into text by isolating the table from the PDF, and then additional cleanup functions are used to remove unnecessary words or characters. 
+            - title: Limitations
+              text: For now, it only parses PDFs from PBZ, but the app could theoretically be extended to support other bank statements too without too much problems. I personally had bank statements from PBZ which is why I worked with them for this project.
+            - title: Issues
+              text: A tricky part for this app is that the structure of the PDFs changes throughout time. Meaning, documents from 2022 are not the same as ones from 2024, there are slight differences. 
+            - title: Github
+              text: This app can also be found on [[github]].
+              links:
+                - token: github
+                  text:  GitHub
+                  url: https://github.com/michelbrassard/transaction-visualiser
+                  external: true
+          technologies: Python, Dash Plotly, Pandas, pdfplumber
+          tag: RIT (ISTE-470)
+          gallery:
+            - src: transaction-visualizer/no-data.jpeg
+              alt: No data uploaded
+            - src: transaction-visualizer/uploaded-data.jpeg
+              alt: Data uploaded
+            - src: transaction-visualizer/pie-1.jpeg
+              alt: Clicked on a day
+            - src: transaction-visualizer/pie-2.jpeg
+              alt: Clicked on another day
+            - src: transaction-visualizer/picker.jpeg
+              alt: Document picker
+            - src: transaction-visualizer/project-structure.jpeg
+              alt: Project Structure
+            - src: transaction-visualizer/wireframes.jpeg
+              alt: Project Structure
+    - name: ISTE-442 Secure Web App Development
+      projects:
+        - title: Scynscape
+          id: scynscape
+          group: true
+          members: 3
+          thumbnail: scynscape/logo.jpg
+          completed: 22 Apr 2024
+          description: A multiplayer educational game (chemistry). A group project for the ISTE-442 course.
+          content:
+            - text: This is a multiplayer turn-based educational escape room type game. It was the final group project for the [[course-link]]. The requirement for the project was to create something that gamifies education, to make it multiplayer and turn based.
+              links:
+                - token: course-link
+                  text: ISTE-442 Secure Web App Development course
+                  url: /education/rit-courses/#iste442
+                  external: false
+            - title: Topic
+              text: For the topic, my teammates and I chose chemistry as it combines well with an escape room type game. A player has to combine elements, create new compounds, and use them to progress the game. The recipes are somewhat grounded in reality (they are not made up, but they are simplified). For example, a player has to pick up zinc and copper, create sheets from that, combine it with acid, and with it assemble a battery.
+            - title: Turn based
+              text: Each player has 20 seconds for their turn to progress as much as possible. When a turn ends, the game of the current player is paused, and then the other player can begin their turn. This repeats until one of the players escapes, making them the winner of the game. 
+            - title: Chat
+              text: In the lobby, players can chat before the game starts. (bottom left corner)
+            - title: Note
+              text: I worked on the gameplay section (combining Phaser with Angular), but other than that I didn't have much contribution in this project. 
+          technologies: NestJS, TypeORM, MySQL, Angular, Phaser
+          tag: RIT (ISTE-442)
+          gallery:
+            - src: scynscape/logo.jpg
+              alt: Logo
+            - src: scynscape/home.jpeg
+              alt: Home
+            - src: scynscape/how-to-1.jpeg
+              alt: How to 1
+            - src: scynscape/how-to-2.jpeg
+              alt: How to 2
+            - src: scynscape/about.jpeg
+              alt: About
+            - src: scynscape/login.jpeg
+              alt: Log in
+            - src: scynscape/signup.jpeg
+              alt: Sign up
+            - src: scynscape/menu.jpeg
+              alt: Menu
+            - src: scynscape/account.jpeg
+              alt: Account
+            - src: scynscape/lobbies.jpeg
+              alt: Lobbies
+            - src: scynscape/create-lobby.jpeg
+              alt: Create a lobby
+            - src: scynscape/pick-lobby.jpeg
+              alt: Pick lobby
+            - src: scynscape/lobby-wait.jpeg
+              alt: Wait in lobby
+            - src: scynscape/game.jpeg
+              alt: Game
+            - src: scynscape/project-structure.jpeg
+              alt: Project structure
+            - src: scynscape/project-structure-backend-1.jpeg
+              alt: Project structure backend 1
+            - src: scynscape/project-structure-backend-2.jpeg
+              alt: Project structure backend 2
+            - src: scynscape/project-structure-frontend-1.jpeg
+              alt: Project structure frontend 1
+            - src: scynscape/project-structure-frontend-2.jpeg
+              alt: Project structure frontend 2
+        - title: SeeTech
+          id: seetech
+          thumbnail: seetech/logo.jpg
+          completed: 5 Apr 2024
+          description: A web-shop for tech products. Individual project for the ISTE-422 course.
+          content: 
+            - text: This is a simple web-shop that "sells" tech products. It allows users to signup, login, browse, add to cart, create orders, and to “buy” products. In addition to that, users can change their account information if needed. This was an individual project for the [[course-link]]. The idea was to pick some technology (VueJS), create something with it, and research it in the context of security and ease of development. 
+              links: 
+                - token: course-link
+                  text: ISTE-442 Secure Web App Development course
+                  url: /education/rit-courses/#iste442
+                  external: false
+          technologies: NodeJS, Express, VueJS, MySQL
+          tag: RIT (ISTE-442)
+          colors:
+            - "#2C3E50"
+            - "#45F1BD"
+            - "#4DC9A4"
+            - "#555555"
+            - "#CCCCCC"
+            - "#EEEEEE"
+            - "#FFFFFF"
+            - "#FF1122"
+            - "#FF616B"
+            - "#FFEFF1"
+          gallery:
+            - src: seetech/logo.jpg
+              alt: Logo
+            - src: seetech/login.jpeg
+              alt: Log in 
+            - src: seetech/signup.jpeg
+              alt: Signup
+            - src: seetech/home.jpeg
+              alt: Home 
+            - src: seetech/catalog-1.jpeg
+              alt: Catalog 1
+            - src: seetech/catalog-2.jpeg
+              alt: Catalog 2
+            - src: seetech/product.jpeg
+              alt: Product
+            - src: seetech/cart.jpeg
+              alt: Cart 
+            - src: seetech/checkout-1.jpeg
+              alt: Checkout 1
+            - src: seetech/checkout-2.jpeg
+              alt: Checkout 2
+            - src: seetech/checkout-3.jpeg
+              alt: Checkout 3
+            - src: seetech/confirmation.jpeg
+              alt: Confirmation
+            - src: seetech/account.jpeg
+              alt: Account
+            - src: seetech/database.jpg
+              alt: Database schema
+            - src: seetech/project-structure.jpeg
+              alt: Project Structure
+            - src: seetech/project-structure-frontend.jpeg
+              alt: Project Structure Frontend
+            - src: seetech/project-structure-backend.jpeg
+              alt: Project Structure Backend
+    - name: ISTE-422 Application Development Practices
+      projects:
+        - title: Queryfier
+          id: queryfier
+          group: true
+          members: 5
+          thumbnail: queryfier/home.jpeg
+          completed: December 2023
+          description: An entity relationship editor. A project for the ISTE-422 course.
+          content: 
+            - text: This app is a GUI entity relationship editor that allows users to read, edit, delete .edg files, and export data into SQL. The editor allows users to configure the tables stored in the files. It is the group project for the [[course-link]].
+              links: 
+                - token: course-link
+                  text: ISTE-422 Application Development Practices course
+                  url: /education/rit-courses/#iste422
+                  external: false
+            - title: 
+              text: 
+          technologies: Java, JavaFX
+          tag: RIT (ISTE-422)
+          gallery:
+            - src: queryfier/home.jpeg
+              alt: Landing Page
+            - src: queryfier/file.jpeg
+              alt: Opened file
+            - src: queryfier/file-menu.jpeg
+              alt: Opened file menu
+            - src: queryfier/relationships.jpeg
+              alt: Relationships page
+            - src: queryfier/relationship-select.jpeg
+              alt: Relationships select
+            - src: queryfier/contact.jpeg
+              alt: Contact popup
+            - src: queryfier/export.jpeg
+              alt: Export file popup
+            - src: queryfier/project-structure-1.jpeg
+              alt: Project structure 1
+            - src: queryfier/project-structure-2.jpeg
+              alt: Project structure 2
+            - src: queryfier/project-structure-3.jpeg
+              alt: Project structure 3
+    - name: ISTE-358 Foundations of Wearable and Ubiquitous Computing
+      projects: 
+        - title: Safety Deposit Box
+          id: safety-deposit-box
+          thumbnail: safety-deposit-box/tinkercad.jpg
+          completed: December 2023
+          description: Arduino safety deposit box. Final individual project for the ISTE-358 course.
+          content:
+            - text: This is the “brains” of a safety deposit box built with Arduino Components. It was the final project for the [[course-link]]. 
+              links: 
+                - token: course-link
+                  text: ISTE-358 Foundations of Wearable and Ubiquitous Computing course
+                  url: /education/rit-courses/#iste358
+                  external: false
+            - title: Features
+              text: The safe can be opened by imputing a 4 digit PIN number, and it can give both audio and visual feedback when the safe changes state or when a user gives a wrong password (motor moves, screen says “Open”/”Closed”/”Wrong password”..., and the piezo buzzer buzzes). Also, the user can change the PIN number of the safe (only if they already know the previous password). 
+            - title: Buzzer
+              text: The buzzer has different sounds depending on the action, if a user adds an incorrect password it will release one longer sound, and on the contrary, if the safe has been successfully opened, the buzzer will release two short sounds. 
+            - title: Password Change
+              text: When a user has to change the password, they first have to initiate that mode by clicking the “*” button on the keypad, input the old PIN, set a new PIN, repeat the new PIN, and click the “#” button to reset. 
+            - title: Components
+              text: SG90 Micro servo motor, Elegoo Uno R3, piezo buzzer, 16x2 LCD Screen, 4x2 keypad
+          technologies: Arduino, Arduino IDE, C, Tinkercad
+          tag: RIT (ISTE-358)
+          gallery:
+            - src: safety-deposit-box/tinkercad.jpg
+              alt: Tinkercad
+            - src: safety-deposit-box/schema.jpg
+              alt: Schema
+            - src: safety-deposit-box/arduino-1.jpg
+              alt: Arduino 1
+            - src: safety-deposit-box/arduino-2.jpg
+              alt: Arduino 2
+            - src: safety-deposit-box/arduino-3.jpg
+              alt: Arduino 3
+            - src: safety-deposit-box/box-1.jpg
+              alt: Box 1
+            - src: safety-deposit-box/box-2.jpg
+              alt: Box 2
+            - src: safety-deposit-box/box-3.jpg
+              alt: Box 3
+            - src: safety-deposit-box/box-4.jpg
+              alt: Box 4
+            - src: safety-deposit-box/box-5.jpg
+              alt: Box 5
+    - name: ISTE-341 Server Programming
+      projects: 
+        - title: Employee Management Backend
+          id: employee-management
+          thumbnail: employee-management/postman.jpg
+          completed: December 2023
+          description: Backend API for an employee management service. A project for the ISTE-341 course.
+          content:
+            - text: This is the backend service for an employee management application, and it is the third project of the [[course-link]] course. The task was to create the business, and service layers of the application (data layer was provided). 
+              links: 
+                - token: course-link
+                  text: ISTE-341 Server Programming course
+                  url: /education/rit-courses/#iste341
+                  external: false
+            - title: JakartaEE version
+              text: In this same course, an identical project was also done before this one. Same task, but built with Java using JakartaEE.
+            - title: Features
+              text: This is only a backend service, there is no frontend, so everything was tested via manual API calls (using Postman). A user can perform CRUD operations on the employee, department, and company entities. 
+          technologies: NodeJS, Express
+          tag: RIT (ISTE-341)
+          gallery:
+            - src: employee-management/postman.jpg
+              alt: Postman
+            - src: employee-management/project-structure.jpg
+              alt: Project Structure
+        - title: Event Management
+          id: event-management
+          thumbnail: event-management/login.jpeg
+          completed: October 2023
+          description: Multi role event management app. A project for the ISTE-341 course.
+          content:
+            - text: This is an event management application that supports 2 roles (user, admin), and allows users to create, edit, delete, and enrol to events. This is the first project for the [[course-link]]. 
+              links: 
+                - token: course-link
+                  text: ISTE-341 Server Programming course
+                  url: /education/rit-courses/#iste341
+                  external: false
+            - title: Note
+              text: Unfortunately, I was unable to add screenshots for this project.
+          technologies: PHP
+          tag: RIT (ISTE-341)
+          gallery:
+            - src: event-management/login.jpeg
+              alt: Login
+            - src: event-management/project-structure-1.jpeg
+              alt: Project Structure 1
+            - src: event-management/project-structure-2.jpeg
+              alt: Project Structure 2
+    - name: SWEN 383 Software Design Principles and Patterns
+      projects:
+        - title: Diet Manager
+          id: diet-manager
+          group: true
+          members: 6
+          thumbnail: diet-manager/thumbnail.jpg
+          completed: May 2023
+          description: Food/exercise calorie tracker. Group project for the SWEN-383 course.
+          content: 
+            - text: This is a calorie tracker app that allows users to log their foods for the day, to log exercises, to add the current weight, the goal weight, and to add calorie goals (how much a user wants to consume compared to the actual eaten calories). The app also allows users to add their custom foods, and exercises. This is a group project for the [[course-link]].
+              links: 
+                - token: course-link
+                  text: SWEN 383 Software Design Principles and Patterns course
+                  url: /education/rit-courses/#swen383
+                  external: false
+            - title: Task
+              text: The task for this assignment was to refactor an existing (provided) app, and to implement design patterns learned in class (Factory, Composite, MVC…).
+          technologies: Java, JavaFX
+          tag: RIT (SWEN-383)
+          gallery:
+            - src: diet-manager/empty.jpeg
+              alt: Empty data
+            - src: diet-manager/food.jpeg
+              alt: 1 food item added
+            - src: diet-manager/food-exercise.jpeg
+              alt: Foods and exercises added
+            - src: diet-manager/add-exercise.jpeg
+              alt: Add custom exercise
+            - src: diet-manager/add-food.jpeg
+              alt: Add custom food
+            - src: diet-manager/add-recipe-1.jpeg
+              alt: Add custom recipe
+            - src: diet-manager/add-recipe-2.jpeg
+              alt: Add custom recipe menu
+            - src: diet-manager/project-structure-1.jpeg
+              alt: Project structure 1
+            - src: diet-manager/project-structure-2.jpeg
+              alt: Project structure 2
+    - name: ISTE-340 Client Programming
+      projects:
+        - title: Custom Sandwiches
+          id: custom-sandwiches
+          thumbnail: custom-sandwiches/home.jpg
+          completed: Feb 2023
+          description: A client side of a web application for ordering sandwiches. First project for the ISTE-340 course.
+          content: 
+            - text: This is the first project for the [[course-link]]. It is a pure frontend application for ordering sandwiches from a hypothetical sandwich shop. Its data is fetched from a file, and after ordering, it is saved to local storage (mimicking fetching and sending from a backend without dealing with APIs). This project was more of an exercise for learning and implementing the MVC pattern using the object oriented approach with JavaScript. 
+              links: 
+                - token: course-link
+                  text: ISTE-340 Client Programming course
+                  url: /education/rit-courses/#iste340
+                  external: false
+            - title: Conditional selects
+              text: For the sandwich ordering, it uses 3 conditional selects with 2 options each. 
+          technologies: HTML, CSS, JavaScript
+          tag: RIT (ISTE-340)
+          colors:
+            - "#F2C12E"
+            - "#FF7043"
+            - "#4E342E"
+            - "#689F38"
+            - "#FFFFFF"
+          gallery:
+            - src: custom-sandwiches/home.jpg
+              alt: Home
+            - src: custom-sandwiches/about.jpg
+              alt: About
+            - src: custom-sandwiches/products.jpg
+              alt: Products
+            - src: custom-sandwiches/order-1.jpg
+              alt: Order 1
+            - src: custom-sandwiches/order-2.jpg
+              alt: Order 2
+            - src: custom-sandwiches/order-3.jpg
+              alt: Order 3
+            - src: custom-sandwiches/order-4.jpg
+              alt: Order 4
+            - src: custom-sandwiches/order-5.jpg
+              alt: Order 5
+            - src: custom-sandwiches/project-structure.jpg
+              alt: Project structure
+            - src: custom-sandwiches/project-structure-css.jpg
+              alt: Project structure CSS
+            - src: custom-sandwiches/project-structure-js.jpg
+              alt: Project structure JS (MVC)
+            - src: custom-sandwiches/project-structure-media.jpg
+              alt: Project structure media
+            - src: custom-sandwiches/project-structure-vendor.jpg
+              alt: Project structure vendor
+        - title: RIT Redesigned
+          id: rit-redesigned
+          thumbnail: rit-redesigned/about-3.jpeg
+          completed: May 2023
+          description: Redesigned frontend for the IST Department of RIT. Third project for the ISTE-340 course.
+          content: 
+            - text: This is a redesigned frontend for the IST Department of Rochester Institute of Technology. The main focus was to correctly use the MVC architecture using ASP.NET, and to utilize jQuery in the app (custom + third party plugins). This was the third project for the [[course-link]].
+              links: 
+                - token: course-link
+                  text: ISTE-340 Client Programming course
+                  url: /education/rit-courses/#iste340
+                  external: false
+            - title: backend
+              text: This app doesn't have a custom backend, it uses existing APIs.
+          technologies: C#, ASP.NET
+          tag: RIT (ISTE-340)
+          colors:
+            - "#000000"
+            - "#EEEEEE"
+            - "#FFFFFF"
+          gallery:
+            - src: rit-redesigned/about-1.jpeg
+              alt: About 1
+            - src: rit-redesigned/about-2.jpeg
+              alt: About 2
+            - src: rit-redesigned/about-3.jpeg
+              alt: About 3
+            - src: rit-redesigned/undergraduate.jpeg
+              alt: Undergraduate degrees
+            - src: rit-redesigned/graduate.jpeg
+              alt: Graduate degrees
+            - src: rit-redesigned/certificates.jpeg
+              alt: Certificates
+            - src: rit-redesigned/employment.jpeg
+              alt: Employment
+            - src: rit-redesigned/co-op.jpeg
+              alt: Co-op table
+            - src: rit-redesigned/employment-table.jpeg
+              alt: Employment table
+            - src: rit-redesigned/faculty.jpeg
+              alt: Faculty
+            - src: rit-redesigned/mobile.jpeg
+              alt: Mobile
+            - src: rit-redesigned/project-structure-1.jpeg
+              alt: Project structure 1
+            - src: rit-redesigned/project-structure-2.jpeg
+              alt: Project structure 2
+            - src: rit-redesigned/project-structure-3.jpeg
+              alt: Project structure 3
+            - src: rit-redesigned/project-structure-4.jpeg
+              alt: Project structure 4
+    - name: ISTE 330 Database Connectivity and Access
+      projects:
+        - title: Query the Berry
+          id: query-the-berry
+          group: true
+          members: 4
+          thumbnail: query-the-berry/logo.jpg
+          completed: May 2023
+          description: A JavaFX quiz application. Group project for the ISTE-330 course. 
+          content:
+            - text: This is a quiz application that allows players to compete with each other, and see their scores on a leaderboard. Players can choose to answer questions or riddles, and after each quiz session, a fun fact is given to the player. In addition to that, registered players can suggest quiz questions. This is a group project for the [[course-link]].
+              links:
+                - token: course-link
+                  text: ISTE 330 Database Connectivity and Access course
+                  url: /education/rit-courses/#iste330
+                  external: false
+            - title: focus
+              text: The main task for this project was to have a database with 15 or more tables, and to perform CRUD operations using a Java application that follows the 4-tier architecture.
+            - title: note
+              text: I haven't made many contributions in this project, compared to some of my teammates. 
+          technologies: Java, JavaFX, MySQL
+          tag: RIT (ISTE-330)
+          gallery:
+            - src: query-the-berry/logo.jpg
+              alt: Logo
+            - src: query-the-berry/login.jpeg
+              alt: Login
+            - src: query-the-berry/signup.jpeg
+              alt: Signup
+            - src: query-the-berry/country.jpeg
+              alt: Country
+            - src: query-the-berry/home.jpeg
+              alt: Home
+            - src: query-the-berry/howto.jpeg
+              alt: How to play
+            - src: query-the-berry/leaderboard.jpeg
+              alt: Leaderboard
+            - src: query-the-berry/suggestion.jpeg
+              alt: Suggestion
+            - src: query-the-berry/lobby.jpeg
+              alt: Lobby
+            - src: query-the-berry/get-ready-riddles.jpeg
+              alt: Getting ready for riddles
+            - src: query-the-berry/riddle.jpeg
+              alt: Riddle example
+            - src: query-the-berry/get-ready-questions.jpeg
+              alt: Getting ready for questions
+            - src: query-the-berry/question.jpeg
+              alt: Question example
+            - src: query-the-berry/hint.jpeg
+              alt: Hint
+            - src: query-the-berry/points.jpeg
+              alt: Points
+            - src: query-the-berry/fun-fact.jpeg
+              alt: Fun fact
+            - src: query-the-berry/database.jpeg
+              alt: Database schema
+            - src: query-the-berry/project-structure-1.jpeg
+              alt: Project structure 1
+            - src: query-the-berry/project-structure-2.jpeg
+              alt: Project structure 2
+            - src: query-the-berry/project-structure-3.jpeg
+              alt: Project structure 3
+    - name: ISTE-252 Foundations of Mobile Design
+      projects:
+        - title: Cookez
+          id: cookez
+          thumbnail: cookez/thumbnail.jpg
+          completed: 5 May 2023
+          description: A simple recipe application built with Flutter. The final project for ISTE-252 course.
+          content:
+            - text: This is a simple recipe application that allows users to get info from the [[api]]. It is the last project for the [[course-link]].
+              links:
+                - token: api
+                  text: Spoonacular API
+                  url: https://spoonacular.com/food-api
+                  external: true
+                - token: course-link
+                  text: ISTE-252 Foundations of Mobile Design course
+                  url: /education/rit-courses/#iste252
+                  external: false
+            - title: Features
+              text: The app allows users to save recipes. explore random recipes, find them based on provided ingredients, and it allows users to create custom recipes. 
+            - title: QR Code
+              text: The [[qr-api]] is used to generate QR codes for a recipe so that they can be easily shared, but it is not a finished feature. 
+              links: 
+                - token: qr-api
+                  text: QR Code Generator API
+                  url: https://goqr.me/api/
+                  external: true
+          technologies: Flutter
+          tag: RIT (ISTE-252)
+          gallery:
+            - src: cookez/platforms.jpg
+              alt: Platforms
+            - src: cookez/thumbnail.jpg
+              alt: Logo
+            - src: cookez/home.jpeg
+              alt: Logo
+            - src: cookez/explore-1.jpeg
+              alt: Explore page
+            - src: cookez/explore-2.jpeg
+              alt: Explore page recipe details
+            - src: cookez/explore-3.jpeg
+              alt: Explore page save recipe
+            - src: cookez/recipes-1.jpeg
+              alt: Saved recipes
+            - src: cookez/recipes-2.jpeg
+              alt: Delete recipe
+            - src: cookez/create-recipe-1.jpeg
+              alt: Create a recipe
+            - src: cookez/create-recipe-2.jpeg
+              alt: Save recipe
+            - src: cookez/create-recipe-3.jpeg
+              alt: View recipe in list
+            - src: cookez/find-1.jpeg
+              alt: Find recipe
+            - src: cookez/find-2.jpeg
+              alt: Add ingredients
+            - src: cookez/find-3.jpeg
+              alt: View found recipes
+            - src: cookez/qr.jpeg
+              alt: Open camera for QR code scan
+            - src: cookez/project-structure.jpg
+              alt: Project structure
+        - title: Weather App
+          id: weather-app
+          thumbnail: weather-app/screen.jpg
+          completed: 30 Mar 2023  
+          description: A simple hybrid weather app. Third project for the ISTE-252 course.
+          content: 
+            - text: This is the third project for the [[course-link]]. It is a simple hybrid weather app that was built with Cordova that, on the chosen location, displays the local time, coordinates, temperature, weather description, pressure, and humidity values. 
+              links: 
+                - token: course-link
+                  text: ISTE-252 Foundations of Mobile Design course
+                  url: /education/rit-courses/#iste252
+                  external: false
+            - title: APIs and plugins
+              text: This app uses the cordova geolocation plugin, Google Maps API, and OpenWeather API for extra data
+          technologies: Apache Cordova
+          tag: RIT (ISTE-252)
+          gallery:
+            - src: weather-app/screen.jpg
+              alt: Screen
+        - title: Mammals
+          id: mammals
+          thumbnail: mammals/home.jpg
+          completed: 3 Mar 2023
+          description: An exercise for utilising adaptive images. Second project in the ISTE-252 course.
+          content: 
+            - text: This is the second project for the [[course-link]]. It is a frontend only web application (data stored in a file) about mammals that utilizes adaptive images.  
+              links: 
+                - token: course-link
+                  text: ISTE-252 Foundations of Mobile Design course
+                  url: /education/rit-courses/#iste252
+                  external: false
+          technologies: HTML, CSS, JS, PHP
+          tag: RIT (ISTE-252)
+          colors: 
+            - "#FCE9DC"
+            - "#FFA866"
+            - "#CFBEA9"
+            - "#A89B8A"
+            - "#FEFEFE"
+          gallery:
+            - src: mammals/home.jpg
+              alt: Home
+            - src: mammals/list.jpg
+              alt: List
+            - src: mammals/details.jpg
+              alt: Details
+        - title: myWorkouts
+          id: myworkouts
+          thumbnail: myworkouts/logo-1.jpg
+          completed: 17 Feb 2023
+          description: A design prototype for a workout app. First project in the ISTE-252 course.
+          content: 
+            - text: This is the first project for the [[course-link]]. It is an interactive design prototype for a workout application. 
+              links: 
+                - token: course-link
+                  text: ISTE-252 Foundations of Mobile Design course
+                  url: /education/rit-courses/#iste252
+                  external: false
+            - title: Prototype link
+              text: "Link: [[figma-link]]"
+              links:
+                - token: figma-link
+                  text:  Figma Prototype
+                  url: https://www.figma.com/proto/Eim1CaIARfrLheWZDt4Bcm/project-1?page-id=0%3A1&node-id=106-171&p=f&viewport=1429%2C1515%2C0.25&t=SAnXhbgp4m7esWDT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=106%3A171
+                  external: true
+          technologies: Figma
+          tag: RIT (ISTE-252)
+          colors: 
+            - "#011126"
+            - "#024873"
+            - "#C7E7FC"
+            - "#F2CA80"
+            - "#BF0426"
+            - "#FFFFFF"
+          gallery:
+            - src: myworkouts/logo-1.jpg
+              alt: Logo 1
+            - src: myworkouts/logo-2.jpg
+              alt: Logo 2
+            - src: myworkouts/mock-1.jpg
+              alt: Mock 1
+            - src: myworkouts/mock-2.jpg
+              alt: Mock 2
+            - src: myworkouts/mock-3.jpg
+              alt: Mock 3
+            - src: myworkouts/mock-4.jpg
+              alt: Mock 4
+            - src: myworkouts/mock-5.jpg
+              alt: Mock 5
+            - src: myworkouts/mock-6.jpg
+              alt: Mock 6
+            - src: myworkouts/mock-7.jpg
+              alt: Mock 7
+            - src: myworkouts/mock-8.jpg
+              alt: Mock 8
+            - src: myworkouts/wireframes-1.jpg
+              alt: Wireframes 1
+            - src: myworkouts/wireframes-2.jpg
+              alt: Wireframes 2
+            - src: myworkouts/wireframes-3.jpg
+              alt: Wireframes 3
+            - src: myworkouts/wireframes-4.jpg
+              alt: Wireframes 4
+    - name: NSSA-290 Networking Essentials for Developers
+      projects:
+        - title: Campus Network Simulation
+          id: campus-network
+          group: true
+          members: 2
+          thumbnail: campus-network/image.jpg
+          completed: December 2022
+          description: Network simulation for a campus. Group project for the NSSA-290 course
+          content: 
+            - text: This is a simulated network created in Cisco Packet Tracer, and it was the final group project for the [[course-link]]. The network has 2 classes, a lab, departments for accounting, marketing, networking, and general staff, a pay check server, and a simulation of the external web (DNS server + servers for RIT, Facebook, Twitter). 
+              links: 
+                - token: course-link
+                  text: NSSA-290 Networking Essentials for Developers course
+                  url: /education/rit-courses/#nssa290
+                  external: false
+            - title: Configuration
+              text: For this project to work, proper routing had to be configured alongside a simple firewall. 
+          technologies: Cisco Packet Tracer
+          tag: RIT (NSSA-290)
+          gallery:
+            - src: campus-network/image.jpg
+              alt: Network
+    - name: ISTE 240 Web and Mobile 2
+      projects:
+        - title: Unix Tutorial
+          id: unix-tutorial
+          group: true
+          members: 4
+          thumbnail: unix-tutorial/logo.jpg
+          completed: 1 May 2022
+          description: A tutorial website for learning beginner lever Unix commands. Group project for the ISTE-240 course.
+          content: 
+            - text: This is a tutorial website that shows potential learners how to use Unix commands. It shows how to view directory contents, how to move through directories, how to create, edit, delete files, how to change permissions, and finally, how to connect and upload a project to a server. This is a group project for the [[course-link]]. 
+              links:
+                - token: course-link
+                  text:  ISTE-240 Web and Mobile 2 course
+                  url: /education/rit-courses/#iste240
+                  external: false
+            - title: Cheat sheet
+              text: In addition to step by step screenshots for using commands, the website also allows users to download a cheat sheet with Unix commands.
+            - title: Contribution
+              text: I worked on the code for the website, and made the screenshots. 
+            - title: Note
+              text: A feedback section is also a part of the project, but the database is not available any more. Also, not all pages of the tutorial are displayed.
+            - title: Font
+              text: The [[font]] typeface is used for the project.
+              links: 
+                - token: font
+                  text: Quicksand
+                  url: https://fonts.google.com/specimen/Quicksand
+                  external: true
+          technologies: HTML, CSS, JS, PHP
+          tag: RIT (ISTE-240)
+          colors:
+            - "#007AFF"
+            - "#DBDBDB"
+            - "#EBEBEB"
+            - "#F7F7F7"
+            - "#474747"
+            - "#FFFFFF"
+          gallery:
+            - src: unix-tutorial/logo.jpg
+              alt: Logo
+            - src: unix-tutorial/home.jpeg
+              alt: Home
+            - src: unix-tutorial/home-navigation.jpeg
+              alt: Home Navigation
+            - src: unix-tutorial/home-hover.jpeg
+              alt: Home Navigation Hover
+            - src: unix-tutorial/commands.jpeg
+              alt: Commands
+            - src: unix-tutorial/commands-print.jpeg
+              alt: Commands PDF for print
+            - src: unix-tutorial/tutorial-1.jpeg
+              alt: Tutorial page 1
+            - src: unix-tutorial/tutorial-2.jpeg
+              alt: Tutorial page 2
+            - src: unix-tutorial/tutorial-3.jpeg
+              alt: Tutorial page 3
+            - src: unix-tutorial/tutorial-4.jpeg
+              alt: Tutorial page 4
+            - src: unix-tutorial/tutorial-5.jpeg
+              alt: Tutorial page 5
+            - src: unix-tutorial/tutorial-6.jpeg
+              alt: Tutorial page 6
+            - src: unix-tutorial/tutorial-7.jpeg
+              alt: Tutorial page 7
+            - src: unix-tutorial/references.jpeg
+              alt: References
+            - src: unix-tutorial/mobile.jpeg
+              alt: Mobile
+            - src: unix-tutorial/mobile-hover-1.jpeg
+              alt: Mobile Navigation hover 1
+            - src: unix-tutorial/mobile-hover-2.jpeg
+              alt: Mobile Navigation hover 2
+            - src: unix-tutorial/mobile-scroll-down.jpeg
+              alt: Mobile Navigation Scroll down
+            - src: unix-tutorial/project-structure.jpeg
+              alt: Project structure
+        - title: Dubrovnik Tours
+          id: dubrovnik-tours
+          thumbnail: dubrovnik-tours/thumbnail.jpg
+          completed: 24 Apr 2022
+          description: A tour website for Dubrovnik. Individual project for the ISTE-240 course.
+          content: 
+            - text: This is a simplified tour website of the city Dubrovnik, Croatia. It shows 10 popular spots from the old town, and briefly explains the history behind it. It is the individual project for the [[course-link]].
+              links:
+                - token: course-link
+                  text:  ISTE-240 Web and Mobile 2 course
+                  url: /education/rit-courses/#iste240
+                  external: false
+            - title: SVG
+              text: The introductory page has an interactive SVG component that shows the map of Dubrovnik. Each dot is a link that represents a spot covered in the tour.
+            - title: Note
+              text: This website also has a comments/feedback section, but the database is not available any more so no screenshots were provided for it. Also, not all pages are added for the tour because they all follow the same structure. 
+            - title: Font
+              text: I used the [[font]] typeface for this project.
+              links: 
+                - token: font
+                  text: Montserrat
+                  url: https://fonts.google.com/specimen/Montserrat
+                  external: true
+          technologies: HTML, CSS, JS, PHP
+          tag: RIT (ISTE-240)
+          colors:
+            - "#BD4A39"
+            - "#FFC1A7"
+            - "#FFDBBF"
+            - "#740001"
+            - "#460000"
+            - "#FFFFFF"
+          gallery:
+            - src: dubrovnik-tours/introduction.jpeg
+              alt: Introduction
+            - src: dubrovnik-tours/map.jpeg
+              alt: Map
+            - src: dubrovnik-tours/tour-navigation.jpeg
+              alt: Tour list 
+            - src: dubrovnik-tours/tour-1.jpeg
+              alt: Tour 1
+            - src: dubrovnik-tours/tour-2.jpeg
+              alt: Tour 2
+            - src: dubrovnik-tours/tour-3.jpeg
+              alt: Tour 3
+            - src: dubrovnik-tours/about.jpeg
+              alt: About
+            - src: dubrovnik-tours/references.jpeg
+              alt: References
+            - src: dubrovnik-tours/mobile-1.jpg
+              alt: Mobile 1
+            - src: dubrovnik-tours/mobile-2.jpeg
+              alt: Mobile 2
+            - src: dubrovnik-tours/mobile-3.jpeg
+              alt: Mobile 3
+            - src: dubrovnik-tours/project-structure.jpeg
+              alt: Project Structure
+    - name: ISTE-121 Computational Problem Solving in Information Domain 2
+      projects: 
+        - title: Snake Game
+          id: snake-game
+          group: true
+          members: 2
+          thumbnail: snake-game/game-3.jpeg
+          completed: 5 May 2022
+          description: A snake game that utilizes multi threading to stream the gameplay to clients. Final group project for the ISTE-121 course.
+          content:
+            - text: This is a snake game that allows users to stream their gameplay to other connected users, and while streaming is on, others can chat between themselves. It is a group project for the [[course-link]], and the main point was to connect a multithreaded server with the game in some way. 
+              links:
+                - token: course-link
+                  text:  ISTE-121 ISTE-121 Computational Problem Solving in Information Domain 2 course
+                  url: /education/rit-courses/#iste121
+                  external: false
+            - title: Settings
+              text: The game has 3 difficulty settings which affects the tick speed of the game (easy is slower gameplay, hard is faster gameplay). In addition to that, users can pick between different skins. 
+            - title: Food
+              text: There are 4 types of “foods” in the game. A regular type (commoner) which gives the least amount of points, a special type (princess) which is rarer, but gives more points, an enemy type which shoots projectiles in the direction of the snake (wizard), and a special wall type (castle) which has to be eaten in under 5 seconds (before the castle gets constructed) otherwise it will permanently stay in the game as a wall.
+          technologies: Java (JavaFX)
+          tag: RIT (ISTE-121)
+          gallery:
+            - src: snake-game/home.jpeg
+              alt: Home
+            - src: snake-game/chat.jpeg
+              alt: Chat
+            - src: snake-game/high-score.jpeg
+              alt: High score
+            - src: snake-game/menu-1.jpeg
+              alt: Menu 1
+            - src: snake-game/menu-2.jpeg
+              alt: Menu 2
+            - src: snake-game/menu-3.jpeg
+              alt: Menu 3
+            - src: snake-game/game-1.jpeg
+              alt: Game 1
+            - src: snake-game/game-2.jpeg
+              alt: Game 2
+            - src: snake-game/game-3.jpeg
+              alt: Game 3
+            - src: snake-game/game-over.jpeg
+              alt: Game Over
+            - src: snake-game/project-structure-1.jpeg
+              alt: Project structure 1
+            - src: snake-game/project-structure-2.jpeg
+              alt: Project structure 2
+            - src: snake-game/project-structure-3.jpeg
+              alt: Project structure 3
+            - src: snake-game/project-structure-4.jpeg
+              alt: Project structure 4
+        - title: JavaFX Text Editor
+          id: javafx-text-editor
+          thumbnail: javafx-text-editor/thumbnail.jpeg
+          completed: 2 Feb 2022
+          description: A simple text editor created with JavaFX. The second homework for the ISTE-121 course.
+          content:
+            - text: This is a simplified file editor that allows users to create, save, edit, rename and delete .txt files. Also, it has tooltip popups that show a placeholder “about” data (in this case it is personal info), and the current word count of the file. This was the second homework of the [[course-link]].
+              links:
+                - token: course-link
+                  text:  ISTE-121 ISTE-121 Computational Problem Solving in Information Domain 2 course
+                  url: /education/rit-courses/#iste121
+                  external: false
+          technologies: Java (JavaFX)
+          tag: RIT (ISTE-121)
+          gallery:
+            - src: javafx-text-editor/home-no-text.jpeg
+              alt: Empty editor
+            - src: javafx-text-editor/home-text.jpeg
+              alt: Editor with text
+            - src: javafx-text-editor/file.jpeg
+              alt: File dropdown
+            - src: javafx-text-editor/tools-menu.jpeg
+              alt: Tools dropdown
+            - src: javafx-text-editor/tools-popup.jpeg
+              alt: Tools popup
+            - src: javafx-text-editor/help-menu.jpeg
+              alt: Help dropdown
+            - src: javafx-text-editor/help-popup.jpeg
+              alt: Help popup
+            - src: javafx-text-editor/project-structure.jpeg
+              alt: Project structure
+    - name: NMDE-111 New Media Design Digital Survey 1
+      projects: 
+        - title: DeliverEat
+          id: delivereat
+          thumbnail: delivereat/icon.jpg
+          completed: 12 Dec 2021
+          description: Third project for the NMDE-111 course. The task was to think of an app and create promotional material for it.
+          content:
+            - text: This is a third project for the [[nmde-link]]. It is a promotional poster for a hypothetical food delivery app called DeliverEat.
+              links:
+                - token: nmde-link
+                  text: NMDE-111 New Media Design 1 course
+                  url: /education/rit-courses/#nmde111
+                  external: false
+            - title: Name
+              text: The name would be pronounced as “deliver it”, but instead of “it” the word “eat” was used to associate it with food.
+            - title: Icon
+              text: For the icon, I imagined a bag that is moving very fast with cutlery in the center to signal fast delivery, and again to associate it with food.
+            - title: Poster
+              text: In the poster, I added a white shape that resembles pac-man to better isolate the call to action buttons for downloading the app, but it also worked as another association to food and eating.
+          technologies: Adobe Illustrator, Adobe Photoshop
+          tag: RIT (NMDE-111)
+          gallery:
+            - src: delivereat/poster.jpg
+              alt: Poster
+            - src: delivereat/icon.jpg
+              alt: Logo
+            - src: delivereat/page-1.jpg
+              alt: Page 1
+            - src: delivereat/page-2.jpg
+              alt: Page 2
+        - title: Kitchen Nightmares Book Cover
+          id: kitchen-nightmares-book-cover
+          thumbnail: kitchen-nightmares-book-cover/final.jpg
+          completed: 16 Nov 2021
+          description: Second project for the NMDE-111 course. The task was to create a book cover for some other existing media.
+          content: 
+            - text: This is a hypothetical cover design of the reality show “Kitchen Nightmares” by Gordon Ramsey if it was made into a book. It is the second project for the [[nmde-link]].
+              links: 
+                - token: nmde-link
+                  text: NMDE-111 New Media Design 1 course
+                  url: /education/rit-courses/#nmde111
+                  external: false
+            - title: Theme
+              text: In that period, a lot of times, I would play the reality show as a “background” when I was completing homeworks, projects or doing chores. That is how I came to this idea to use it as the theme for this project.
+            - title: Elements
+              text: For the background, I put some famous phrases said during the show, either by Gordon Ramsey or someone else in the show. On the forefront there is a plate full of unpleasant items. There are loose hairs, a cockroach, a dead rat without a tail, and a half eaten rotting apple. The items on the plate were made by image tracing existing images, but the plate itself is a light gray circle with circular lines. The lines were filled with a gradient (spanning from white to dark gray) so that they resemble the highlights and shadows of a plate. Also, the circle itself drops a shadow to give off a 3D-like effect.
+          technologies: Adobe Illustrator
+          tag: RIT (NMDE-111)
+          gallery:
+            - src: kitchen-nightmares-book-cover/final.jpg
+              alt: Final Book Cover
+            - src: kitchen-nightmares-book-cover/template.jpg
+              alt: Template Layout
+            - src: kitchen-nightmares-book-cover/draft-1.jpg
+              alt: Draft 1
+            - src: kitchen-nightmares-book-cover/draft-2.jpg
+              alt: Draft 2
+            - src: kitchen-nightmares-book-cover/mood-board.jpg
+              alt: Mood Board
+        - title: I.T.T.W. Repairs
+          id: ittw-repairs
+          thumbnail: ittw-repairs/front.jpg
+          completed: 7 Nov 2021
+          description: An exercise for the NMDE-111 course. The task was to create the front and the back of a business card."
+          content: 
+            - text: This is a business card for a hypothetical technology repair business. It is the ninth lab exercise in the [[nmde-link]].
+              links:
+                - token: nmde-link
+                  text: NMDE-111 New Media Design 1 course
+                  url: /education/rit-courses/#nmde111
+                  external: false
+            - title: Inspiration
+              text: The name was inspired from the frustration that comes with dealing with technology that doesn’t work properly. In those scenarios we often question if the thing itself even works from which the abbreviation ITTW (is this thing working) came from.
+          technologies: Adobe Illustrator
+          tag: RIT (NMDE-111)
+          gallery:
+            - src: ittw-repairs/both.jpg
+              alt: Card Front/Back
+            - src: ittw-repairs/front.jpg
+              alt: Front
+            - src: ittw-repairs/back.jpg
+              alt: Back
+        - title: PlantEd
+          id: planted
+          thumbnail: planted/final.jpg
+          completed: 19 Oct 2021
+          description: A design for a digital invite poster. It is the first project for the NMDE-111 course.
+          content: 
+            - text: This is an electronic invite poster for a hypothetical event which was the first project in the [[nmde-link]]. I chose to make a poster for a hypothetical event about plants (how to grow, use, decorate, cultivate, prepare…).
+              links:
+                - token: nmde-link
+                  text: NMDE-111 New Media Design 1 course
+                  url: /education/rit-courses/#nmde111
+                  external: false
+            - title: Name
+              text: The name is simple, plants are planted, but in this case the “Ed” is highlighted because the “full name” for the event would be Plant Education, and the shortened version would be Plant Ed = PlantEd.
+            - title: Note
+              text: For this project, I had to make different variations of the design which is why some styleboards or moodboards may not correspond to the final version.
+          technologies: Adobe Photoshop
+          tag: RIT (NMDE-111)
+          gallery:
+            - src: planted/final.jpg
+              alt: Final Version
+            - src: planted/draft-1.jpg
+              alt: Draft 1
+            - src: planted/draft-2.jpg
+              alt: Draft 2
+            - src: planted/draft-3.jpg
+              alt: Draft 3
+            - src: planted/draft-4.jpg
+              alt: Draft 4
+            - src: planted/draft-5.jpg
+              alt: Draft 5
+            - src: planted/moodboard-1.jpg
+              alt: Moodboard 1
+            - src: planted/moodboard-2.jpg
+              alt: Moodboard 2
+            - src: planted/styleboard-1.jpg
+              alt: Styleboard 1
+            - src: planted/styleboard-2.jpg
+              alt: Styleboard 2
+            - src: planted/styleboard-final.jpg
+              alt: Final Styleboard
+    - name: ISTE 140 Web and Mobile 1
+      projects:
+        - title: Blue Whales
+          id: blue-whales
+          thumbnail: blue-whales/logo.jpg
+          completed: 19 Dec 2021
+          description: A website about blue whales. Third project of the ISTE-140 Web and Mobile 1 course.
+          content: 
+            - text: This is an electronic invite poster for a hypothetical event which was the first project in the [[nmde-link]]. I chose to make a poster for a hypothetical event about plants (how to grow, use, decorate, cultivate, prepare…).
+              links:
+                - token: iste-140-link
+                  text:  ISTE-140 Web and Mobile 1 course
+                  url: /education/rit-courses/#iste140
+                  external: false
+            - title: Design
+              text: For the project, I used a blue color scheme, and for the font I used the [[outfit]] typeface.
+              links: 
+                - token: outfit
+                  text: Outfit
+                  url: https://fonts.google.com/specimen/Outfit
+                  external: true
+          technologies: HTML, CSS
+          tag: RIT (ISTE-140)
+          colors:
+            - "#011826"
+            - "#042940"
+            - "#EBEFF2"
+            - "#8AB0BF"
+            - "#3E6E8C"
+            - "#000000"
+            - "#FFFFFF"
+          gallery:
+            - src: blue-whales/logo.jpg
+              alt: Logo
+            - src: blue-whales/introduction-1.jpg
+              alt: Introduction 1
+            - src: blue-whales/introduction-2.jpg
+              alt: Introduction 2
+            - src: blue-whales/details-1.jpg
+              alt: Details 1
+            - src: blue-whales/details-2.jpg
+              alt: Details 2
+            - src: blue-whales/details-3.jpg
+              alt: Details 3
+            - src: blue-whales/details-4.jpg
+              alt: Details 4
+            - src: blue-whales/evolution.jpg
+              alt: Evolution
+            - src: blue-whales/endangerment-1.jpg
+              alt: Endangerment 1
+            - src: blue-whales/endangerment-2.jpg
+              alt: Endangerment 2
+            - src: blue-whales/references-1.jpg
+              alt: References 1
+            - src: blue-whales/references-2.jpg
+              alt: References 2
+            - src: blue-whales/mobile-1.jpg
+              alt: Mobile 1
+            - src: blue-whales/mobile-2.jpg
+              alt: Mobile 2
+            - src: blue-whales/project-structure.jpg
+              alt: Project Structure
+        - title: History of the Web
+          id: history-of-the-web
+          thumbnail: history-of-the-web/introduction-1.jpg
+          completed: 15 Nov 2025
+          description: A website about the history of the web. Second project of the ISTE-140 Web and Mobile 1 course.
+          content: 
+            - text: This is a responsive multipage website about the history of the web, and it is the second project introduced in the [[iste140-link]]. The project had 5 pages, but the main difference between this project and project one ([[your-favourites-link]]) is that the topic was given by the professor, and the task was to also do some research around the topic.
+              links:
+                - token: iste140-link
+                  text:  ISTE-140 Web and Mobile 1 course
+                  url: /education/rit-courses/#iste140
+                  external: false
+                - token: your-favourites-link
+                  text: Your Favourites!
+                  url: /projects/descriptions/#your-favourites
+                  external: false
+            - title: Design
+              text: For the colors, I picked a desaturated teal color scheme, and for the font I used the [[roboto]] typeface.
+              links: 
+                - token: roboto
+                  text: Roboto
+                  url: https://fonts.google.com/specimen/Roboto
+                  external: true
+          technologies: HTML, CSS
+          tag: RIT (ISTE-140)
+          colors:
+            - "#99B4BF"
+            - "#404E59"
+            - "#E9F2F1"
+            - "#C1D4D9"
+            - "#000000"
+            - "#FFFFFF"
+          gallery:
+            - src: history-of-the-web/introduction-1.jpg
+              alt: Introduction 1
+            - src: history-of-the-web/introduction-2.jpg
+              alt: Introduction 2
+            - src: history-of-the-web/introduction-3.jpg
+              alt: Introduction 3
+            - src: history-of-the-web/pioneers-1.jpg
+              alt: Pioneers 1
+            - src: history-of-the-web/pioneers-2.jpg
+              alt: Pioneers 2
+            - src: history-of-the-web/pioneers-3.jpg
+              alt: Pioneers 3
+            - src: history-of-the-web/pioneers-4.jpg
+              alt: Pioneers 4
+            - src: history-of-the-web/http.jpg
+              alt: HTTP
+            - src: history-of-the-web/terminology.jpg
+              alt: Terminology
+            - src: history-of-the-web/references.jpg
+              alt: References
+            - src: history-of-the-web/mobile-1.jpg
+              alt: Mobile 1
+            - src: history-of-the-web/mobile-2.jpg
+              alt: Mobile 2
+            - src: history-of-the-web/project-structure.jpg
+              alt: Project Structure
+        - title: Your Favourites!
+          id: your-favourites
+          thumbnail: your-favourites/home.jpg
+          completed: 20 Oct 2021
+          description: A restuarant promo page. First project of the ISTE-140 Web and Mobile 1 course.
+          content: 
+            - text: 
+              links:
+                - token: iste140-link
+                  text:  ISTE-140 Web and Mobile 1 course
+                  url: /education/rit-courses/#iste140
+                  external: false
+            - title: Pages
+              text: The first page is an introductory landing page with the summary of all restaurant information that shows up on hover. For the layout I used a 3x3 grid and spanned the cards accordingly where I implemented the rule of thirds. The idea for that was to let hypothetical users see the information right away so that they don't need to go to specific pages to retrieve information. The second page shows a list of menu items with images, names, and prices of the dishes. The third page is for details that show the hypothetical location and work hours of the restaurant. The fourth page is for the contact information.
+            - title: Design
+              text: "For the colors, I picked a yellow color scheme because it resembles fast food restaurants like McDonalds. In addition to that, I added the frosted glass/blurred effect for the background which was inspired by Apple's UI. For the typography I used a generic sans-serif font (in the CSS file just font-family: sans-serif;)"
+            - title: Name idea
+              text: The idea for the name “Your Favourites!” didn't have much thought as this restaurant “sells” hamburgers, pizzas, pancakes and chocolate cakes. A lot of people can say that these are one of their favourite foods so the ad is “marketing” to those customers.
+          technologies: HTML, CSS
+          tag: RIT (ISTE-140)
+          colors:
+            - "#F2AE2E"
+            - "#FFCE58"
+            - "#FFEEC6"
+            - "#000000"
+            - "#FFFFFF"
+          gallery:
+            - src: your-favourites/home.jpg
+              alt: Home
+            - src: your-favourites/home-hover-menu.jpg
+              alt: Home hover ”Menu”
+            - src: your-favourites/home-hover-details.jpg
+              alt: Home hover ”Details”
+            - src: your-favourites/home-hover-contact.jpg
+              alt: Home hover ”Contact”
+            - src: your-favourites/menu-1.jpg
+              alt: Menu 1
+            - src: your-favourites/menu-2.jpg
+              alt: Menu 2
+            - src: your-favourites/details.jpg
+              alt: Details
+            - src: your-favourites/contact.jpg
+              alt: Contact
+            - src: your-favourites/project-structure.jpg
+              alt: Project Structure

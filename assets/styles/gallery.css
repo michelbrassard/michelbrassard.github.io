@@ -1,0 +1,145 @@
+
+#zoomed-gallery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    opacity: 0;
+    height: 100%; 
+    z-index: 3;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    background-image: radial-gradient(var(--text-color-light) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-color: #00000077;
+    display: grid;
+    place-items: center;
+    transition: opacity .3s;
+}
+#zoomed-gallery img {
+    display: block;
+    border: var(--design-element-color) 1px solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+#zoomed-gallery .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    align-items: end;
+}
+#zoomed-gallery .button-container p {
+    margin: 0;
+    color: white;
+    width: 50%;
+}
+#zoomed-gallery .button-container button {
+    align-self: self-end;
+}
+#zoomed-gallery .image-container {
+    position: absolute;
+    bottom: 2rem;
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70vw;
+    z-index: 2;
+}
+#zoomed-gallery .image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 1rem;
+}
+#zoomed-gallery .image-container button {
+    display: flex;
+    background-color: #00000077;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 1rem;
+    transition: background-color .2s;
+}
+#zoomed-gallery .image-container button:hover {
+    background-color: var(--primary-color);
+}
+#zoomed-gallery .image-container button:disabled {
+    cursor: not-allowed;
+    opacity: 30%;
+}
+#zoomed-gallery .image-container button:disabled:hover {
+    background-color: #00000077;
+}
+#zoomed-gallery .image-container button:first-of-type {
+    padding-right: 0.20rem;
+}
+#zoomed-gallery .image-container button:last-of-type {
+    padding-left: 0.20rem;
+}
+#zoomed-gallery button svg {
+    height: 3rem;
+    width: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    stroke: white;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 60vw;
+    gap: 1rem;
+    padding: 1rem;
+    background-image: radial-gradient(var(--design-element-color) 1px, transparent 1px);
+    background-size: 20px 20px;
+    border-right: var(--design-element-color) 1px solid;
+}
+.gallery .image {
+    width: min-content;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.gallery .image img {
+    height: 100px;
+    border-radius: 0.25rem;
+    border: var(--design-element-color) 1px solid;
+}
+.gallery .overlay {
+    position: absolute;
+    z-index: 2;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+    display: grid;
+    place-items: center;
+    transition: all .2s;
+}
+.gallery .overlay svg {
+    stroke: transparent;
+    transition: all .2s;
+}
+.gallery .overlay:hover {
+    background-color: var(--primary-color);
+    background-image: radial-gradient(var(--primary-color-medium) 1px, transparent 1px);
+    background-size: 20px 20px;
+    cursor: pointer;
+}
+.gallery .overlay:hover svg {
+    stroke: var(--primary-color-light);
+}
+
+@media screen and (max-width: 768px) {
+    #zoomed-gallery .button-container p {
+        width: 40%;
+    }
+}

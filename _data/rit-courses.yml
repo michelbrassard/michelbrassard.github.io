@@ -1,0 +1,591 @@
+- number: 1
+  terms:
+    - name: Fall (2021)
+      courses:
+        - id: iste120
+          title: ISTE-120 Computational Problem Solving in Information Domain 1
+          official-description: A first course in using the object-oriented approach to solve problems in the information domain. Students will learn to design software solutions using the object-oriented approach, to visually model systems using UML, to implement software solutions using a contemporary programming language, and to test these software solutions. Additional topics include thinking in object-oriented terms, and problem definition. Programming projects will be required.
+          official-term: Lec/Lab 6, Credits 4 (Fall, Spring)
+          tools-technologies: Java
+          notes-comments:
+            - title: Topics
+              content: Intro to programming, variables, comments, data types, type conversions, methods, objects, constructors, classes, drawing on canvas (rectangles, triangles, coordinates…), scope, persistence, overloading, control statements, nesting, private/public, name clashes, arrays, ArrayList, 2d arrays, inheritance, interfaces, I/O (character, binary), files, exceptions, best practices…
+            - title: course structure
+              content: This course was conducted 3 times a week. Two of the times were lectures, and the third was a lab exercise (2 hours per session). In addition to that, there were weekly homeworks, and, occasionally, an extra in-class exercise was assigned during lectures. (14 lab exercises, 13 homeworks, 4 practical exams).
+        - id: math131
+          title: MATH-131 Discrete Mathematics
+          official-description: "This course is an introduction to the topics of discrete mathematics, including number systems, sets and logic, relations, combinatorial methods, graph theory, regular sets, vectors, and matrices. (Prerequisites: MATH-101, MATH-111, NMTH-260, NMTH-272 or NMTH-275 or a Math Placement Exam score of at least 35.)"
+          official-term: Lec/Lab 3, Credits 4 (Fall, Spring)
+          notes-comments:
+            - title: Topics
+              content: Logic, sets, relations, functions, theory of counting, pigeonhole principle, graph theory, arrays, matrices, adjacency matrix, incidence matrix, bipartite graphs (K 2,3), complete graphs (K 4), 5-wheel graphs, boolean algebra, number theory, languages, automata, grammars…
+            - title: Homeworks
+              content: In addition to 3 exams, there were 2 homeworks. The first one was regarding the implementation of the critical path method for planning. A set of tasks, and their prerequisites were given, and the exercise was to calculate when the final task will be completed. The second one was regarding bit cleaning and masking. The task was to research what it is, and why it is used.
+        - id: iste140
+          title: ISTE-140 Web and Mobile I
+          official-description: This course provides students with an introduction to internet and web technologies, and to development on Macintosh/UNIX computer platforms. Topics include HTML and CSS, CSS3 features, digital images, web page design and website publishing. Emphasis is placed on fundamentals, concepts and standards. Additional topics include the user experience, mobile design issues, and copyright/intellectual property considerations. Exercises and projects are required.
+          official-term: Lab 3, Lecture 2, Credits 3 (Spring)
+          tools-technologies: HTML, CSS, JS, PHP, VSCode, Terminal, FileZilla (beginner level)
+          projects:
+            - title: Simple Portfolio
+              description: The first website students and I had to build was a personal portfolio where we would link all our exercises and future projects.
+            - title: ”Your Favourites!” Website (Project 1)
+              description: The task was to create a simple website for a hypothetical local restaurant. It had to have a home page, a details page, a menu page and a contact page. In addition to that, the task was to pay attention to visual design, navigation, folder structure, naming conventions etc. (no frameworks allowed, pure HTML, CSS, and JS if needed)
+              id: your-favourites
+              name: ”Your Favourites!”
+            - title: ”History of the Web” Website (Project 2)
+              description: The task was to create a website with a given topic. In this case, it was about the origins of the web. The requirements were similar to the previous project (attention to visual design, navigation...), but students also needed to pay attention to semantic tags, create more pages, and research about some terms for the topic. (no frameworks allowed, pure HTML, CSS, and JS if needed)
+              id: history-of-the-web
+              name: History of the Web
+            - title: ”Blue Whales” Website (Project 3)
+              description: The task for the third project was to research a topic of our own liking, and create a multipage website about it. The requirements were similar to the previous projects, but a bit more strict regarding styling, layout, and project structure. Students needed to embed other media (videos, links, sound files), and have more content comparatively. For the topic; I have chosen to research about blue whales. (no frameworks allowed, pure HTML, CSS, and JS if needed)
+              id: blue-whales
+              name: Blue Whales
+          notes-comments:
+            - title: Topics
+              content: Intro (How the web works), web development overview, careers in web dev, HTML basics, CSS, CSS3, progressive enhancement/graceful degradation, validation, design basics, prototyping, images, copyright, layout, positioning, flexbox, grid, responsive design, Unix system intro, Unix commands, embedded media, animations, intro to JavaScript, intro to forms, intro to PHP…
+            - title: Course Structure
+              content: This course had 3 projects, 2 exams (midterm, final), weekly quizzes and inclass/homework exercises.
+            - title: TA Experience
+              content: In my second year, I worked as a [[ta-link]] for this course.
+              links: 
+                - token: ta-link
+                  text: teaching assistant
+                  url: /experience/#ta
+        - id: nmde111
+          title: NMDE-111 New Media Design Digital Survey 1
+          official-description: This project-based course is an investigation of the computer as an illustrative, imaging, and graphical generation tool. It develops foundational design skills in raster and vector image creation, editing, compositing, layout and visual design for online production. Emphasis will be on the application of visual design organization methods and principles for electronic media. Students will create and edit images, graphics, layouts and typography to form effective design solutions for online delivery. (This course is restricted to students in the WMC-BS or HCC-BS or NMDE-BFA or NWMEDID-BS or DIGHSS-BS program.)
+          official-term: Lab 3, Lecture 2, Credits 3 (Fall, Spring)
+          tools-technologies: Adobe Photoshop, Adobe Illustrator
+          projects:
+            - title: Event Promo Website Design (PlantEd)
+              description: The objective of the first project was to design a single page website, an e-vite, or event sign-up using Adobe Photoshop. The professor gave the specifications (PPI density, dimensions, format…), and specified the deliverables which are 2 mood boards, 2 styleboards, drafts, and the final design. I chose to make a promo website for an event regarding plants.
+              id: planted
+              name: PlantEd
+            - title: Book Cover (Kitchen Nightmares)
+              description: The objective of the second project was to design a book cover inspired by some other existing media (movie, TV-show, reality show, game…) using Adobe Illustrator. Specifications were given like in the previous project (dimensions, PPI density, mood boards, style boards, iterations…). I chose to make a book cover for the reality show "Kitchen Nightmares" by Gordon Ramsey.
+              id: kitchen-nightmares-book-cover
+              name: Kitchen Nightmares Book Cover
+            - title: ”App Wireframes, Promo Poster, Icon (DeliverEat)
+              description: The objective of the third project was to create high fidelity wireframes of a mobile app. The project consisted of multiple parts. An app logo, a promo poster, high fidelity wireframes of 2 screens of the app, and the hypothetical’s app description. In my case, I chose to create a design for a food delivery app.
+              id: delivereat
+              name: DeliverEat
+            - title: Business Card Exercise (I.T.T.W. Repairs)
+              description: "The task for this exercise was to create the front and the back side of a business card using Adobe Illustrator. I have chosen to create a business card for a hypothetical repair business called “I.T.T.W. Repairs” (I.T.T.W.: Is This Thing Working?)."
+              id: ittw-repairs
+              name: I.T.T.W. Repairs
+          notes-comments:
+            - title: Topics
+              content: Digital images, raster vs vector, RGB, CMYK, intro to Adobe Photoshop, intro to photography, ISO, aperture, shutter speed, intro to typography, Gestalt principles of design, basic elements of design, intro to Adobe Illustrator, color, color harmonies, color in design…
+            - title: Course Structure
+              content: This course had 3 projects, 2 homeworks, 7 lab assignments, and 2 exams.
+        - id: uwrt100
+          title: UWRT-100 Critical Reading and Writing
+          official-description: Critical Reading and Writing is a one semester, three-credit course limited to 15 students per section. This course is designed to help students develop the literacy practices they will need to be successful in their First-Year Writing course. Students will read, understand, interpret, and synthesize a variety of texts. Assignments are designed to challenge students intellectually, culturally and rhetorically. Through inquiry-based assignment sequences, students will improve their writing by developing academic research and literacy practices that will be further strengthened in First-Year Writing. Particular attention will be given to critical reading, academic writing conventions, and revision. Small class size promotes frequent student-instructor and student-student interaction. The course also emphasizes the principles of intellectual property and academic integrity in academic writing. This course fulfills a Gen Ed free elective.
+          official-term: Lecture 3, Credits 3 (Fall, Spring, Summer)
+          projects:
+            - title: Descriptive Essay
+              description: The idea for this assignment was to describe something from our life. It had two parts. First, students and I had to create a draft in class (which was reviewed by the professor), and then finish the essay later on after we received professor’s feedback.
+            - title: Critical Response Essay
+              description: For this essay, the task was to comment, in written form, on the text given by the professor. In my case it was “The Trouble with X” by C.S. Lewis. The requirements were to first introduce the reader to the text, write a main thesis statement, add supporting paragraphs, and to finish off with a conclusion.
+            - title: Personal Essay
+              description: The focus of the last essay was to describe my opinion on a topic of our choosing, but the focus was on myself, and how I feel about something.
+            - title: Physical Portfolio
+              description: For this last project, students and I needed to collect our previous essays, design a cover page, print everything, and then bind it (the library bound the pages).
+          notes-comments:
+            - title: Topics
+              content: Concrete writing, text anaysis, writing tips, revising a draft, sentences, sentence structure, sentence fragments, paragraphs, parallel structure…  
+        - id: yops010
+          title: "YOPS-010 RIT 365: RIT Connections"
+          official-description: RIT 365 students participate in experiential learning opportunities designed to launch them into their career at RIT, support them in making multiple and varied connections across the university, and immerse them in processes of competency development. Students will plan for and reflect on their first-year experiences, receive feedback, and develop a personal plan for future action in order to develop foundational self-awareness and recognize broad-based professional competencies. (This class is restricted to incoming 1st year or global campus students.)
+          official-term: Lecture 1, Credits 0 (Fall, Spring)
+          notes-comments:
+            - title: Note
+              content: This course was used to introduce freshmen to the RIT community and its services.
+    - name: Spring (2022)
+      courses:
+        - id: iste121
+          title: ISTE-121 Computational Problem Solving in Information Domain 2
+          official-description: "A second course in using the object-oriented approach to solving problems in the information domain. Students will learn: basic design principles and guidelines for developing graphical user interfaces, and use of the Event Model to implement graphical interfaces; algorithms for processing data structures; multithreading concepts and use of the Multithreading Model to design and implement advanced processing methods. Additional topics include the relational model of information organization, and the Client-Server model. Individual implementation projects are required. A team implementation exercise is used to provide students an opportunity to apply basic software development and project management practices in the context of a medium-scale project. (Prerequisites: ISTE-120 or NACA-161 or equivalent course.)"
+          official-term: Lec/Lab 6, Credits 4 (Fall, Spring)
+          tools-technologies: Java, JavaFX
+          projects:
+            - title: Snake Game (Final Group Project)
+              description: This is a final group project for which students had to create a snake game with JavaFX, and to connect it to a multithreaded server in some way. My teammate and I decided to add a chat section, and the ability of the current player to stream their gameplay to other connected players. 
+              id: snake-game
+              name: Snake Game
+            - title: JavaFX Text Editor (Homework 2)
+              description: This is one of the homeworks assigned for this course for which students had to create a simple text editor with JavaFX. Users can create, edit, rename, and delete .txt files. 
+              id: javafx-text-editor
+              name: JavaFX Text Editor
+          notes-comments:
+            - title: Topics
+              content: GUI, JavaFX, Events, event handling, TextAreas, Menus, InnerClasses, Buttons, binary stream IO, threads, thread control, multithreading, networking, client-server, data transfer and multi-threaded TCP server, sorting, searching, data structures, stacks, queues, linked lists, recursion, directory tree walk, animations, scaling, transitioning, rotating, generics…
+            - title: Course Structure
+              content: This course was conducted 3 times a week. Two of the times were lectures, and the third was a lab exercise (2 hours per session). In addition to that, there were 4 individual homeworks, 2 group homeworks, and, occasionally, an in-class exercise was assigned during lectures. (11 lab exercises, 4 homeworks, 3 practical exams, 1 theory exam, 1 group project).
+        - id: iste230
+          title: ISTE-230 Introduction to Database and Data Modeling
+          official-description: "A presentation of the fundamental concepts and theories used in organizing and structuring data. Coverage includes the data modeling process, basic relational model, normalization theory, relational algebra, and mapping a data model into a database schema. Structured Query Language is used to illustrate the translation of a data model to physical data organization. Modeling and programming assignments will be required. Note: students should have one course in object-oriented programming. (Prerequisites: ISTE-120 or ISTE-200 or IGME-101 or IGME-105 or CSCI-140 or CSCI-142 or NACA-161 or NMAD-180 or BIOL-135 or GCIS-123 or GCIS-127 or equivalent course.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: MySQL, MySQL Workbench
+          notes-comments:
+            - title: Topics
+              content: History of database systems, databases, data stores, user data, metadata, index, app metadata, database management system, database as a model, data modeling, relational model, attributes, tuples, normalization, entities, relational schema, primary key, foreign key, DDL, DML, MySQL, statements, joins, selection, product, intersection, difference…
+        - id: iste240
+          title: ISTE-240 Web and Mobile 2
+          official-description: "This course builds on the basics of web page development that are presented in Web and Mobile I and extends that knowledge to focus on theories, issues, and technologies related to the design and development of web sites. An overview of web design concepts, including usability, accessibility, information architecture, and graphic design in the context of the web will be covered. Introduction to web site technologies, including HTTP, web client and server programming, and dynamic page generation from a database also will be explored. Development exercises are required. (Prerequisites: (ISTE-120 or CSCI-140 or CSCI-141 or GCIS-127 or NACA-161 or IGME-105 or IGME-101 or NMAD-180 or GCIS-123) and (ISTE-140 or NACA-172 or IGME-230 or IGME-235) or equivalent course.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: PHP, HTML, CSS, JS
+          projects:
+            - title: Unix Tutorial (Final Group Project)
+              description: This is a group project for which my teammates and I had to create a tutorial website for beginners on the topic of using Unix commands. The website had to use PHP, and some type of dynamic data had to be implemented. The minimum was to store and display user feedback for the tutorial (a simple comments section).
+              id: unix-tutorial
+              name: Unix Tutorial
+            - title: Dubrovnik Tours (Final Individual Project)
+              description: For this project, students had to create a tour website using PHP with a working comments/reviews section and a minimum of 10 sections about some place. The project was introduced at the beginning of the semester, and it had 2 submissions (midterm and final). For the final version, we had to review the feedback from the previous one, fix issues if needed, and add some additional functionalities. For the topic, I picked my hometown.
+              id: dubrovnik-tours
+              name: Dubrovnik Tours
+          notes-comments:
+            - title: Topics
+              content: HTML, CSS, JS review, DOM, SEO, forms, menus, client-server, htaccess, intro to PHP, PHP modular sites and forms, PHP and connecting to a database, sanitization, validation, AJAX…
+        - id: math161
+          title: MATH-161 Applied Calculus
+          official-description: "This course is an introduction to the study of differential and integral calculus, including the study of functions and graphs, limits, continuity, the derivative, derivative formulas, applications of derivatives, the definite integral, the fundamental theorem of calculus, basic techniques of integral approximation, exponential and logarithmic functions, basic techniques of integration, an introduction to differential equations, and geometric series. Applications in business, management sciences, and life sciences will be included with an emphasis on manipulative skills. (Prerequisite: C- or better in MATH-101, MATH-111, MATH-131, NMTH-260, NMTH-272 or NMTH-275 or Math Placement Exam score greater than or equal to 45.)"
+          official-term: Lecture 4, Credits 4 (Fall, Spring)
+          notes-comments:
+            - title: Topics
+              content: Derivatives, definition of derivatives, limits, tangent lines, high order derivatives, implicit differentiation, related rates, curve sketching, optimization, indefinite integrals, definite integrals, fundemental theorem of calculus, substition, area between curves, numerical integration, differential equations, functions of 2+ variables, sequences, geometric series, real life applications…
+        - id: uwrt150
+          title: "UWRT-150 FYW: Writing Seminar"
+          official-description: Writing Seminar is a three-credit course limited to 19 students per section. The course is designed to develop first-year students’ proficiency in analytical and rhetorical reading and writing, and critical thinking. Students will read, understand, and interpret a variety of non-fiction texts representing different cultural perspectives and/or academic disciplines. These texts are designed to challenge students intellectually and to stimulate their writing for a variety of contexts and purposes. Through inquiry-based assignment sequences, students will develop academic research and literacy practices that will be further strengthened throughout their academic careers. Particular attention will be given to the writing process, including an emphasis on teacher-student conferencing, critical self-assessment, class discussion, peer review, formal and informal writing, research, and revision. Small class size promotes frequent student-instructor and student-student interaction. The course also emphasizes the principles of intellectual property and academic integrity for both current academic and future professional writing.
+          official-term: Lecture 3, Credits 3 (Fall, Spring, Summer)
+          projects:
+            - title: Research Paper
+              description: The task was to write a short research paper on a given topic which had to be properly structured (introduction, literature review, discussion, references) and grammatically correct. My topic was about linguistic relativity, more specifically how language affects thought. After the paper was submitted, other students and I needed to present our research paper in class.
+          notes-comments:
+            - title: Topics
+              content: Literacy narrative, peer review, research paper, what is a research paper, evaluating sources, annotated bibliography, paraphrasing…
+              
+- number: 2
+  terms:
+    - name: Fall (2022)
+      courses: 
+        - id: iste222
+          title: ISTE-222 Computational Problem Solving in the Information Domain 3
+          official-description: "This course expands the student’s knowledge base of applying higher level programming concepts including data structures, algorithm development and analysis, Big-O notation, directed graphs, priority queues, performance, and a greater understanding of how complex software can more easily be designed. Programming assignments are required. (Prerequisites: ISTE-121 or ISTE-200 or CSCI-142 or CSCI-140 or IGME-106 or CSCI-242 or GCIS-124 or GCIS-127 or equivalent course.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: Java
+          notes-comments:
+            - title: Topics
+              content: Number systems, memory, memory leaks, big-O notation, algorithm development, performance, linear data structures, priority queues, linked lists, stacks, searching, sorting, non-linear data structures, heaps, graphs, directed graphs, graph algorithms…
+        - id: iste260
+          title: ISTE-260 Designing the User Experience
+          official-description: "The user experience is an important design element in the development of interactive systems. This course presents the foundations of user-centered design principles within the context of human-computer interaction (HCI). Students will explore and practice HCI methods that span the development lifecycle from requirements analysis and creating the product/service vision through system prototyping and usability testing. Leading edge interface technologies are examined. Group-based exercises and design projects are required. (Prerequisite: ISTE-140 or IGME-230 or NACA-172 or equivalent course.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: inVision, Figma
+          projects:
+            - title: NAPS (Individual Project)
+              description: For this project, students had to think about a hypothetical product (that may exist in the real world or not), develop documentation, and create a promotional video for it. This project is more focused on research (acquiring data via forms), developing user profiles, creating task scenarios, defining the scope of work, deciding on the pricing and performing usability studies for the product than creating a user interface for an app that has good UX. For my project, I thought about a product that would look like a yoga mat which could speed up someone’s sleep (sleeping “8 hours” in 2 hours).
+          notes-comments:
+            - title: Topics
+              content: UX, requirement analysis, personas, technologies (universal, global, accessibility, assistive), GUI design, design life cycles, heuristic evaluations, usability, usability goals, usability testing…
+        - id: iste099
+          title: ISTE-099 Second Year Seminar
+          official-description: "This course helps students prepare for cooperative employment by developing job search approaches and material. Students will explore current and emerging aspects of IST fields to help focus their skill development strategies. Students are introduced to the Office of Career Services and Cooperative Education, and learn about their professional and ethical responsibilities for their co-op and subsequent professional experiences. Students will work collaboratively to build résumés, cover letters, and prepare for interviewing. (Prerequisites: This class is restricted to HCC-BS or CMIT-BS or WMC-BS or WMCCR-BS or CMITDU-BS or COMPEX-UND or CMITKO-BS Major students with at least 2nd year standing.)"
+          official-term: Lecture 1, Credits 0 (Fall, Spring)
+          notes-comments:
+            - title: About
+              content: This course is used as preparation for the undergraduate co-op. It helped students with creating LinkedIn profiles, developing CVs and with writing cover letters for some specific job (a real job posting from linkedin or some other platform). In addition to that, there was a mock job interview at the end of the course where students received feedback on what to watch out for or fix during a real one (eye contact, hand placement, appearance of being tense…).
+        - id: mlfr201
+          title: MLFR-201 Beginning French 1
+          official-description: This is the first course in a two-course sequence. The sequence provides students without prior exposure to the language with a sound basis for learning French as it is used today in its spoken and written forms. The goal of the sequence is proficiency in communication skills with an emphasis on oral proficiency. The sequence also acquaints students with contemporary culture and life in French-speaking countries. Students must take a placement exam if this is their first RIT class in French and they have some prior study of French.
+          official-term: Seminar, Credits 4 (Fall, Spring)
+          notes-comments:
+            - title: Topics
+              content: Greeting, counting, describing the week, talking about yourself, alphabet, describing appearance, personality, professions, asking how is someone, comparison, negation, describing an area, sport activities, describing free time activities, asking about someone’s day, asking for information, talking about the the place we live in, give numerical information, definition a location of an object, describing a room…
+        - id: nssa290
+          title: NSSA-290 Networking Essentials for Developers
+          official-description: This is a course in the basics of network communication for software developers. Topics will include the OSI 7-layer model and its realization in the TCP/IP protocol stack. Students will also learn about naming and name resolution as it is used in the internet, plus the basics of routing and switching. The focus in all of this will be on an analysis of how name resolution, routing and switching operate at the developer's perspective. The specifics of how the socket transport layer appears to the programmer and operates will be a key topic. Finally, an overview of authentication mechanisms and a number of examples of the security vulnerabilities of existing communication protocols will be provided to instruct students on the inherent risks of communication via the INTERNET. (Prerequisites:GCIS-124 or ISTE-121 or ISTE-200 or CSCI-142 or CSCI-140 or CSCI-242 or IGME-102 or IGME-106 or GCIS-127 or equivalent course.)
+          official-term: Lecture 3, Credits 3 (Fall, Spring)
+          tools-technologies: Cisco Packet Tracer
+          projects:
+            - title: Campus Network (Final Group Project)
+              description: In addition to exams, and labs, this course also had a group project for which students had to create a networking simulation of a small campus (create departments, add computers, switches, routers, define subnet masks, routing, firewalls etc.) The project was done in pairs, and it was created using Cisco Packet Tracer. 
+              id: campus-network
+              name: Campus Network
+          notes-comments:
+            - title: Topics
+              content: Network basics, network types, network scaling, subnetting, IP address, MAC address, DTE devices, DCE devices, data flow, switches, routers, TCP protocol, UDP protocol, OSI layers, Networking Simulation Softwares (Cisco Packet Tracer), firewalls,  subnet masks, DNS, DNS lookup tables,...
+        - id: soci102
+          title: SOCI 102 Foundations of Sociology
+          official-description: Sociology is the study of the social world and socialization processes. Sociologists study the broader picture of how societies are structured and organized through a macro-sociological analysis as well as how individuals create their own social reality symbolically through their interactions with others in a micro-sociological analysis. Students in this course will learn the fundamentals of each approach and come away with a sociological framework which they can critically apply to their own lives.
+          official-term: Lecture 3, Credits 3 (Fall, Spring, Summer)
+          projects:
+            - title: Essay
+              description: For this project, students and I had to write a 10 page essay on how society may have influenced us in forming our identities. The requirements were to find and explain terms learned in lectures that may apply in our upbringing. 
+          notes-comments:
+            - title: Topics
+              content: Societal influence, social structure, social construction of reality, dimensions of culture, cultural expectations, social order, identity, presentation of self, building social relationships, deviance…
+            - title: Course structure
+              content: This course had 2 exams, 5 discussion papers, project essay, and weekly discussions.
+    - name: Spring (2023)
+      courses: 
+        - id: iste252
+          title: ISTE-252 Foundations of Mobile Design
+          official-description: "This course is an introduction to designing, prototyping, and creating applications and web applications for mobile devices. These devices include a unique set of hardware and communications capabilities, incorporate novel interfaces, are location aware, and provide persistent connectivity. Topics covered include user interaction patterns, connectivity, interface design, software design patterns, and application architectures. Programming projects are required. (Prerequisites: ISTE-240 or IGME-330 or equivalent course.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: Flutter, Figma
+          projects:
+            - title: myWorkouts Figma Mockup (Project 1)
+              description: For this project, students had to create an interactive mockup of a mobile app in Figma. I created a mockup for an exercise app. 
+              id: myworkouts
+              name: myWorkouts
+            - title: Mammals Web App (Project 2)
+              description: The task was to create a responsive web app with 3 main pages (home, collection list, details page). In the collections list, students had to implement adaptive images to dynamically resize the images, and the data had to be retrieved from a json file. For the topic I chose mammals. 
+              id: mammals
+              name: Mammals
+            - title: Cordova Weather App (Project 3)
+              description: For this project, students had to create an app that utilizes phone location services to display a minimum of 3 pieces of data (time, location name, temperature…). In addition to that, a Cordova plugin had to be added, and at least 2 third party services. The app has to run on both iOS and Android devices. 
+              id: weather-app
+              name: Weather App
+            - title: Cookez Flutter App (Project 4)
+              description: For this project, students had to use either Flutter or React Native to create a simple hybrid app. It had to have at least 3 pages, one plugin, and use 2 APIs. For the topic I chose a recipe app. 
+              id: cookez
+              name: Cookez
+          notes-comments:
+            - title: Topics
+              content: Prototyping, design elements (color, typography…), design patterns, mobile app design, mobile gestures, responsive design, adaptive images, Cordova intro, Android Studio intro, hybrid apps, Flutter…
+        - id: iste330
+          title: ISTE-330 Database Connectivity and Access
+          official-description: "In this course, students will build applications that interact with databases. Through programming exercises, students will work with multiple databases and programmatically invoke the advanced database processing operations that are integral to contemporary computing applications. Topics include the database drivers, the data layer, connectivity operations, security and integrity, and controlling database access. (Prerequisites: (ISTE-230 or CSCI-320) and (ISTE-120 or GCIS-124 or CSCI-140 or CSCI-142 or CSCI-242 or GCIS-127) or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: Java, JDBC, mySQL, JavaFX
+          projects:
+            - title: Query the Berry (Final Group Project)
+              description: For the project, students had to create a Java application that connects to a database and supports multiple users. It had to have around 10 entities in it. In addition to the code, detailed documentation had to be written for the application explaining the scope, technologies, layers, requirements, installation, GUI etc. For the topic, my teammates and I chose to make a quiz application with sign up features, leaderboard, timed questions etc.
+              id: query-the-berry
+              name: Query the Berry
+          notes-comments:
+            - title: Topics
+              content: Database drivers, Database mySQL connector, JDBC, ER diagrams, multilayered applications, Connection, ResultSet, Transactions, Security, connection pooling, data source, data migration, upgradable scrollable ResultSet, RowSets, intro to ORM…
+        - id: iste340
+          title: ISTE-340 Client Programming
+          official-description: "This course will explore the analysis, design, development, and implementation of client-side programming in the context of Internet technologies, mobile devices, Web-based client systems and desktop applications. Students will learn to design and build usable and effective interactive systems, clients, and interfaces. Key features addressed will include browser and platform compatibility, object reusability, bandwidth and communications issues, development environments, privacy and security, and related technologies and APIs. Programming is required. (Prerequisites: (ISTE-240 or IGME-330) and (GCIS-124 or ISTE-121 or ISTE-200 or CSCI-142 or CSCI-140 or IGME-106 or IGME-102 or GCIS-127) or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: JS, C# (ASP.NET), jQuery
+          projects:
+            - title: Custom Sandwiches Interactive JS Frontend (Project 1)
+              description: For the first project, the task was to create a frontend of an application with the topic of our choosing. The data was not pulled from an API, but from a file. For the requirements, it had to follow the MVC structure, have conditional dropdowns, and utilize local storage. There need to be at least 3 layers selected, and each select has to have a minimum of 2 options. For the topic I have chosen to create a sandwich creator web app where I user can pick from 2 different breads, spreadings, and meats (hams). 
+              id: custom-sandwiches
+              name: Custom Sandwiches
+            - title: RIT Redesigned jQuery Frontend (Project 2)
+              description: For the project, students had to redesign and create a new frontend for the IST Department of Rochester Institute of Technology using provided API endpoints. The app has to use jQuery, a minimum of 3 third party and 1 custom jQuery plugins.
+            - title: RIT Redesigned ASP.NET Frontend (Project 3)
+              description: The third project is the same as the second one, but it has to be implemented using ASP.NET Core (MVC).
+              id: rit-redesigned
+              name: RIT Redesigned
+          notes-comments:
+            - title: Topics
+              content: Frontend, AJAX, async, MVC, JS, JS modules, jQuery, local storage,  HTML Forms, PHP ASP.NET, consuming an API, dynamic rendering…
+        - id: mlfr202
+          title: MLFR-202 Beginning French 2
+          official-description: "This is the second course in a two-course sequence. The sequence provides students without prior exposure to the language with a sound basis for learning French as it is used today in its spoken and written forms. The goal of the sequence is proficiency in communication skills with an emphasis on oral proficiency. The sequence also acquaints students with contemporary culture and life in French-speaking countries. (Prerequisites: Minimum score of 1 on RIT Language Placement Exam or MLFR-201 or equivalent course.)"
+          official-term: Seminar, Credits 4 (Fall, Spring)
+          notes-comments:
+            - title: Topics
+              content: Foods, making food, giving prices, quantity (numeric info), describing the place we live in, where it is, colors, saying what is ours, possessive adjectives, describing family, friends, appearance, feelings, describing where we go in our free time, suggesting activities, planning, verbs take and have, past tense, discussing the weather, buying clothes, inviting someone…
+        - id: swen383
+          title: SWEN-383 Software Design Principles and Patterns
+          official-description: "Quality software designs and architectures reflect software engineering principles that represent best contemporary practice. This course focuses on explicating these fundamental principles, examining a set of design and architecture patterns that embody the principles, and applying patterns appropriate to a design problem in a given context. Restricted to IST majors only. (Prerequisites: ISTE-240 or equivalent course.Co-requisite: ISTE-340 or equivalent course.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: Java, JavaFX, GitLab
+          projects: 
+            - title: Diet Manager (Group Project)
+              description: This is a group project that was assigned at the beginning of the semester, and it was modified up until the end. The topics from lectures built upon the project as the semester went on. For the topic, students worked on a diet manager application that allowed the user to add foods, create recipes, save foods eaten during the day, see the calculated calories on graph etc.
+              id: diet-manager
+              name: Diet Manager
+          notes-comments:
+            - title: Topics
+              content: Software design principles, DRY, separation of concerns, high cohesion, low coupling software design patterns, Singleton, Observer, Factory, Adapter, Facade, Composite, refactoring, UML diagrams, sequence diagrams, GitLab intro…
+    - name: Summer (2023)
+      courses:
+        - id: iste499-1
+          title: ISTE-499 Undergraduate Co-op (1st)
+          official-description: Students perform paid, professional work related to their program of study. Students work full-time during the term they are registered for co-op. Students must complete a student co-op work report for each term they are registered; students also are evaluated each term by their employer. A satisfactory grade is given for co-op when both a completed student co-op report and a corresponding employer report that indicates satisfactory student performance are received. (Enrollment in this course requires permission from the department offering the course.)
+          official-term: Co-op, Credits 0 (Fall, Spring, Summer)
+          tools-technologies: C#, WinForms, ASP.NET
+          notes-comments:
+            - title: notes
+              content: Students have to work for a minimum of 10 weeks full time to complete this course (first 400 hours of the 800 hours needed to graduate).
+            - title: My coop
+              content: "Employer: [[lauscc]]"
+              links: 
+                - token: lauscc
+                  text: LausCC
+                  url: /experience/#laus
+        
+- number: 3
+  terms:
+    - name: Fall (2023)
+      courses:
+        - id: iste341
+          title: ISTE-341 Server Programming
+          official-description: "This course provides in-depth work in server-side programming. Students will develop dynamic, data centric web pages and systems, and server-side information services that will be available to clients implemented in a variety of software technologies. Topics include XML parsing, generation, and consumption; web configuration and security; design patterns; web service structures, and application security. Programming projects are required. (Prerequisites: ISTE-340 and (ISTE-230 or CSCI-320) and (SWEN-383 or SWEN-262) or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: PHP, Java, JakartaEE, NodeJS, Express, Postman
+          projects:
+            - title: Event Management (PHP, Project 1)
+              description: For this project, students had to create an event management web application using PHP. It had to have a login/signup form, support at least 2 user types (regular user/admin), and be able to perform CRUD operations on a database (create events, enroll, edit events, delete events, view attendees…). 
+              id: event-management
+              name: Event Management
+            - title: Employee Management (JakartaEE, Project 2)
+              description: For the second project, the task was to create a multilayer (service, business, data layers) employee management REST service. It had to be built using JakartaEE, and tested with Postman. This application doesn’t have a frontend.
+            - title: Employee Management (NodeJS, Project 3)
+              description: The third project is the same when it comes to the topic and the requirements, but it had to be built using NodeJS and Express. 
+              id: employee-management
+              name: Employee Management
+          notes-comments:
+            - title: Topics
+              content: Backend, PHP Review, OOP, PDO, state Management, sessions, routing, database connectivity, RESTful web services, Docker, multicontainer apps, NodeJS, NodeJS Express, connecting to MongoDB…
+        - id: engl210
+          title: ENGL-210 Literature and Cultural Studies
+          official-description: In this course, students will study literature, movements, and writers within their cultural contexts and in relation to modes of literary production and circulation. Students will hone their skills as attentive readers and will engage with literary analysis and cultural criticism. The class will incorporate various literary, cultural, and interdisciplinary theories--such as psychoanalytic theory, feminist and queer theories, critical race studies, and postcolonial theory. Using these theoretical frameworks in order to study texts, students will gain a strong foundation for analyzing the ways literary language functions and exploring the interrelations among literature, culture, and history. In doing so, they will engage issues involving culture, identity, language, ethics, race, gender, class, and globalism, among many others.
+          official-term: Lecture 3, Credits 3 (Fall, Spring)
+          projects:
+            - title: Trickster gods Comparison Research and Presentation
+              description: The project for this course was to pick one of the topics from the lecture materials, research about it, and then present it in class. The assignment was done in pairs, and for the topic my teammate and I worked on the comparison of mythological trickster gods (Wakjankaga vs Hermes).
+          notes-comments:
+            - title: Topics
+              content: Drama, Elizabethan theatre, the golden age, theatre in the age of Shakespeare, The Tempest, essays, transcendentalism, civil rights, Henry David Thoreau, resistance to civil government, Ralph Aldo Emerson, self-reliance, world mythologies, native american trickster tales, Felix White Sr.'s Introduction to Wakjankaga, Winnebago trickster, Ernest Hemingway, Emily Dickinson, writing citations, literary review…
+        - id: iste358
+          title: ISTE-358 Foundations of Wearable and Ubiquitous Computing
+          official-description: "Wearable technologies, like smart watches, and ubiquitous computing technologies, including the Internet of Things, are entering the mainstream. In this introductory course, students will learn the history of research in these areas and fundamentals of developing for these devices, including interface design, networking, physical form factors; societal issues such as privacy will also be discussed. This class is primarily project-based. (Prerequisites: ISTE-341 and ISTE-252 or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall)
+          tools-technologies: Arduino, Arduino IDE, Arduino UNO, C, Tinkerkad
+          projects:
+            - title: Arduino Safety Deposit Box
+              description: For the project, the task was to combine multiple components covered in class, write code for it, create an outer shell in some 3D software (Tinkercard, Blender…), connect everything in one logical unit, and present it in class. I chose to make a safe. A user could configure their PIN (on a keypad), see feedback on a 16x2 LCD screen (* signs for password, is the password correct, is it opened/closed…), and see/hear the servo motor move (lock/unlock) the safe. 
+              id: safety-deposit-box
+              name: Safety Deposit Box
+          notes-comments:
+            - title: Topics
+              content: Basic concepts of electric circuits, intro to Arduino and C, circuit diagrams, combinational logic, logic gates, components, registers, sensors, temperature/humidity sensor, HCSR04 ultrasonic sensor, screens, LCD-1602A_CA, input components, buttons, keypads, actuators, servo motors, intro to 3D printing…
+            - title: Course structure
+              content: This course had 2 exams (midterm, final), lab exercises almost each week where different components were explored, and a final project.
+        - id: iste422
+          title: ISTE-422 Application Development Practices
+          official-description: "In this course, students will gain experience with the processes, practices, and tools professional developers use to deliver robust and maintainable applications. Students will apply these practices and tools to build smaller-scale production-quality applications and systems. Topics include development life cycles, version control, test bed development and use, build utilities, error handling, deployment tools, and documentation. (Prerequisites: ISTE-121 or ISTE-200 or CSCI-142 or CSCI-140 or IGME-106 or CSCI-242 or GCIS-124 or GCIS-127 or equivalent course.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: Java, JavaFX, GitLab, GitLab CI/CD
+          projects:
+            - title: Queryfier .edg File Converter (Group Project)
+              description: At the beginning of the course, a buggy, unfinished project that needed refactoring was provided to students. As the lectures progressed, the point was to implement what was learned in class (fix mistakes, add new features, setting up a CI/CD, remove warnings from static/dynamic code analysis tools) to that project. It was a group assignment done in teams of 5-6 students. The app was a GUI database table builder with additional export features to SQL. 
+              id: queryfier
+              name: Queryfier
+          notes-comments:
+            - title: Topics
+              content: Intro to methodologies, waterfall, agile, scrum, sprints, build utilities, build servers, testing, GitLab CI/CD pipeline, static code analysis, refactoring…
+        - id: mlfr301
+          title: MLFR-301 Intermediate French 1
+          official-description: "This is the first course of a two-course sequence at the intermediate level. The sequence provides students with the tools necessary to increase their ability to function in French. Communicative activities, contemporary texts, vocabulary study, and grammar are used to expand all communication skills, especially oral proficiency. This sequence continues to address issues of contemporary French life and culture as well as the cultures of the Francophone world. (Prerequisites: Minimum score of 2 on RIT Language Placement Exam or MLFR-202 or MLFR-202T or equivalent course.)"
+          official-term: Seminar, Credits 3 (Fall, Spring)
+          notes-comments:
+            - title: Topics
+              content: Explain what and when you did, past tense have, telling where you when, past tense “be”, discussing activities and weather, deciding what to wear, pronouns, inviting someone, reflexive verbs, talking about routines, verbs ending in -ir, identifying parts of the body, going to the doctor, talk about your impressions, good/bad sides, character traits, talk about technology (vocabulary)...
+    - name: Spring (2024)
+      courses: 
+        - id: iste442
+          title: ISTE-442 Secure Web Application Development
+          official-description: "When building larger-scale web applications, there are a myriad of concerns that range from technology, security, framework, and architecture selection to runtime performance optimization. This course focuses on the development of secure integrated web applications that consume information served from one or many sources. Trends in web application development are identified and assessed. Programming projects are required. (Prerequisites: ISTE-341 or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall)
+          tools-technologies: OWASP Zap, Angular, NestJS, MySQL, Phaser, VueJS
+          projects:
+            - title: Scynscape Escape Room (Gamification of the Learning Process, Group Project)
+              description: For the group project, the task was to create a multiplayer turn based educational game that implements security precautions learned in class. In addition to that it has to be some form of a web application. For the assignment, my teammates and I created an escape room like game with chemistry for the topic where a player combines and creates chemical compounds which will open new clues as the game progresses.
+              id: scynscape
+              name: Scynscape
+            - title: SeeTech Webshop (Individual Project)
+              description: For the individual project, the task was to pick some web technology (library, framework…), create an application, research the pros and cons in terms of security, document the development experience, and present it in class. For the technology, I picked VueJS, and I created a simple web shop application that sells tech (computers, cameras, phones, headphones etc.).
+              id: seetech
+              name: SeeTech
+          notes-comments:
+            - title: Topics
+              content: Web app overview, personal system attacks, SQL injections, XSS, CSRF, OWASP, Zap, cryptography, encryption, symmetric/asymmetric encryption, hashing, profiling, load testing, heap analysis, memory allocation…
+        - id: envs150
+          title: ENVS-150 Ecology of the Dalmatian Coast
+          official-description: This course is an introduction to population, community, and ecosystem ecology; stressing the dynamic interrelationships of plant and animal communities of the Dalmatian Coast. The course includes such ecological concepts as energy flow and trophic levels in natural communities, population and community dynamics, biogeography and ecosystem ecology. Field trips to local Croatian ecosystems are included.
+          official-term: Lab 2, Lecture 3, Credits 4 (Spring)
+          projects:
+            - title: E-Waste Research Paper (Individual Project)
+              description: For this course, a research paper was assigned, and students had to write about some topic that relates to ecology. I decided to write about e-waste.
+            - title: Calculating Biomass at Park Bundek (Group Project)
+              description: For the group project, students were separated into teams, and each team had to measure the biomass of some area filled with trees (a park usually). 
+          notes-comments:
+            - title: Topics
+              content: Intro to ecology of the dalmatian coast, niches, biomes, responses of natural systems to environmental stress, cycles, feedback loops, climate feedback, planetary cycles, global warming, ecological succession, biodiversity, nutrient cycling, decomposition, toxicology, water, water pollution, air, air pollution…
+        - id: iste444
+          title: ISTE-444 Web Server Development and Administration
+          official-description: "Web developers often need to go beyond building web pages and client-server programming to plan, install, configure, develop, and maintain the Web servers that host their sites. They need to understand issues of scalability, performance, and security as they apply to deploying a web presence. This course provides a practical hands-on approach to development, configuration, and administration of Web server platforms, including operating system administration and shell scripting. Topics include issues of and approaches to scalability, multiple server systems, security, and auditing, as well as the many configuration options, modules, and server alternatives available. (Prerequisites: ISTE-341 or equivalent course.)"
+          official-term: Lec/Lab 3, Credits 3 (Spring)
+          tools-technologies: Microsoft Azure, Amazon AWS, VMWareFusion, CentOS
+          notes-comments:
+            - title: Topics
+              content: Web server software selection, OS, hosting options, server access, IIS, Apache, vertical scaling, horizontal scaling, geographic scaling, sessions distribution, virtualization, cloud computing, DNS, DNS issues, security and auditing, users, groups, authentication, authorization, SSL, certificates, web server development…
+            - title: Course structure
+              content: This course had 2 exams (midterm, final), and labs/exercises bi-weekly.
+        - id: iste470
+          title: ISTE-470 Data Mining and Exploration
+          official-description: "Rapidly expanding volumes of data from all areas of society are becoming available in digital form. High value information and knowledge is embedded in many of these data volumes. Unlocking this information can provide many benefits, and may also raise ethical questions in certain circumstances. This course provides students with a hands-on introduction to how interactive data exploration and data mining software can be used for data-driven knowledge discovery, including domains such as business, environmental management, healthcare, finance, and transportation. Data mining techniques and their application to large data sets will be discussed in detail, including classification, clustering, association rule mining, and anomaly detection. In addition, students will learn the importance of applying data visualization practices to facilitate exploratory data analysis. (Prerequisites: (STAT-145 OR MATH-251) and (GCIS-124 OR ISTE-121 OR CSCI-140 OR CSCI-142 OR CSCI-242 OR ISTE-200 OR IGME-201 OR IGME-106 OR GCIS-127) or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: Python, Pandas, Numpy, Dash Plotly
+          projects:
+            - title: Transaction Visualizer, PDF Bank Statement Parser
+              description: For the project, students needed to pick from two types. A data focused (website scraping, parsing), or a model focused (picking a dataset, and training a model with it) project. I chose to create a data focused project that parses bank statements in PDF form, and visualizes spending data using a calendar heat map (the more one spends that day, darker the color gets in the calendar cell).
+              id: transaction-visualizer
+              name: Transaction Visualizer
+          notes-comments:
+            - title: Topics
+              content: Intro to python, python anaconda, pandas, matplotlib, cluster analysis, classification, artificial neural networks, decision trees, anomaly detection, association analysis, deep learning…
+        - id: mlfr302
+          title: MLFR-302 Intermediate French 2
+          official-description: "This is the second course of a two-course sequence at the intermediate level. The sequence provides students with the tools necessary to increase their ability to function in French. Communicative activities, contemporary texts, vocabulary study, and grammar are used to expand all communication skills, especially oral proficiency. This sequence continues to address issues of contemporary French life and culture as well as the cultures of the Francophone world. (Prerequisites: Minimum score of 3 on RIT Language Placement Exam or MLFR-301 or equivalent course.)"
+          official-term: Seminar, Credits 3 (Fall, Spring)
+          notes-comments:
+            - title: Topics
+              content: Pronouns which, what, where, placing a hotel reservation (price, room, organization, accommodation), future tense, talking about future plans, conditional tense, media, giving orders, persuade, argumenting, starting, continuing, ending a conversation, expressing an opinion, talking about what we are going to do, employment, careers, forming hypothesis... 
+    - name: Summer (2024)
+      courses:
+        - id: iste499-2
+          title: ISTE-499 Undergraduate Co-op (2nd)
+          official-description: Students perform paid, professional work related to their program of study. Students work full-time during the term they are registered for co-op. Students must complete a student co-op work report for each term they are registered; students also are evaluated each term by their employer. A satisfactory grade is given for co-op when both a completed student co-op report and a corresponding employer report that indicates satisfactory student performance are received. (Enrollment in this course requires permission from the department offering the course.)
+          official-term: Co-op, Credits 0 (Fall, Spring, Summer)
+          tools-technologies: Flutter
+          notes-comments:
+            - title: notes
+              content: Students have to work for a minimum of 10 weeks full time to complete this course (first 400 hours of the 800 hours needed to graduate).
+            - title: My coop
+              content: For my second coop, I worked on a team project (project based unpaid co-op) with the professor of psychology on campus. I worked on a note taking feature for an app that was designed to help students with course work. Technically speaking, my employer was RIT Croatia. 
+
+- number: 4
+  terms: 
+    - name: Fall (2024)
+      courses:
+        - id: iste500
+          title: ISTE-500 Senior Development Project I
+          official-description: "The first course in a two-course, senior level, system development capstone project. Students form project teams and work with sponsors to define system requirements. Teams then create architectures and designs, and depending on the project, also may begin software development. Requirements elicitation and development practices introduced in prior coursework are reviewed, and additional methods and processes are introduced. Student teams are given considerable latitude in how they organize and conduct project work. (This course is restricted to WMC-BS, HCC-BS, CMIT-BS, and 2 ISTE-499 completed or (1 ISTE-498 completed and 1 ISTE-499 completed).)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          projects:
+            - title: Realex.in (Team Capstone Project)
+              description: Realex.in is a real-estate management platform which focuses on non-standard vacation homes. It is a responsive web application that is supported by blockchain technology. The task for the first semester was to explore use cases, develop a work breakdown structure, write a project plan, assess the potential risks, and test out new technologies (blockchain mostly). 
+              id: realex
+              name: Realex.in
+          notes-comments:
+            - title: Topics
+              content: Teams, group dynamics, requirements development, tracking, project charters, methodologies, strategies, documentation, use cases, MVP, work breakdown structure, technology selection, testing, cost estimation, risk management, wireframes, development environments…
+            - title: course
+              content: In the first semester, most of the work was done on the documentation (planning, making graphs, assessing risks, understanding the project…), and preparation for the development that follows next semester. Only a little bit of coding was done at the end to test out unknown technologies. 
+            - title: sponsor
+              content: For this course, an “external person” from outside RIT was brought in. They acted as a potential client/sponsor, and presented an idea for an application which students needed to develop (Realex.in my case). 
+        - id: envs151
+          title: ENVS-151 Scientific Inquiries in Environmental Science
+          official-description: This course is part of a two-semester sequence that when combined presents an integrated approach to the interrelated, interdisciplinary principles of environmental science through case studies, site visits, and field work. Through assigned readings, classroom discussion and case studies dealing with global environmental issues as well as the environmental issues related to the Dalmatian coast, students will learn how to critically analyze environmental problems from a multidisciplinary perspective and to propose solutions.
+          official-term: Lab 2, Lecture 3, Credits 4 (Fall)
+          projects:
+            - title: Review of Minimalism, Research Paper (Impact on the Environment)
+              description: For the research paper, I reviewed the impact of a minimalist lifestyle on the environment. By minimalism, I mean the process of buying and consuming less, not the modern style of clothes, architecture and furniture with a simple design. 
+          notes-comments: 
+            - title: Topics
+              content: Overview of current global environmental issues, scientific creativity, cases of collapsed civilizations, data collection, introduction to data analysis, organizing information in a research paper, the story of humans, survival , migrations, dispersal…
+        - id: iste454
+          title: ISTE-454 Mobile Application Development 1
+          official-description: "This course extends the material covered in the Foundations of Mobile Design course and provides students with the experience of creating interesting applications for small-size form factor mobile devices such as smartphones These devices are exceptionally portable, have unique sets of hardware and communications capabilities, incorporate novel interfaces, are location aware, and provide persistent connectivity. Students are encouraged to make creative use of these unique device characteristics and operating properties to develop innovative applications. Programming projects are required. (Prerequisites: (ISTE-252 and ISTE-340) or IGME-330 or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: Swift, SwiftUI, XCode (iOS Development)
+          projects:
+            - title: Rack 
+              description: For the project, students had to create an iOS application that was proposed to the professor at the beginning of the course. My idea was to create a productivity app that combines features from typical Notes, Calendar, and Reminders apps.
+              id: rack
+              name: Rack
+          notes-comments:
+            - title: Topics
+              content: Introduction to iOS, Swift, Application design, SwiftUI, text, images, buttons, PLists, Tuples, delegates, protocols, MapKit, CoreLocation, Lists, State and Binding, Navigation Views, Tab Views, data flow, JSON, gestures, animations…
+        - id: anth210
+          title: ANTH-210 Culture and Globalization
+          official-description: By exploring critical issues of globalizing culture, we examine how ideas, attitudes, and values are exchanged or transmitted across conventional borders. How has the production, articulation, and dissemination of cultural forms (images, languages, practices, beliefs) been shaped by global capitalism, media industries, communication technologies, migration, and tourist travels? How are cultural imaginaries forged, exchanged, and circulated among a global consumer public? How has the internationalizing of news, computer technologies, video-sharing websites, blogging sites, and other permutations of instant messaging served to accelerate cultural globalization? Students will be introduced to anthropological perspectives on cultural globalization, the transmission of culture globally, and the subsequent effects on social worlds, peoples, communities, and nations.
+          official-term: Lecture 3, Credits 3 (Fall/Spring/Summer)
+          projects:
+          - title: Collective Memory
+            description: For this assignment, students had to identify an object or event that connects them to a group of people that share a similar experience as them. Something that makes them a part of “collective memory” (a term coined by Maurice Halbwach)  It can be some special tradition, a dish, ornament, equipment, anything that connects their personal history with a larger group. For the task, we had to explain why and how the chosen item is important while implementing terms learned in class. For my topic, I chose Japanese curry rice.
+          notes-comments:
+            - title: Topics
+              content: Defining globalization, politics, cultural identity, global economy, capitalism, culture of capitalism, consumer, laborer, capitalist, nation states, new means of consumption, organizations and power, global businesses…
+        - id: phil103
+          title: PHIL-103 Critical Thinking
+          official-description: The purpose of this course is to improve everyday reasoning skills. Critical thinking means evaluating the reasons for our actions and beliefs. Ideally, we think our actions are rational, not arbitrary. But one does not have to look far to discover disagreement and apparent irrationality. What accounts for this? This course investigates how to argue effectively, how to evaluate evidence and reasons, and how to marshal good evidence and reasons in order to arrive at reliable knowledge and justified action. It covers common mistakes that people make in causal, statistical, moral, and everyday reasoning, and it teaches how and when it pays to be skeptical,reflective, and critical.
+          official-term: Lecture 3, Credits 3 (Fall, Spring)
+          notes-comments:
+            - title: Topics
+              content: Introduction to logic, reasoning, identifying inconsistencies, errors, arguments, constructing, identifying, and evaluating arguments, logical connections, relationships between ideas, systematical problem analysis, accessing the relevance of arguments and ideas…
+
+    - name: Spring (2025)
+      courses: 
+        - id: iste501
+          title: ISTE-501 Senior Development Project 2
+          official-description: "The second course in a two-course, senior level, system development capstone project. Student teams complete development of their system project and package the software and documentation for deployment. Usability testing practices introduced in prior course work are reviewed, and additional methods and processes are introduced. Teams present their developed system and discuss lessons learned at the completion of the course. (Prerequisites: ISTE-500 or equivalent course.)"
+          official-term: Lecture 3, Credits 3 (Fall, Spring)
+          tools-technologies: React, Three.js, NodeJS, Express, PostgreSQL, Supabase, Hyperledger Fabric
+          projects:
+            - title: Realex.in (Team Capstone Project)
+              description: Realex.in is a real-estate management platform which focuses on non-standard vacation homes. It is a responsive web application supported by blockchain technology. The task for the second semester was to develop and present a minimum viable product with a deployment plan. 
+              id: realex
+              name: Realex.in
+          notes-comments:
+            - title: Topics
+              content: Leadership, team management, beta product presenting, usability testing, system testing, integration needs, individual status reports, PM status reports, sponsor reports, gate reviews, phase gates, traceability matrix, deployment…
+        - id: iste432
+          title: ISTE-432 Database Application Development
+          official-description: "The second course in a two-course, senior level, system development capstone project. Student teams complete development of their system project and package the software and documentation for deployment. Usability testing practices introduced in prior course work are reviewed, and additional methods and processes are introduced. Teams present their developed system and discuss lessons learned at the completion of the course. (Prerequisites: ISTE-500 or equivalent course.)"
+          official-term: Lecture 3, Credits 3 (Fall, Spring)
+          tools-technologies: Java, Spring, Hibernate
+          projects:
+            - title: Vitalin, Doctor's Appointment Management App (Group Project)
+              description: For the project, the task was to create a web application with an ORM of choice (Spring, Hibernate was recommended). It had to have around 15 entities (excluding many-to-many tables), a simple frontend, it had to support multiple user roles, and perform CRUD operations on the database. My teammate and I chose to make a simplified medical dashboard for managing doctor’s appointments.
+              id: vitalin
+              name: Vitalin
+          notes-comments:
+            - title: Topics
+              content: Software architecture, advanced database connectivity, transactions, object-relational mapping, security, database design, best practices, patterns, what to avoid, performance, scalability, JDBC revision, intro to Spring, Spring Boot, intro to Hibernate…
+        - id: iste456
+          title: ISTE-456 Mobile Application Development 2
+          official-description: "This course extends the Foundations of Mobile Design course in that students will learn to apply mobile design skills to develop applications in the Android platform. Students will design, develop, and test mobile applications using the Android Studio IDE. This course covers the major components such as activities, receivers, content providers, permissions, intents, fragments, data storage, and security. Programming projects are required (Prerequisites: (ISTE-252 and ISTE-340) or IGME-330 or equivalent courses.)"
+          official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
+          tools-technologies: Kotlin, Jetpack Compose, Android Studio
+          projects:
+            - title: Smudge, Drawing Application
+              description: The assignment was to create an Android application using Jetpack Compose on a topic that was previously approved by the professor. I decided to create a simplified drawing application inspired by Procreate Pocket, a popular iOS app for drawing and painting.
+              id: smudge
+              name: Smudge
+          notes-comments:
+            - title: Topics
+              content: Intro to the Android environment, Android Studio, Kotlin, Android views, Jetpack compose, UI elements, styling, data store, local storage options, coroutines, Surface, Scaffold components, navigation, API fetching, view models, permissions, location, animations…
+        - id: anth350
+          title: ANTH-350 Global Economy & Grassroots
+          official-description: Economic globalization has given birth to global, grassroots social movements. This course examines how global economic integration is brought about through multilateral institutions, multinational corporations, outsourcing, trade agreements, international lending, and neoliberal reforms. We consider impacts (cultural, economic, and health) of these trends on employees, farmers, small businesses, consumers, and the environment in the developed and developing worlds (with special emphasis on Latin America). We examine beliefs, alternative visions, and strategies of grassroots movements responding to these challenges.
+          official-term: Lecture 3, Credits 3 (Spring)
+          notes-comments:
+            - title: Topics
+              content: Globalization, anti-globalization, alter-globalization, intro to neoliberalism, media politics, Mexico’s Zapatistas, pursuit of freedom, wealth inequality…
+            - title: Course structure
+              content: This course had 2 pairs of exams (a midterm, and a final, written + oral form) and weekly discussions.
+        - id: soci230
+          title: SOCI-230 Sociology of Work
+          official-description: "This course analyzes and assesses social relations of paid labor. Sociology's major ideas about the ways we work will be examined and applied to numerous important topics such as: workplace organization, unions, labor legislation, health and safety, workplace culture, interplays between work and family, experiences of work as alienating or satisfying, inequalities at work, and social mobility."
+          official-term: Lecture 3, Credits 3 (Fall, Spring)
+          projects:
+            - title: Job Interview Process (Project Assignment)
+              description: This is a 4 part assignment designed to mimic the process of finding a job. The first part was to find some existing job, and explain what it is with our reasoning as to why we chose it. The second part was to create a CV, and cover letter for the position. The third was an interview followed by the fourth part, a SWOT analysis (strengths, weaknesses, opportunities, threats). After the interview, everyone got individual feedback on what to work on in terms of communication, what to say, how to say it, eye contact, hand placement etc. 
+          notes-comments:
+            - title: Topics
+              content: Sociological perspectives on work and leisure, embarking in careers, work roles, job interviews, socialization to work, work and discrimination, fulfillment and discontent at work, unemployment…
+            - title: Course Structure
+              content: This course had 2 exams (midterm, final, written + oral form), 5 discussion papers, in-class discussions, and a project.

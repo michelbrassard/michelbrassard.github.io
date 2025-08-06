@@ -1,18 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="../../assets/styles.css">
-</head>
-<body>
-    <nav>
-        <a href="">Nav link</a>
-        <a href="" class="active">Nav link</a>
-    </nav>
-    <main>
-        <h1>Project Descriptions</h1>
-    </main>
-    <footer>just a footer</footer>
-</body>
-</html>
+---
+layout: default
+title: Project Descriptions
+stylesheets:
+  - descriptions.css
+  - gallery.css
+---
+
+<h1 class="title-with-backlink">
+    <a href="/projects" class="backlink">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-left-icon lucide-arrow-left"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+    </a>
+    Project Descriptions
+</h1>
+<div class="wrapper">
+    <div id="zoomed-gallery">
+        <div>
+            <div class="button-container">
+                <p id="image-name" class="xs-title">Title</p>
+                <button onclick="closeGallery()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            
+            <img src="" alt="image" srcset="">
+            <div class="image-container">
+                <button onclick="prevImage()" id="previous">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left-icon lucide-chevron-left"><path d="m15 18-6-6 6-6"/></svg>
+                </button>
+                <button onclick="nextImage()" id="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+    <section id="side-navigation">
+        {% include projects-side-navigation.html %}
+    </section>
+    <section class="content">
+        {% include project-descriptions.html %}
+    </section>
+</div>

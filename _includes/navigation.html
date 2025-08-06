@@ -1,0 +1,47 @@
+<nav>
+    <div class="desktop">
+        <a href="{{ site.baseurl }}/" class="name">
+            {% if page.url == '/' %}
+                Portfolio
+            {% else %}
+                Michel Brassard
+            {% endif %}
+        </a>
+        <div class="links">
+            <a href="{{ site.baseurl }}/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+            <a href="{{ site.baseurl }}/education" class="{% if page.url contains '/education/' %}active{% endif %}">Education</a>
+            <a href="{{ site.baseurl }}/experience" class="{% if page.url == '/experience/' %}active{% endif %}">Work Experience</a>
+            <a href="{{ site.baseurl }}/projects" class="{% if page.url contains '/projects/' %}active{% endif %}">Projects</a>
+            <a href="{{ site.baseurl }}/interests" class="{% if page.url contains '/interests/' %}active{% endif %}">Hobbies & Interests</a>
+        </div>
+    </div>
+    <div class="mobile">
+        <a href="{{ site.baseurl }}/">
+            <svg class="icon {% if page.url == '/' %}active{% endif %}" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-house-icon lucide-house"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        </a>
+        <div class="links">
+            <a href="{{ site.baseurl }}/education" class="{% if page.url contains '/education/' %}active{% endif %}">Education</a>
+            <a href="{{ site.baseurl }}/experience" class="{% if page.url == '/experience/' %}active{% endif %}">Work Experience</a>
+            <button onclick="toggleMobileNavigation()">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-right-icon lucide-align-right"><path d="M21 12H9"/><path d="M21 18H7"/><path d="M21 6H3"/></svg>
+            </button>
+        </div>
+        <button id="mobile-navigation-hovering-button" onclick="toggleMobileNavigation()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-right-icon lucide-align-right"><path d="M21 12H9"/><path d="M21 18H7"/><path d="M21 6H3"/></svg>
+        </button>
+        <div id="overlay">
+            <div class="button-container">
+                <button onclick="toggleMobileNavigation()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                </button>
+            </div>
+            <div class="list">
+                <a href="{{ site.baseurl }}/">Home</a>
+                <a href="{{ site.baseurl }}/education">Education</a>
+                <a href="{{ site.baseurl }}/experience">Work Experience</a>
+                <a href="{{ site.baseurl }}/projects">Projects</a>
+                <a href="{{ site.baseurl }}/interests">Hobbies & Interests</a>
+            </div>
+        </div>
+    </div>
+</nav>

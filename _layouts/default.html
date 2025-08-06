@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/shared.css">
+    {% if page.stylesheets %}
+        {% for stylesheet in page.stylesheets %}
+            <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/{{ stylesheet }}" />
+        {% endfor %}
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="{{ site.baseurl }}/assets/script.js" defer></script>
+</head>
+<body>
+    {%include navigation.html %}
+    
+    <main class="dot-background">
+        {{ content }}
+    </main>
+    
+    {%include footer.html %}
+</body>
+</html>

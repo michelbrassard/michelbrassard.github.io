@@ -1,0 +1,15 @@
+<div class="links courses">
+    {% for year in site.data.rit-courses %}
+        <p class="title">Year {{ year.number }}</p>
+        {% for term in year.terms %}
+            <div class="indent">
+                <p class="xs-title">{{ term.name }}</p>
+                <div class="indent">
+                    {% for course in term.courses %}
+                        <a href="{{ site.baseurl }}/education/RIT-courses/#{{course.id}}">{{ course.title }}</a>
+                    {% endfor %}
+                </div>
+            </div>
+        {% endfor %}
+    {% endfor %}
+</div>

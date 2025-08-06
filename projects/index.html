@@ -1,18 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="../assets/styles.css">
-</head>
-<body>
-    <nav>
-        <a href="/education">Nav link</a>
-        <a href="" class="active">Nav link</a>
-    </nav>
-    <main>
-        <h1>Projects</h1>
-    </main>
-    <footer>just a footer</footer>
-</body>
-</html>
+---
+layout: default
+title: Projects
+stylesheets:
+  - projects.css
+---
+
+<h1>Projects</h1>
+<div class="wrapper">
+    {% for type in site.data.projects %}
+        {% for category in type.categories %}
+            {% for project in category.projects %}
+                {% include card.html
+                    id=project.id
+                    thumbnail=project.thumbnail
+                    title=project.title
+                    description=project.description
+                    technologies=project.technologies
+                    tag=project.tag
+                    group=project.group
+                    members=project.members
+                %}
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
+</div>
