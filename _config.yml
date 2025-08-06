@@ -1,4 +1,4 @@
 title: Portfolio
 description: Personal portfolio hosted by GitHub Pages
-baseurl: "/portfolio" # FOR PRODUCTION?
+# baseurl: "/portfolio" # FOR PRODUCTION?
 # baseurl: ""
