@@ -570,6 +570,29 @@
               alt: Postman
             - src: employee-management/project-structure.jpg
               alt: Project Structure
+        - title: Event Management
+          id: event-management
+          thumbnail: event-management/login.jpeg
+          completed: October 2023
+          description: Multi role event management app. A project for the ISTE-341 course.
+          content:
+            - text: This is an event management application that supports 2 roles (user, admin), and allows users to create, edit, delete, and enrol to events. This is the first project for the [[course-link]]. 
+              links: 
+                - token: course-link
+                  text: ISTE-341 Server Programming course
+                  url: /education/rit-courses/#iste341
+                  external: false
+            - title: Note
+              text: Unfortunately, I was unable to add screenshots for this project.
+          technologies: PHP
+          tag: RIT (ISTE-341)
+          gallery:
+            - src: event-management/login.jpeg
+              alt: Login
+            - src: event-management/project-structure-1.jpeg
+              alt: Project Structure 1
+            - src: event-management/project-structure-2.jpeg
+              alt: Project Structure 2
 
     - name: SWEN 383 Software Design Principles and Patterns
       projects:
