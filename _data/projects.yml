@@ -499,7 +499,46 @@
             - src: seetech/project-structure-backend.jpeg
               alt: Project Structure Backend
     - name: ISTE-422 Application Development Practices
-    
+      projects:
+        - title: Queryfier
+          id: queryfier
+          group: true
+          members: 5
+          thumbnail: queryfier/home.jpeg
+          completed: December 2023
+          description: An entity relationship editor. A project for the ISTE-422 course.
+          content: 
+            - text: This app is a GUI entity relationship editor that allows users to read, edit, delete .edg files, and export data into SQL. The editor allows users to configure the tables stored in the files. It is the group project for the [[course-link]].
+              links: 
+                - token: course-link
+                  text: ISTE-422 Application Development Practices course
+                  url: /education/rit-courses/#iste422
+                  external: false
+            - title: 
+              text: 
+          technologies: Java, JavaFX
+          tag: RIT (ISTE-422)
+          gallery:
+            - src: queryfier/home.jpeg
+              alt: Landing Page
+            - src: queryfier/file.jpeg
+              alt: Opened file
+            - src: queryfier/file-menu.jpeg
+              alt: Opened file menu
+            - src: queryfier/relationships.jpeg
+              alt: Relationships page
+            - src: queryfier/relationship-select.jpeg
+              alt: Relationships select
+            - src: queryfier/contact.jpeg
+              alt: Contact popup
+            - src: queryfier/export.jpeg
+              alt: Export file popup
+            - src: queryfier/project-structure-1.jpeg
+              alt: Project structure 1
+            - src: queryfier/project-structure-2.jpeg
+              alt: Project structure 2
+            - src: queryfier/project-structure-3.jpeg
+              alt: Project structure 3
     - name: ISTE-358 Foundations of Wearable and Ubiquitous Computing
       projects: 
         - title: Safety Deposit Box
@@ -593,7 +632,6 @@
               alt: Project Structure 1
             - src: event-management/project-structure-2.jpeg
               alt: Project Structure 2
-
     - name: SWEN 383 Software Design Principles and Patterns
       projects:
         - title: Diet Manager
@@ -633,7 +671,6 @@
               alt: Project structure 1
             - src: diet-manager/project-structure-2.jpeg
               alt: Project structure 2
-
     - name: ISTE-340 Client Programming
       projects:
         - title: Custom Sandwiches

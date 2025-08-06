@@ -378,10 +378,10 @@
           official-term: Lec/Lab 3, Credits 3 (Fall, Spring)
           tools-technologies: Java, JavaFX, GitLab, GitLab CI/CD
           projects:
-            - title: Edge Converter (Group Project)
+            - title: Queryfier .edg File Converter (Group Project)
               description: At the beginning of the course, a buggy, unfinished project that needed refactoring was provided to students. As the lectures progressed, the point was to implement what was learned in class (fix mistakes, add new features, setting up a CI/CD, remove warnings from static/dynamic code analysis tools) to that project. It was a group assignment done in teams of 5-6 students. The app was a GUI database table builder with additional export features to SQL. 
-              id: edge-converter
-              name: Edge Converter
+              id: queryfier
+              name: Queryfier
           notes-comments:
             - title: Topics
               content: Intro to methodologies, waterfall, agile, scrum, sprints, build utilities, build servers, testing, GitLab CI/CD pipeline, static code analysis, refactoring…
