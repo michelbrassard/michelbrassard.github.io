@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/shared.css">
+    <link rel="stylesheet" href="../{{ site.baseurl }}/assets/styles/shared.css">
     {% if page.stylesheets %}
         {% for stylesheet in page.stylesheets %}
             <link rel="stylesheet" href="{{ site.baseurl }}/assets/styles/{{ stylesheet }}" />
