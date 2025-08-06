@@ -578,7 +578,7 @@
         - title: Custom Sandwiches
           id: custom-sandwiches
           thumbnail: custom-sandwiches/home.jpg
-          completed: May 2023
+          completed: Feb 2023
           description: A client side of a web application for ordering sandwiches. First project for the ISTE-340 course.
           content: 
             - text: This is the first project for the [[course-link]]. It is a pure frontend application for ordering sandwiches from a hypothetical sandwich shop. Its data is fetched from a file, and after ordering, it is saved to local storage (mimicking fetching and sending from a backend without dealing with APIs). This project was more of an exercise for learning and implementing the MVC pattern using the object oriented approach with JavaScript. 
@@ -624,7 +624,57 @@
               alt: Project structure media
             - src: custom-sandwiches/project-structure-vendor.jpg
               alt: Project structure vendor
-    
+        - title: RIT Redesigned
+          id: rit-redesigned
+          thumbnail: rit-redesigned/about-3.jpeg
+          completed: May 2023
+          description: Redesigned frontend for the IST Department of RIT. Third project for the ISTE-340 course.
+          content: 
+            - text: This is a redesigned frontend for the IST Department of Rochester Institute of Technology. The main focus was to correctly use the MVC architecture using ASP.NET, and to utilize jQuery in the app (custom + third party plugins). This was the third project for the [[course-link]].
+              links: 
+                - token: course-link
+                  text: ISTE-340 Client Programming course
+                  url: /education/rit-courses/#iste340
+                  external: false
+            - title: backend
+              text: This app doesn't have a custom backend, it uses existing APIs.
+          technologies: C#, ASP.NET
+          tag: RIT (ISTE-340)
+          colors:
+            - "#000000"
+            - "#EEEEEE"
+            - "#FFFFFF"
+          gallery:
+            - src: rit-redesigned/about-1.jpeg
+              alt: About 1
+            - src: rit-redesigned/about-2.jpeg
+              alt: About 2
+            - src: rit-redesigned/about-3.jpeg
+              alt: About 3
+            - src: rit-redesigned/undergraduate.jpeg
+              alt: Undergraduate degrees
+            - src: rit-redesigned/graduate.jpeg
+              alt: Graduate degrees
+            - src: rit-redesigned/certificates.jpeg
+              alt: Certificates
+            - src: rit-redesigned/employment.jpeg
+              alt: Employment
+            - src: rit-redesigned/co-op.jpeg
+              alt: Co-op table
+            - src: rit-redesigned/employment-table.jpeg
+              alt: Employment table
+            - src: rit-redesigned/faculty.jpeg
+              alt: Faculty
+            - src: rit-redesigned/mobile.jpeg
+              alt: Mobile
+            - src: rit-redesigned/project-structure-1.jpeg
+              alt: Project structure 1
+            - src: rit-redesigned/project-structure-2.jpeg
+              alt: Project structure 2
+            - src: rit-redesigned/project-structure-3.jpeg
+              alt: Project structure 3
+            - src: rit-redesigned/project-structure-4.jpeg
+              alt: Project structure 4
     - name: ISTE 330 Database Connectivity and Access
       projects:
         - title: Query the Berry
@@ -688,7 +738,6 @@
               alt: Project structure 2
             - src: query-the-berry/project-structure-3.jpeg
               alt: Project structure 3
-
     - name: ISTE-252 Foundations of Mobile Design
       projects:
         - title: Cookez
