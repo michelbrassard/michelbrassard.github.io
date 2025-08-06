@@ -572,6 +572,44 @@
               alt: Project Structure
 
     - name: SWEN 383 Software Design Principles and Patterns
+      projects:
+        - title: Diet Manager
+          id: diet-manager
+          group: true
+          members: 6
+          thumbnail: diet-manager/thumbnail.jpg
+          completed: May 2023
+          description: Food/exercise calorie tracker. Group project for the SWEN-383 course.
+          content: 
+            - text: This is a calorie tracker app that allows users to log their foods for the day, to log exercises, to add the current weight, the goal weight, and to add calorie goals (how much a user wants to consume compared to the actual eaten calories). The app also allows users to add their custom foods, and exercises. This is a group project for the [[course-link]].
+              links: 
+                - token: course-link
+                  text: SWEN 383 Software Design Principles and Patterns course
+                  url: /education/rit-courses/#swen383
+                  external: false
+            - title: Task
+              text: The task for this assignment was to refactor an existing (provided) app, and to implement design patterns learned in class (Factory, Composite, MVC…).
+          technologies: Java, JavaFX
+          tag: RIT (SWEN-383)
+          gallery:
+            - src: diet-manager/empty.jpeg
+              alt: Empty data
+            - src: diet-manager/food.jpeg
+              alt: 1 food item added
+            - src: diet-manager/food-exercise.jpeg
+              alt: Foods and exercises added
+            - src: diet-manager/add-exercise.jpeg
+              alt: Add custom exercise
+            - src: diet-manager/add-food.jpeg
+              alt: Add custom food
+            - src: diet-manager/add-recipe-1.jpeg
+              alt: Add custom recipe
+            - src: diet-manager/add-recipe-2.jpeg
+              alt: Add custom recipe menu
+            - src: diet-manager/project-structure-1.jpeg
+              alt: Project structure 1
+            - src: diet-manager/project-structure-2.jpeg
+              alt: Project structure 2
 
     - name: ISTE-340 Client Programming
       projects:
