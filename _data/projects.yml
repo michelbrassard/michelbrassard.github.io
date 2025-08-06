@@ -374,6 +374,68 @@
             - src: transaction-visualizer/wireframes.jpeg
               alt: Project Structure
     - name: ISTE-442 Secure Web App Development
+      projects:
+        - title: SeeTech
+          id: seetech
+          thumbnail: seetech/logo.jpg
+          completed: 5 Apr 2024
+          description: A web-shop for tech products. Individual project for the ISTE-422 course.
+          content: 
+            - text: This is a simple web-shop that "sells" tech products. It allows users to signup, login, browse, add to cart, create orders, and to “buy” products. In addition to that, users can change their account information if needed. This was an individual project for the [[course-link]]. The idea was to pick some technology (VueJS), create something with it, and research it in the context of security and ease of development. 
+              links: 
+                - token: course-link
+                  text: ISTE-442 Secure Web App Development course
+                  url: /education/rit-courses/#iste442
+                  external: false
+          technologies: NodeJS, Express, VueJS, MySQL
+          tag: RIT (ISTE-442)
+          colors:
+            - "#2C3E50"
+            - "#45F1BD"
+            - "#4DC9A4"
+            - "#555555"
+            - "#CCCCCC"
+            - "#EEEEEE"
+            - "#FFFFFF"
+            - "#FF1122"
+            - "#FF616B"
+            - "#FFEFF1"
+          gallery:
+            - src: seetech/logo.jpg
+              alt: Logo
+            - src: seetech/login.jpeg
+              alt: Log in 
+            - src: seetech/signup.jpeg
+              alt: Signup
+            - src: seetech/home.jpeg
+              alt: Home 
+            - src: seetech/catalog-1.jpeg
+              alt: Catalog 1
+            - src: seetech/catalog-2.jpeg
+              alt: Catalog 2
+            - src: seetech/product.jpeg
+              alt: Product
+            - src: seetech/cart.jpeg
+              alt: Cart 
+            - src: seetech/checkout-1.jpeg
+              alt: Checkout 1
+            - src: seetech/checkout-2.jpeg
+              alt: Checkout 2
+            - src: seetech/checkout-3.jpeg
+              alt: Checkout 3
+            - src: seetech/confirmation.jpeg
+              alt: Confirmation
+            - src: seetech/account.jpeg
+              alt: Account
+            - src: seetech/database.jpg
+              alt: Database schema
+            - src: seetech/project-structure.jpeg
+              alt: Project Structure
+            - src: seetech/project-structure-frontend.jpeg
+              alt: Project Structure Frontend
+            - src: seetech/project-structure-backend.jpeg
+              alt: Project Structure Backend
+
     - name: ISTE-422 Application Development Practices
     
     - name: ISTE-358 Foundations of Wearable and Ubiquitous Computing

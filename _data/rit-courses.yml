@@ -404,10 +404,10 @@
               description: For the group project, the task was to create a multiplayer turn based educational game that implements security precautions learned in class. In addition to that it has to be some form of a web application. For the assignment, my teammates and I created an escape room like game with chemistry for the topic where a player combines and creates chemical compounds which will open new clues as the game progresses.
               id: escape-room
               name: Escape Room
-            - title: Tech Shop (Individual Project)
+            - title: SeeTech Webshop (Individual Project)
               description: For the individual project, the task was to pick some web technology (library, framework…), create an application, research the pros and cons in terms of security, document the development experience, and present it in class. For the technology, I picked VueJS, and I created a simple web shop application that sells tech (computers, cameras, phones, headphones etc.).
-              id: tech-shop
-              name: Tech Shop
+              id: seetech
+              name: SeeTech
           notes-comments:
             - title: Topics
               content: Web app overview, personal system attacks, SQL injections, XSS, CSRF, OWASP, Zap, cryptography, encryption, symmetric/asymmetric encryption, hashing, profiling, load testing, heap analysis, memory allocation…
