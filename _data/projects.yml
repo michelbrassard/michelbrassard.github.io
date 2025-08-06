@@ -28,7 +28,7 @@
             - title: Roles
               text: There are 3 roles for this application, an admin, creator, and regular user. A regular user, in short, can invest in a property and buy/sell tokens, a creator can post, edit, delete property ideas, and the admin can verify idea creators, and approve new property ideas. 
             - title: Application flow
-              text: A user finds a property idea, and invests in it. Later, after the property receives enough funds, construction begins. After it is done, the investor picks the dates of their stay, and receives tokens that are stored on the blockchain. With the tokens, the investor can either use them to stay in the newly constructed property (stay dates are defined on the smart contract) or sell them to the secondary market.
+              text: When it comes to the application flow, we can begin with a user who finds a property idea, and invests in it. Later, after the property receives enough funds, construction begins. After it is done, the investor picks the dates of their stay, and receives tokens that are stored on the blockchain. With the tokens, the investor can either use them to stay in the newly constructed property (stay dates are defined on the smart contract) or sell them to the secondary market.
             - title: Solution
               text: The idea for the solution was to allow the public to decide whether they want to build something by investing in some property idea (voting with wallets), and to allow proposing real estate ideas without having the necessary funds right away.
             - title: Clarification
@@ -626,6 +626,68 @@
               alt: Project structure vendor
     
     - name: ISTE 330 Database Connectivity and Access
+      projects:
+        - title: Query the Berry
+          id: query-the-berry
+          group: true
+          members: 4
+          thumbnail: query-the-berry/logo.jpg
+          completed: May 2023
+          description: A JavaFX quiz application. Group project for the ISTE-330 course. 
+          content:
+            - text: This is a quiz application that allows players to compete with each other, and see their scores on a leaderboard. Players can choose to answer questions or riddles, and after each quiz session, a fun fact is given to the player. In addition to that, registered players can suggest quiz questions. This is a group project for the [[course-link]].
+              links:
+                - token: course-link
+                  text: ISTE 330 Database Connectivity and Access course
+                  url: /education/rit-courses/#iste330
+                  external: false
+            - title: focus
+              text: The main task for this project was to have a database with 15 or more tables, and to perform CRUD operations using a Java application that follows the 4-tier architecture.
+            - title: note
+              text: I haven't made many contributions in this project, compared to some of my teammates. 
+          technologies: Java, JavaFX, MySQL
+          tag: RIT (ISTE-330)
+          gallery:
+            - src: query-the-berry/logo.jpg
+              alt: Logo
+            - src: query-the-berry/login.jpeg
+              alt: Login
+            - src: query-the-berry/signup.jpeg
+              alt: Signup
+            - src: query-the-berry/country.jpeg
+              alt: Country
+            - src: query-the-berry/home.jpeg
+              alt: Home
+            - src: query-the-berry/howto.jpeg
+              alt: How to play
+            - src: query-the-berry/leaderboard.jpeg
+              alt: Leaderboard
+            - src: query-the-berry/suggestion.jpeg
+              alt: Suggestion
+            - src: query-the-berry/lobby.jpeg
+              alt: Lobby
+            - src: query-the-berry/get-ready-riddles.jpeg
+              alt: Getting ready for riddles
+            - src: query-the-berry/riddle.jpeg
+              alt: Riddle example
+            - src: query-the-berry/get-ready-questions.jpeg
+              alt: Getting ready for questions
+            - src: query-the-berry/question.jpeg
+              alt: Question example
+            - src: query-the-berry/hint.jpeg
+              alt: Hint
+            - src: query-the-berry/points.jpeg
+              alt: Points
+            - src: query-the-berry/fun-fact.jpeg
+              alt: Fun fact
+            - src: query-the-berry/database.jpeg
+              alt: Database schema
+            - src: query-the-berry/project-structure-1.jpeg
+              alt: Project structure 1
+            - src: query-the-berry/project-structure-2.jpeg
+              alt: Project structure 2
+            - src: query-the-berry/project-structure-3.jpeg
+              alt: Project structure 3
 
     - name: ISTE-252 Foundations of Mobile Design
       projects:
