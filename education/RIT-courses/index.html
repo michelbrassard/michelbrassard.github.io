@@ -12,12 +12,17 @@ stylesheets:
     RIT Course Descriptions
 </h1>
 <div class="wrapper">
-    <section id="side-navigation">
+    <section class="side-navigation">
         {% include rit-courses-side-navigation.html %}
     </section>
     <section class="content">
         {% include rit-courses.html %}
     </section>
 </div>
+
+<button id="mobile-side-nav-hovering-button" onclick="toggleMobileSideNavigation()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical-icon lucide-ellipsis-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+</button>
+{% include rit-courses-mobile-side-navigation.html %}
 
     

@@ -1,0 +1,21 @@
+<div id="mobile-side-overlay">
+    <div class="links">
+        {% for type in site.data.projects %}
+            <p class="sm-title">{{ type.name }}</p>
+            {% for category in type.categories %}
+                <div class="indent">
+                    <p class="xs-title">{{ category.name }}</p>
+                    <div class="indent project-list">
+                        {% for project in category.projects %}
+                            <a href="{{ site.baseurl }}/projects/descriptions/#{{project.id}}" onclick="toggleMobileSideNavigation()">{{ project.title }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        {% endfor %}
+    </div>
+    <a href="#top" class="back-to-top" onclick="toggleMobileSideNavigation()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-icon lucide-arrow-up"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></svg>
+        Back to Top
+    </a>
+</div>
