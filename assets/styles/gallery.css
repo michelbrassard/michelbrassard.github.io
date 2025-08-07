@@ -142,4 +142,7 @@
     #zoomed-gallery .button-container p {
         width: 40%;
     }
+    .gallery {
+        width: calc(80vw - 4rem);
+    }
 }
