@@ -14,24 +14,24 @@ html {
   scroll-behavior: smooth;
 }
 
-@font-face {
+/* @font-face {
   font-family: Inter;
   src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 @font-face {
     font-family: Inter-Italic;
     src: url(../fonts/Inter-Italic-VariableFont_opsz\,wght.ttf);
-}
+} */
 
 body {
     margin: 0;
     display: flex;
     height: 100vh;
     flex-direction: column;
-    font-family: Inter;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: subpixel-antialiased;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale; 
+    text-rendering: optimizeLegibility;
 }
 main {
     flex: 1;
@@ -50,8 +50,8 @@ section:last-of-type {
 }
 
 /* Titles */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
+h1, h2, h3 {
+    font-weight: 800;
     color: var(--title-color);
     margin: 0;
     line-height: 1;
