@@ -64,6 +64,7 @@ h1 {
 .project-title {
     display: flex;
     align-items: end;
+    flex-direction: row;
     justify-content: space-between;
 }
 .project-title p {
@@ -88,5 +89,12 @@ h1 {
     }
     .wrapper {
         grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project-title {
+        align-items: start;
+        flex-direction: column;
     }
 }
