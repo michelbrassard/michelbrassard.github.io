@@ -76,9 +76,9 @@ h1 {
     position: fixed;
     top: 0;
     left: 0;
-    width: 0%;
+    width: 0;
     opacity: 0%;
-    height: 100%;
+    height: 100vh;
     box-sizing: border-box;
     padding: 0rem 1rem;
     backdrop-filter: blur(8px);
@@ -89,14 +89,13 @@ h1 {
     z-index: 4;
     transition: all .3s;
     text-overflow: ellipsis;
+    overflow-x: hidden;
 }
 #mobile-side-overlay .links {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     height: 90vh;
-    box-sizing: border-box;
-    overflow-x: hidden;
     overflow-y: scroll;
     border-bottom: var(--design-element-color) 1px solid;
 }
@@ -113,6 +112,11 @@ h1 {
 }
 #mobile-side-overlay .links .xs-title {
     margin: 0%;
+    text-wrap: nowrap;
+}
+#mobile-side-overlay .links .sm-title {
+    margin: 0%;
+    text-wrap: nowrap;
 }
 #mobile-side-overlay .links .project-list {
     display: flex;
@@ -145,9 +149,10 @@ h1 {
     align-items: start;
     font-size: 1rem;
     color: var(--text-color-light);
-    transition: all .2s;
+    transition: width .2s;
     text-decoration: none;
     gap: 0.5rem;
+    text-wrap: nowrap;
 }
 #mobile-side-overlay .back-to-top:hover {
     stroke: var(--primary-color);
