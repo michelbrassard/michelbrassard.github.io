@@ -1,6 +1,6 @@
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 1rem;
 }
 h1 {
@@ -133,21 +133,17 @@ h1 {
     color: var(--primary-color-light);
 }
 
-/* Grid layout for projects */
-@media screen and (min-width: 768px) {
-    /* #trek {
-        grid-column: span 3;
+@media screen and (max-width: 1600px) {
+    .wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
-    #transaction-visualizer {
-        grid-column: span 2;
-    } */
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
     .wrapper {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-@media screen and (max-width: 864px) {
+@media screen and (max-width: 992px) {
     .wrapper {
         grid-template-columns: 1fr 1fr;
     }
