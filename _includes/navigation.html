@@ -1,18 +1,20 @@
 <nav>
-    <div class="desktop">
-        <a href="{{ site.baseurl }}/" class="name">
-            {% if page.url == '/' %}
-                Portfolio
-            {% else %}
-                Michel Brassard
-            {% endif %}
-        </a>
-        <div class="links">
-            <a href="{{ site.baseurl }}/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
-            <a href="{{ site.baseurl }}/education" class="{% if page.url contains '/education/' %}active{% endif %}">Education</a>
-            <a href="{{ site.baseurl }}/experience" class="{% if page.url == '/experience/' %}active{% endif %}">Work Experience</a>
-            <a href="{{ site.baseurl }}/projects" class="{% if page.url contains '/projects/' %}active{% endif %}">Projects</a>
-            <a href="{{ site.baseurl }}/interests" class="{% if page.url contains '/interests/' %}active{% endif %}">Hobbies & Interests</a>
+    <div class="limited-width">
+        <div class="desktop">
+            <a href="{{ site.baseurl }}/" class="name">
+                {% if page.url == '/' %}
+                    Portfolio
+                {% else %}
+                    Michel Brassard
+                {% endif %}
+            </a>
+            <div class="links">
+                <a href="{{ site.baseurl }}/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+                <a href="{{ site.baseurl }}/education" class="{% if page.url contains '/education/' %}active{% endif %}">Education</a>
+                <a href="{{ site.baseurl }}/experience" class="{% if page.url == '/experience/' %}active{% endif %}">Work Experience</a>
+                <a href="{{ site.baseurl }}/projects" class="{% if page.url contains '/projects/' %}active{% endif %}">Projects</a>
+                <a href="{{ site.baseurl }}/interests" class="{% if page.url contains '/interests/' %}active{% endif %}">Hobbies & Interests</a>
+            </div>
         </div>
     </div>
     <div class="mobile">
