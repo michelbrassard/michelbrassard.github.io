@@ -5,7 +5,7 @@
         - title: Trek
 
         - title: Logo Design
-- name: RIT (College)
+- name: Rochester Institute of Technology
   categories:
     - name: ISTE-500/501 Senior Development Project
       projects:
@@ -1160,7 +1160,7 @@
               alt: Mobile 3
             - src: dubrovnik-tours/project-structure.jpeg
               alt: Project Structure
-    - name: ISTE-121 Computational Problem Solving in Information Domain 2
+    - name: ISTE-121 Computational Problem Solving in the Information Domain 2
       projects: 
         - title: Snake Game
           id: snake-game
