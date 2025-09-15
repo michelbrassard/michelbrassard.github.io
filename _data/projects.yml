@@ -1160,7 +1160,7 @@
               alt: Mobile 3
             - src: dubrovnik-tours/project-structure.jpeg
               alt: Project Structure
-    - name: ISTE-121 Computational Problem Solving in Information Domain 2
+    - name: ISTE-121 Computational Problem Solving in the Information Domain 2
       projects: 
         - title: Snake Game
           id: snake-game

@@ -3,7 +3,7 @@
     - name: Fall (2021)
       courses:
         - id: iste120
-          title: ISTE-120 Computational Problem Solving in Information Domain 1
+          title: ISTE-120 Computational Problem Solving in the Information Domain 1
           official-description: A first course in using the object-oriented approach to solve problems in the information domain. Students will learn to design software solutions using the object-oriented approach, to visually model systems using UML, to implement software solutions using a contemporary programming language, and to test these software solutions. Additional topics include thinking in object-oriented terms, and problem definition. Programming projects will be required.
           official-term: Lec/Lab 6, Credits 4 (Fall, Spring)
           tools-technologies: Java
@@ -105,7 +105,7 @@
     - name: Spring (2022)
       courses:
         - id: iste121
-          title: ISTE-121 Computational Problem Solving in Information Domain 2
+          title: ISTE-121 Computational Problem Solving in the Information Domain 2
           official-description: "A second course in using the object-oriented approach to solving problems in the information domain. Students will learn: basic design principles and guidelines for developing graphical user interfaces, and use of the Event Model to implement graphical interfaces; algorithms for processing data structures; multithreading concepts and use of the Multithreading Model to design and implement advanced processing methods. Additional topics include the relational model of information organization, and the Client-Server model. Individual implementation projects are required. A team implementation exercise is used to provide students an opportunity to apply basic software development and project management practices in the context of a medium-scale project. (Prerequisites: ISTE-120 or NACA-161 or equivalent course.)"
           official-term: Lec/Lab 6, Credits 4 (Fall, Spring)
           tools-technologies: Java, JavaFX
