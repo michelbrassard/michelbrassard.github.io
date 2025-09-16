@@ -167,6 +167,6 @@
         width: 40%;
     }
     .gallery {
-        width: calc(80vw - 4rem);
+        width: calc(100vw - 4rem);
     }
 }
