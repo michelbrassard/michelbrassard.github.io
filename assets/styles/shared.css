@@ -190,7 +190,7 @@ nav .desktop {
     display: flex;
     justify-content: space-between;
     padding: 1.25rem;
-    
+
 }
 nav .name {
     color: var(--title-color);
@@ -489,4 +489,12 @@ hr {
         padding-right: 3rem;
     }
 }
+
+@media screen and (min-width: 1800px) {
+    nav .desktop {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
 
