@@ -1,27 +1,17 @@
 ---
 title: Home
 layout: default
+stylesheets:
+  - home.css 
 ---
 <section>
-    <h1>Michel Brassard</h1>
-    
-    <p>Praesent nec leo id justo tincidunt dapibus. Integer in augue sit amet lacus vehicula fermentum in nec nunc.</p>
+  <h1>Michel Brassard</h1>
 
-    <p>Curabitur a felis non elit vulputate cursus. Proin tincidunt, orci ut porttitor dictum, eros lorem lacinia nisi, nec sollicitudin justo erat vel sapien.</p>
-
-    <h2>CV</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sapien sed justo porttitor congue.</p>
-
-    <p>Praesent nec leo id justo tincidunt dapibus. Integer in augue sit amet lacus vehicula fermentum in nec nunc.</p>
-
-    <p>Curabitur a felis non elit vulputate cursus. Proin tincidunt, orci ut porttitor dictum, eros lorem lacinia nisi, nec sollicitudin justo erat vel sapien.</p>
-    
-    <h3>CV</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sapien sed justo porttitor congue.</p>
-
-    <p>Praesent nec leo id justo tincidunt dapibus. Integer in augue sit amet lacus vehicula fermentum in nec nunc.</p>
-
-    <p>Curabitur a felis non elit vulputate cursus. Proin tincidunt, orci ut porttitor dictum, eros lorem lacinia nisi, nec sollicitudin justo erat vel sapien.</p>
-
-    <p>Morbi dignissim orci ac nisi lobortis, sit amet blandit leo consequat. Duis sit amet libero vitae magna cursus egestas.</p>
+  <h2>Technical Skills</h2>
+  <div class="technical-skills-tags-container">
+    {% for skill in site.data.skills %}
+      {% include tag.html skill=skill %}
+    {% endfor %}
+  </div>
+  
 </section>
