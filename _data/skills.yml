@@ -50,7 +50,7 @@
   courses: 
     - id: nmde111
       name: NMDE-111 New Media Design 1
-- name: Java (+ JavaFX)
+- name: Java (+ JavaFX, Spring...)
   projects: 
     - id: javafx-text-editor
       name: JavaFX Text Editor
@@ -190,14 +190,14 @@
   courses: 
     - id: iste470
       name: ISTE-470 Data Mining and Exploration
-- name: Swift (iOS Development)
+- name: Swift (SwiftUI, iOS Development)
   projects: 
     - id: rack
       name: Rack
   courses: 
     - id: iste454
       name: ISTE-454 Mobile Application Development 1
-- name: Kotlin (Android Development)
+- name: Kotlin (Jetpack Compose, Android Development)
   projects: 
     - id: smudge
       name: Smudge
