@@ -1,0 +1,21 @@
+- name: HTML, CSS
+  projects:
+    - id: your-favourites
+      name: Your Favourites
+    - id: history-of-the-web
+      name: History of the Web
+    - id: blue-whales
+      name: Blue Whales
+  courses: 
+    - id: iste140
+      name: ISTE-140 Web and Mobile 1
+
+- name: (HTML, CSS) + JS, PHP
+  projects: 
+    - id: dubrovnik-tours
+      name: Dubrovnik Tours
+  courses: 
+    - id: iste240
+      name: ISTE-240 Web and Mobile 2
+
+# i tako dalje za druge skills
