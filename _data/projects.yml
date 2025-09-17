@@ -444,7 +444,7 @@
           id: seetech
           thumbnail: seetech/logo.jpg
           completed: 5 Apr 2024
-          description: A web-shop for tech products. Individual project for the ISTE-422 course.
+          description: A web-shop for tech products. Individual project for the ISTE-442 course.
           content: 
             - text: This is a simple web-shop that "sells" tech products. It allows users to signup, login, browse, add to cart, create orders, and to “buy” products. In addition to that, users can change their account information if needed. This was an individual project for the [[course-link]]. The idea was to pick some technology (VueJS), create something with it, and research it in the context of security and ease of development. 
               links: 
