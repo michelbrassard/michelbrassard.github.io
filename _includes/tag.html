@@ -16,6 +16,13 @@
         opacity: 1;
         visibility: visible;
     }
+    .tag-container .details .details-link {
+        margin-bottom: 0.5rem;
+        font-size: 0.75rem;
+    }
+    .tag-container .details .details-link a {
+        font-size: 0.75rem;
+    }
     .tag-container .details .background {
         background-color: white;
         border: 1px solid var(--design-element-color);
@@ -57,19 +64,26 @@
     <div class="details">
         <div class="background">
             <p class="xs-title">Related Projects</p>
-            <div>
+            <div class="sm-indent">
                 {% for project in include.skill.projects %}
-                    <a href="{{ site.baseurl }}/projects/descriptions/#{{ project.id }}">
-                        {{project.name-}}
-                    </a>{% unless forloop.last %}, {% endunless %}
+                    <div class="details-link">
+                        <a href="{{ site.baseurl }}/projects/descriptions/#{{ project.id }}">
+                            {{project.name-}}
+                        </a>
+                    </div>
+                    
                 {% endfor %}
             </div>
             <p class="xs-title">Related Courses</p>
-            <div>
+            <div class="sm-indent">
                 {% for course in include.skill.courses %}
-                    <a href="{{ site.baseurl }}/education/RIT-courses/#{{ course.id }}">
-                        {{course.name-}}
-                    </a>{% unless forloop.last %}, {% endunless %}
+                    <div class="details-link">
+                        <a href="{{ site.baseurl }}/education/RIT-courses/#{{ course.id }}">
+                            {{course.name-}}
+                        </a>
+                        
+                    </div>
+                    
                 {% endfor %}
             </div>
         </div>
@@ -78,7 +92,7 @@
 </div>
 
 <script>
-    document.querySelectorAll('.container').forEach(container => {
+    document.querySelectorAll('.tag-container').forEach(container => {
         const details = container.querySelector('.details');
 
         container.addEventListener('mouseenter', () => {
