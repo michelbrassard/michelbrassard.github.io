@@ -90,19 +90,4 @@
     </div>
 </div>
 
-<script>
-    document.querySelectorAll('.tag-container').forEach(container => {
-        const details = container.querySelector('.details');
-
-        container.addEventListener('mouseenter', () => {
-            details.classList.remove('right');
-            const rect = details.getBoundingClientRect();
-            const viewportWidth = window.innerWidth;
-            if (rect.right > viewportWidth) {
-                details.classList.add('right');
-            }
-        });
-    });
-</script>
-
 
