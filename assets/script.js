@@ -93,15 +93,3 @@ function toggleMobileSideNavigation() {
     overlay.style.opacity = "100%";
   }
 }
-
-// mozda maknem ovo skroz
-document.querySelectorAll('.tag-container').forEach(container => {
-  const details = container.querySelector('.details');
-
-  container.addEventListener('mouseenter', () => {
-      details.classList.remove('right')
-      if (details.getBoundingClientRect().right + 100 > window.innerWidth) {
-          details.classList.add('right');
-      }
-  });
-});
