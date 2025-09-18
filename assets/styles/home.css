@@ -1,3 +1,9 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+
 .technical-skills-tags-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -5,11 +11,6 @@
 
 .date {
     color: var(--text-color-light);
-}
-
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
 }
 
 .text-with-icon {
