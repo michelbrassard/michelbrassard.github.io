@@ -4,6 +4,10 @@
     gap: 5rem;
 }
 
+.wrapper p a {
+    display: inline-block;
+}
+
 .technical-skills-tags-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
