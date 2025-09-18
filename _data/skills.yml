@@ -133,6 +133,8 @@
   courses: 
     - id: iste340
       name: ISTE-340 Client Programming
+    - id: iste499-1
+      name: ISTE-499 Undergraduate Co-op (1st)
 - name: NodeJS (Express)
   projects: 
     - id: employee-management
