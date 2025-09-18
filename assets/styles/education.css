@@ -10,7 +10,7 @@
     gap: 1.5rem;
 }
 .bachelors .descriptions {
-    display: block;
+    display: inline-block;
     margin-bottom: 0.5rem;
 }
 
@@ -27,11 +27,8 @@
     border-right: 1px solid var(--design-element-color);
     border-bottom: 1px solid var(--design-element-color);
 }
-.detailed-section section a {
-    display: block;
-    /* white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;  */
+a {
+    display: inline-block;
 }
 .detailed-section section h3 {
     margin: 0.25rem;

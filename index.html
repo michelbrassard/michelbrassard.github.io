@@ -1,27 +1,75 @@
 ---
 title: Home
 layout: default
+stylesheets:
+  - home.css 
 ---
 <section>
-    <h1>Michel Brassard</h1>
-    
-    <p>Praesent nec leo id justo tincidunt dapibus. Integer in augue sit amet lacus vehicula fermentum in nec nunc.</p>
+  <div class="wrapper">
+    <div>
+      <h1>Michel Brassard</h1>
 
-    <p>Curabitur a felis non elit vulputate cursus. Proin tincidunt, orci ut porttitor dictum, eros lorem lacinia nisi, nec sollicitudin justo erat vel sapien.</p>
+      <h3 class="xs-title">About me</h3>
+      <p>I am a hard-working and organized individual interested in software development, robotics, and design.</p>
 
-    <h2>CV</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sapien sed justo porttitor congue.</p>
+      <h3 class="xs-title">Contact</h3>
+      <div class="indent">
+        <p><a href="mailto:michelbrassard47@gmail.com" class="text-with-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+          michelbrassard47@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/michelb1/" class="text-with-icon" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin-icon lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          michelb1
+        </a></p>
+        <p><a href="https://github.com/michelbrassard" class="text-with-icon" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github-icon lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          michelbrassard</a></p>
+        <p><a href="https://maps.app.goo.gl/ypBSnLKNXaenv7js5" class="text-with-icon" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+          Zagreb, Croatia
+        </a></p>
+      </div>
 
-    <p>Praesent nec leo id justo tincidunt dapibus. Integer in augue sit amet lacus vehicula fermentum in nec nunc.</p>
+    </div>
 
-    <p>Curabitur a felis non elit vulputate cursus. Proin tincidunt, orci ut porttitor dictum, eros lorem lacinia nisi, nec sollicitudin justo erat vel sapien.</p>
-    
-    <h3>CV</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Sed vitae sapien sed justo porttitor congue.</p>
+    <div class="experience">
+      <h3 class="top-margin">Work Experience</h3>
+      <div class="indent">
+        <p>
+          <a href="{{ site.baseurl }}/experience/#laus">Intern at Laus CC</a> <span class="date">(22 May 2023 - 12 Aug 2023)</span>
+        </p>
+        <p>
+          <a href="{{ site.baseurl }}/experience/#ta">Teaching Assistant at RIT Croatia</a> <span class="date">(2 Sep 2022 - 9 Dec 2022)</span>
+        </p>
+      </div>
 
-    <p>Praesent nec leo id justo tincidunt dapibus. Integer in augue sit amet lacus vehicula fermentum in nec nunc.</p>
+      <h3>Education</h3>
+      <div class="indent">
+        <p>
+          <a href="{{ site.baseurl }}/education/#rit">Bachelor of Science in Web and Mobile Computing</a>
+          <span class="date">(2021 - 2025)</span>
+        </p>
+        <p>
+          <a href="{{ site.baseurl }}/education/#high-school">Biskupijska klasična gimnazija Ruđera Boškovića s pravom javnosti Dubrovnik</a>
+          <span class="date">(2017 - 2021)</span>
+        </p>
+      </div>
 
-    <p>Curabitur a felis non elit vulputate cursus. Proin tincidunt, orci ut porttitor dictum, eros lorem lacinia nisi, nec sollicitudin justo erat vel sapien.</p>
+      <h3>Languages</h3>
+      <div class="indent">
+        <p><strong>Croatian</strong> (native), <strong>English</strong></p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <h3 class="top-margin">Technical Skills</h3>
+  <div class="indent">
+    <p>Tools and technologies used in projects and courses.</p>
+    <div class="technical-skills-tags-container">
+      {% for skill in site.data.skills %}
+        {% include tag.html skill=skill %}
+      {% endfor %}
+    </div>
+  </div>
 
-    <p>Morbi dignissim orci ac nisi lobortis, sit amet blandit leo consequat. Duis sit amet libero vitae magna cursus egestas.</p>
 </section>

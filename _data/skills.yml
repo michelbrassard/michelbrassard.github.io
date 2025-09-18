@@ -1,0 +1,206 @@
+- name: HTML, CSS
+  projects:
+    - id: your-favourites
+      name: Your Favourites
+    - id: history-of-the-web
+      name: History of the Web
+    - id: blue-whales
+      name: Blue Whales
+  courses: 
+    - id: iste140
+      name: ISTE-140 Web and Mobile 1
+- name: (HTML, CSS), JS, (+ PHP)
+  projects: 
+    - id: dubrovnik-tours
+      name: Dubrovnik Tours
+    - id: unix-tutorial
+      name: Unix Tutorial
+    - id: mammals
+      name: Mammals
+    - id: custom-sandwiches
+      name: Custom Sandwiches
+    - id: event-management
+      name: Event Management
+  courses: 
+    - id: iste240
+      name: ISTE-240 Web and Mobile 2
+    - id: iste252
+      name: ISTE-252 Foundations of Mobile Design
+    - id: iste340
+      name: ISTE-340 Client Programming
+    - id: iste341
+      name: ISTE-341 Server Programming
+- name: Adobe Photoshop
+  projects: 
+    - id: planted
+      name: PlantEd
+    - id: delivereat
+      name: DeliverEat
+  courses: 
+    - id: nmde111
+      name: NMDE-111 New Media Design 1
+- name: Adobe Illustrator
+  projects: 
+    - id: ittw-reparis
+      name: I.T.T.W. Repairs
+    - id: kitchen-nightmares-book-cover
+      name: Kitchen Nightmares Book Cover
+    - id: delivereat
+      name: DeliverEat
+  courses: 
+    - id: nmde111
+      name: NMDE-111 New Media Design 1
+- name: Java (+ JavaFX, Spring...)
+  projects: 
+    - id: javafx-text-editor
+      name: JavaFX Text Editor
+    - id: snake-game
+      name: Snake Game
+    - id: diet-manager
+      name: Diet Manager
+    - id: query-the-berry
+      name: Query the Berry
+    - id: queryfier
+      name: Queryfier
+    - id: vitalin
+      name: Vitalin
+  courses: 
+    - id: iste120
+      name: ISTE-120 Computational Problem Solving in the Information Domain 1
+    - id: iste121
+      name: ISTE-121 Computational Problem Solving in the Information Domain 2
+    - id: swen383
+      name: SWEN-383 Software Design Principles and Patterns
+    - id: iste330
+      name: ISTE-330 Database Connectivity and Access
+    - id: iste422
+      name: ISTE-422 Application Development Practices
+    - id: iste432
+      name: ISTE-432 Database Application Development
+- name: Cisco Packet Tracer
+  projects: 
+    - id: campus-network
+      name: Campus Network Simulation
+  courses: 
+    - id: nssa-290
+      name: NSSA-290 Networking Essentials for Developers
+- name: Figma
+  projects: 
+    - id: myworkouts
+      name: myWorkouts
+  courses: 
+    - id: iste252
+      name: ISTE-252 Foundations of Mobile Design
+- name: Hybrid App Dev (Flutter, Cordova)
+  projects: 
+    - id: weather-app
+      name: Weather App
+    - id: cookez
+      name: Cookez
+  courses: 
+    - id: iste252
+      name: ISTE-252 Foundations of Mobile Design
+- name: MySQL
+  projects: 
+    - id: query-the-berry
+      name: Query the Berry
+    - id: seetech
+      name: SeeTech
+    - id: scyscape
+      name: Scynscape
+    - id: vitalin
+      name: Vitalin
+  courses: 
+    - id: iste230
+      name: ISTE-230 Introduction to Database and Data Modeling
+    - id: iste330
+      name: ISTE-330 Database Connectivity and Access
+    - id: iste442
+      name: ISTE-442 Secure Web Application Development
+    - id: iste432
+      name: ISTE-432 Database Application Development
+- name: PostgreSQL (+ Supabase)
+  projects: 
+    - id: realex
+      name: Realex
+  courses: 
+    - id: iste500
+      name: ISTE-500/501 Senior Development Project
+- name: ASP.NET
+  projects: 
+    - id: rit-redesigned
+      name: RIT Redesigned
+  courses: 
+    - id: iste340
+      name: ISTE-340 Client Programming
+- name: NodeJS (Express)
+  projects: 
+    - id: employee-management
+      name: Employee Management Backend
+    - id: seetech
+      name: SeeTech
+  courses: 
+    - id: iste341
+      name: ISTE-341 Server Programming
+    - id: iste442
+      name: ISTE-442 Secure Web Application Development
+- name: Arduino
+  projects: 
+    - id: safety-deposit-box
+      name: Safety Deposit Box
+  courses: 
+    - id: iste358
+      name: ISTE-358 Foundations of Wearable and Ubiquitous Computing
+- name: VueJS
+  projects: 
+    - id: seetech
+      name: SeeTech
+  courses: 
+    - id: iste442
+      name: ISTE-442 Secure Web Application Development
+- name: NextJS
+  projects: 
+    - id: vitalin
+      name: Vitalin
+    - id: trek
+      name: Trek
+  courses: 
+    - id: iste432
+      name: ISTE-432 Database Application Development
+- name: React
+  projects: 
+    - id: realex
+      name: Realex
+  courses: 
+    - id: iste500
+      name: ISTE-500/501 Senior Development Project
+- name: ThreeJS
+  projects: 
+    - id: realex
+      name: Realex
+  courses: 
+    - id: iste500
+      name: ISTE-500/501 Senior Development Project
+- name: Python (+ Dash plotly, pandas, Django...)
+  projects: 
+    - id: transaction-visualizer
+      name: Transaction Visualizer
+    - id: trek
+      name: Trek
+  courses: 
+    - id: iste470
+      name: ISTE-470 Data Mining and Exploration
+- name: Swift (SwiftUI, iOS Development)
+  projects: 
+    - id: rack
+      name: Rack
+  courses: 
+    - id: iste454
+      name: ISTE-454 Mobile Application Development 1
+- name: Kotlin (Jetpack Compose, Android Development)
+  projects: 
+    - id: smudge
+      name: Smudge
+  courses: 
+    - id: iste456
+      name: ISTE-456 Mobile Application Development 2

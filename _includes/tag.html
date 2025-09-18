@@ -1,0 +1,57 @@
+<style>
+    .tag-container {
+        display: inline-block;
+        position: relative;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        background-color: white;
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 1rem;
+        border: 1px solid var(--design-element-color);
+    }    
+    .tag-container h3 {
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0px;
+        margin-top: 0rem;
+    }
+    .tag-container a {
+        font-size: 0.75rem;
+    }
+    .tag-container .details-link {
+        margin-bottom: 0.25rem;
+    }
+    .tag-container:hover .tag {
+        background-color: var(--primary-color);
+        color: var(--primary-color-light);
+    }
+    .comma {
+        color: var(--text-color-light);
+    }
+</style>
+
+<div class="tag-container">
+    <h3 class="skill-title">
+        {{include.skill.name}}
+    </h3>
+    <div class="content-wrapper">
+        <p class="xs-title">Related Projects</p>
+        <div class="sm-indent">
+            {% for project in include.skill.projects %}
+                <a href="{{ site.baseurl }}/projects/descriptions/#{{ project.id }}">
+                    {{project.name-}}
+                </a><span class="comma">{% unless forloop.last %}, {% endunless %}</span>
+            {% endfor %}
+        </div>
+        <p class="xs-title">Related Courses</p>
+        <div class="sm-indent">
+            {% for course in include.skill.courses %}
+                <a href="{{ site.baseurl }}/education/RIT-courses/#{{ course.id }}" title="{{course.name}}">
+                    {{ course.name | split: " " | first -}}
+                </a><span class="comma">{% unless forloop.last %}, {% endunless %}</span>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+
