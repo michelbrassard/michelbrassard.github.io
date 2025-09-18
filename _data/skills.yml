@@ -9,7 +9,7 @@
   courses: 
     - id: iste140
       name: ISTE-140 Web and Mobile 1
-- name: (HTML, CSS), JavaScript, (+ PHP)
+- name: (HTML, CSS), JS, (+ PHP)
   projects: 
     - id: dubrovnik-tours
       name: Dubrovnik Tours
@@ -86,8 +86,8 @@
       name: NSSA-290 Networking Essentials for Developers
 - name: Figma
   projects: 
-    - id: myWorkouts
-      name: myworkouts
+    - id: myworkouts
+      name: myWorkouts
   courses: 
     - id: iste252
       name: ISTE-252 Foundations of Mobile Design
