@@ -36,14 +36,15 @@
 
 h1 {
     white-space: nowrap;
+    margin-bottom: 1.25rem;
 }
 
 @media screen and (max-width: 1200px) {
     .wrapper {
-        gap: 2.5rem;
+        gap: 2rem;
     }
     .experience {
-        padding-left: 2.5rem;
+        padding-left: 2rem;
         border-left: 1px solid var(--design-element-color);
     }
 }
