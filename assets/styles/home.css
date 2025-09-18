@@ -1,7 +1,7 @@
 .wrapper {
-    display: flex;
-    flex-direction: row;
-    gap: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 5rem;
 }
 
 .technical-skills-tags-container {
@@ -29,6 +29,25 @@
     margin-top: 3.5rem;
 }
 
+.experience {
+    padding-left: 5rem;
+    border-left: 1px solid var(--design-element-color);
+}
+
+h1 {
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        gap: 2.5rem;
+    }
+    .experience {
+        padding-left: 2.5rem;
+        border-left: 1px solid var(--design-element-color);
+    }
+}
+
 @media screen and (max-width: 992px) {
     .technical-skills-tags-container {
         display: grid;
@@ -39,6 +58,18 @@
     .technical-skills-tags-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .experience {
+        padding: 0;
+        border-left: none;
+        border-top: 1px solid var(--design-element-color);
+    }
+    .top-margin {
+        margin-top: 1rem;
     }
 }
 @media screen and (max-width: 768px) {
