@@ -42,11 +42,12 @@ h1 {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.side-navigation .links.courses a {
-    font-size: 0.75rem;
+
+.side-navigation .links.elements a {
+    font-size: 0.85rem;
 }
-.side-navigation .links.projects a {
-    font-size: 1rem;
+.side-navigation .links.elements a:last-child {
+    margin-bottom: 0.75rem;
 }
 .side-navigation .back-to-top {
     display: flex;
