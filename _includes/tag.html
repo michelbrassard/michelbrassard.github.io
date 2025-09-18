@@ -4,89 +4,53 @@
         position: relative;
         margin-right: 0.5rem;
         margin-bottom: 0.5rem;
-    }
-    .tag-container .details {
-        position: absolute;
-        z-index: 1;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
-    .tag-container:hover .details {
-        opacity: 1;
-        visibility: visible;
-    }
-    .tag-container .details .details-link {
-        margin-bottom: 0.5rem;
-        font-size: 0.75rem;
-    }
-    .tag-container .details .details-link a {
-        font-size: 0.75rem;
-    }
-    .tag-container .details .background {
         background-color: white;
+        padding: 1rem 1rem 1rem 1rem;
+        border-radius: 1rem;
         border: 1px solid var(--design-element-color);
-        border-radius: 0.5rem;
-        padding: 0rem 1rem 1rem 1rem;
-        width: 300px;
-        height: max-content;
-        margin-top: 0.25rem;
+    }    
+    .tag-container h3 {
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0px;
+        margin-top: 0rem;
+    }
+    .tag-container a {
+        font-size: 0.75rem;
+    }
+    .tag-container .details-link {
+        margin-bottom: 0.25rem;
     }
     .tag-container:hover .tag {
         background-color: var(--primary-color);
         color: var(--primary-color-light);
     }
-    .tag {
-        background-color: var(--light-gray);
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-        transition: all .2s;
-        color: var(--primary-color);
-        z-index: 0;
+    .comma {
+        color: var(--text-color-light);
     }
-    .tag:hover {
-        background-color: var(--design-element-color);
-    }
-
-    /* modifier class for right alignment */
-    .tag-container .details.right {
-        left: auto;
-        right: 0;
-    }
-
-    /* For mobile the popup will be different!!! */
 </style>
 
 <div class="tag-container">
-    <button class="tag">
+    <h3 class="skill-title">
         {{include.skill.name}}
-    </button>
-    <div class="details">
-        <div class="background">
-            <p class="xs-title">Related Projects</p>
-            <div class="sm-indent">
-                {% for project in include.skill.projects %}
-                    <div class="details-link">
-                        <a href="{{ site.baseurl }}/projects/descriptions/#{{ project.id }}">
-                            {{project.name-}}
-                        </a>
-                    </div>
-                {% endfor %}
-            </div>
-            <p class="xs-title">Related Courses</p>
-            <div class="sm-indent">
-                {% for course in include.skill.courses %}
-                    <div class="details-link">
-                        <a href="{{ site.baseurl }}/education/RIT-courses/#{{ course.id }}">
-                            {{course.name-}}
-                        </a>
-                        
-                    </div>
-                    
-                {% endfor %}
-            </div>
+    </h3>
+    <div class="content-wrapper">
+        <p class="xs-title">Related Projects</p>
+        <div class="sm-indent">
+            {% for project in include.skill.projects %}
+                <a href="{{ site.baseurl }}/projects/descriptions/#{{ project.id }}">
+                    {{project.name-}}
+                </a><span class="comma">{% unless forloop.last %}, {% endunless %}</span>
+            {% endfor %}
         </div>
-        
+        <p class="xs-title">Related Courses</p>
+        <div class="sm-indent">
+            {% for course in include.skill.courses %}
+                <a href="{{ site.baseurl }}/education/RIT-courses/#{{ course.id }}" title="{{course.name}}">
+                    {{ course.name | split: " " | first -}}
+                </a><span class="comma">{% unless forloop.last %}, {% endunless %}</span>
+            {% endfor %}
+        </div>
     </div>
 </div>
 

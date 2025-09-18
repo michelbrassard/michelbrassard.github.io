@@ -1,7 +1,6 @@
 .technical-skills-tags-container {
-    display: flex;
-    flex-wrap: wrap;
-    overflow-x: clip;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .date {
@@ -13,8 +12,24 @@
     grid-template-columns: 2fr 1fr;
 }
 
-@media screen and (min-width: 1625px) {
+@media screen and (max-width: 992px) {
     .technical-skills-tags-container {
-        overflow-x: visible;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+}
+@media screen and (max-width: 864px) {
+    .technical-skills-tags-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 768px) {
+    .technical-skills-tags-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 576px) {
+    
 }
