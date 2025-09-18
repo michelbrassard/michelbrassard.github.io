@@ -9,7 +9,23 @@
 
 .wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.text-with-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.text-with-icon svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    stroke: var(--text-color-light);
+}
+
+.top-margin {
+    margin-top: 3.5rem;
 }
 
 @media screen and (max-width: 992px) {
