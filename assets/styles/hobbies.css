@@ -1,0 +1,71 @@
+body {
+    background: #020024;
+    background: -webkit-linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: -moz-linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#00D4FF", GradientType=1);
+}
+.dot-background {
+    background-image: none;
+}
+.solid-background {
+    background-color: transparent;
+}
+
+
+/* Titles */
+h1, h2, h3 {
+    color: white;
+}
+h4, h5, h6 {
+    color: var(--light-gray);
+}
+
+/* Small titles */
+.sm-title {
+    color: var(--text-color-light);
+}
+.xs-title {
+    color: var(--xs-title-color);
+}
+
+/* paragraph */
+p {
+    color: var(--light-gray);
+}
+nav {
+    border-bottom: none;
+}
+nav .name {
+    color: var(--text-color-light);
+}
+nav .links a {
+    color: var(--text-color-light);
+}
+nav .links .active {
+    color: var(--primary-color);
+}
+
+
+/* Footer */
+footer {
+    background-color: transparent;
+    background-image: none;
+    border-top: none;
+}
+footer .copyright {
+    border-top: var(--text-color) 1px solid;
+    color: var(--text-color-light);
+}
+footer .links a {
+    background-color: var(--text-color);
+}
+footer .navigation a {
+    color: var(--text-color-light);
+}
+footer .navigation a:hover {
+    text-decoration: underline;
+}
+hr {
+    border: var(--text-color) 0.5px solid;
+}
